@@ -16,6 +16,19 @@ MVP vertical slice 기준 검증 완료:
 - runner 미설정 상태는 `local_stub` degraded로 JSON summary를 출력하고 exit code `2`를 반환해야 한다.
 - real PASS 조건은 BettaFish=`bettafish_cli completed`, MiroFish=`mirofish_cli completed` 둘 다 만족할 때뿐이다.
 
+Release QA 결과:
+
+- BettaFish Aquarium runner tests: 11 passed.
+- MiroFish Aquarium runner tests: 11 passed.
+- Aquarium backend tests: 14 passed.
+- Aquarium frontend i18n tests: 2 passed.
+- Frontend production build: passed.
+- Docker Compose config/build/up health smoke: passed.
+- Browser smoke: Korean UI rendered, run completed, warnings/artifacts visible, console errors 0.
+- GitHub Actions: Aquarium main `Local Runtime CI` success; MiroFish-localized main `Local Runtime CI` and `Deploy GitHub Pages` success.
+
+중요 caveat: MiroFish bridge는 contract-level fake bridge로 검증했기 때문에, live native Graphiti/OASIS 실행 증명은 별도 항목으로 남긴다.
+
 ## Acceptance criteria
 
 ### Product flow
