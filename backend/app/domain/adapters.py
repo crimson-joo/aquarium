@@ -18,9 +18,28 @@ from app.domain.contracts import (
     SimulationResult,
 )
 
+_SAFE_BASE_ENV = {"PATH", "HOME", "TMPDIR", "LANG", "LC_ALL", "PYTHONUTF8"}
+_SAFE_RUNNER_ENV = {
+    "BETTAFISH_AQUARIUM_SMOKE_RESULT",
+    "BETTAFISH_CANARY_BASE_URL",
+    "BETTAFISH_CANARY_MODEL",
+    "QUERY_ENGINE_BASE_URL",
+    "QUERY_ENGINE_MODEL_NAME",
+    "MIROFISH_AQUARIUM_BRIDGE_COMMAND",
+    "MIROFISH_AQUARIUM_MAX_ROUNDS",
+    "MIROFISH_AQUARIUM_PROFILE_COUNT",
+    "MIROFISH_BASE_URL",
+}
+
+
+def _allowed_extra_env_names() -> set[str]:
+    configured = os.environ.get("AQUARIUM_RUNNER_ENV_ALLOWLIST", "")
+    return {name.strip() for name in configured.split(",") if name.strip()}
+
 
 def _command_env(topic: str, locale: Locale, mode: SimulationMode, run_dir: Path, manifest_path: Path | None = None) -> dict[str, str]:
-    env = os.environ.copy()
+    allowed = _SAFE_BASE_ENV | _SAFE_RUNNER_ENV | _allowed_extra_env_names()
+    env = {name: os.environ[name] for name in allowed if name in os.environ}
     env.update(
         {
             "AQUARIUM_TOPIC": topic,
@@ -50,6 +69,31 @@ def _read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _validate_simulation_report_artifact(payload: dict[str, Any], run_dir: Path) -> None:
+    run_dir = run_dir.resolve()
+    report = SimulationReport.model_validate(payload["simulation_report"])
+    report_path = Path(report.path).expanduser()
+    if not report_path.is_absolute():
+        report_path = (run_dir / report_path).resolve()
+    else:
+        report_path = report_path.resolve()
+    try:
+        report_path.relative_to(run_dir)
+    except ValueError as exc:
+        raise RuntimeError(f"MiroFish simulation report path is outside run directory: {report_path}") from exc
+    try:
+        file_body = report_path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise RuntimeError(f"MiroFish simulation report path is not readable: {report_path}") from exc
+    if not file_body.strip():
+        raise RuntimeError(f"MiroFish simulation report file is empty: {report_path}")
+    if not report.body.strip():
+        raise RuntimeError("MiroFish simulation report body is empty")
+    if report.body != file_body:
+        raise RuntimeError("MiroFish simulation report body does not match report file contents")
+    payload["simulation_report"] = {"path": str(report_path), "body": report.body}
+
+
 def run_bettafish_cli_adapter(topic: str, locale: Locale, mode: SimulationMode, run_dir: Path) -> tuple[HandoffManifest | None, AdapterStage | None]:
     command = os.environ.get("AQUARIUM_BETTAFISH_COMMAND", "").strip()
     if not command:
@@ -66,6 +110,9 @@ def run_bettafish_cli_adapter(topic: str, locale: Locale, mode: SimulationMode, 
         if not manifest_path.exists():
             raise RuntimeError("AQUARIUM_BETTAFISH_COMMAND did not create bettafish_handoff_manifest.json")
         manifest = HandoffManifest.model_validate(_read_json(manifest_path))
+        if manifest.provider != "bettafish_cli":
+            raise RuntimeError(f"BettaFish manifest provider mismatch: expected bettafish_cli, got {manifest.provider}")
+        stage.warnings.extend(manifest.warnings)
         stage.artifacts = {"handoff_manifest": str(manifest_path), "final_report": manifest.final_report_path}
         return manifest, stage
     except Exception as exc:  # pragma: no cover - failure shape is asserted through pipeline state in integration tests.
@@ -96,11 +143,14 @@ def run_mirofish_cli_adapter(
         if not result_path.exists():
             raise RuntimeError("AQUARIUM_MIROFISH_COMMAND did not create mirofish_result.json")
         payload = _read_json(result_path)
+        if payload.get("provider") != "mirofish_cli":
+            raise RuntimeError(f"MiroFish result provider mismatch: expected mirofish_cli, got {payload.get('provider')}")
         # Validate the payload at the adapter boundary so the main pipeline can fail loudly in tests/dev.
         Ontology.model_validate(payload["ontology"])
         [Persona.model_validate(item) for item in payload["personas"]]
         SimulationResult.model_validate(payload["simulation"])
-        SimulationReport.model_validate(payload["simulation_report"])
+        _validate_simulation_report_artifact(payload, run_dir)
+        stage.warnings.extend(str(item) for item in payload.get("warnings", []))
         stage.artifacts = {"mirofish_result": str(result_path), "simulation_report": payload["simulation_report"]["path"]}
         return payload, stage
     except Exception as exc:  # pragma: no cover - failure shape is asserted through pipeline state in integration tests.

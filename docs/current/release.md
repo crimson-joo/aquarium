@@ -9,8 +9,11 @@
 ```bash
 cd backend && uv run pytest -q
 cd ../frontend && npm test && npm run build
-cd .. && docker compose config --quiet
+cd .. && docker compose config
+./scripts/run_real_integration_canary.sh
 ```
+
+`run_real_integration_canary.sh`는 실제 runner가 모두 연결된 release 후보에서만 exit code `0`이어야 합니다. runner가 비어 있거나 한 단계라도 degraded/fallback이면 exit code `2`가 정상적인 “real integration 미충족” 신호입니다.
 
 ## Docker endpoints
 

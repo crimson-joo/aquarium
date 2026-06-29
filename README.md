@@ -49,7 +49,15 @@ AQUARIUM_BETTAFISH_COMMAND="python3 /path/to/bettafish_aquarium_runner.py"
 AQUARIUM_MIROFISH_COMMAND="python3 /path/to/mirofish_aquarium_runner.py"
 ```
 
-BettaFish command는 `$AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json`을 생성해야 하고, MiroFish command는 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다. 자세한 계약은 [Execution Plan](docs/current/execution-plan.md)을 참고하세요.
+현재 sibling runner 브랜치 기준 예시는 `.env.example`에 주석으로 포함되어 있습니다. BettaFish command는 `$AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json`을 생성해야 하고, MiroFish command는 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다. 자세한 계약은 [Execution Plan](docs/current/execution-plan.md)을 참고하세요.
+
+로컬 통합 canary:
+
+```bash
+./scripts/run_real_integration_canary.sh
+```
+
+이 canary는 두 단계가 모두 `bettafish_cli` / `mirofish_cli`이고 `completed`일 때만 `status: pass`로 종료합니다. 한 단계라도 `local_stub`, `degraded`, `failed`이면 JSON summary를 출력하고 exit code `2`로 끝나므로, demo fallback을 real integration으로 오해하지 않게 합니다. 단, canary는 설정된 runner command가 Aquarium 계약 산출물을 정직하게 냈는지 검증하는 로컬 계약 검증이며, command 자체의 출처/브랜치 신뢰성은 Release/Reviewer가 별도로 확인해야 합니다. Adapter subprocess에는 기본적으로 Aquarium 계약 변수와 문서화된 runner 변수만 전달되며, 추가 비밀/토큰이 꼭 필요할 때만 `AQUARIUM_RUNNER_ENV_ALLOWLIST`에 변수명을 명시합니다.
 
 ## MVP Flow
 
