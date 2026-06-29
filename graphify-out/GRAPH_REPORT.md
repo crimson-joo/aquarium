@@ -1,16 +1,16 @@
 # Graph Report - feat-real-runner-integration  (2026-06-29)
 
 ## Corpus Check
-- 30 files · ~10,116 words
+- 30 files · ~10,603 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 329 nodes · 381 edges · 30 communities
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 32 edges (avg confidence: 0.76)
+- 333 nodes · 392 edges · 30 communities
+- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1612af82`
+- Built from commit: `99561c8b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,20 +42,18 @@
 - [[_COMMUNITY_Community 24|Community 24]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `run_aquarium_pipeline()` - 23 edges
+1. `run_aquarium_pipeline()` - 26 edges
 2. `Aquarium Architecture Slice` - 15 edges
 3. `Aquarium Architecture Slice` - 15 edges
 4. `아쿠아리움 Design Slice` - 11 edges
 5. `Aquarium / 아쿠아리움` - 9 edges
 6. `3. 주요 화면 제안` - 9 edges
 7. `Aquarium / 아쿠아리움` - 9 edges
-8. `7. Job flow와 handoff contract` - 8 edges
+8. `_write_executable()` - 8 edges
 9. `7. Job flow와 handoff contract` - 8 edges
-10. `_stub_simulation()` - 7 edges
+10. `7. Job flow와 handoff contract` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `_data_dir()` --calls--> `get_settings()`  [INFERRED]
-  backend/app/main.py → backend/app/core/config.py
 - `seed_from_report()` --calls--> `SeedDocument`  [INFERRED]
   backend/app/domain/pipeline.py → backend/app/domain/contracts.py
 - `extract_ontology()` --calls--> `OntologyEntity`  [INFERRED]
@@ -63,6 +61,8 @@
 - `extract_ontology()` --calls--> `Ontology`  [INFERRED]
   backend/app/domain/pipeline.py → backend/app/domain/contracts.py
 - `build_personas()` --calls--> `Persona`  [INFERRED]
+  backend/app/domain/pipeline.py → backend/app/domain/contracts.py
+- `run_simulation()` --calls--> `UniverseResult`  [INFERRED]
   backend/app/domain/pipeline.py → backend/app/domain/contracts.py
 
 ## Communities (30 total, 0 thin omitted)
@@ -80,12 +80,12 @@ Cohesion: 0.06
 Nodes (30): 1. 제품/브랜드 방향, 10. 구현팀 전달 메모, 2.1 권장 전역 구조, 2.2 신규 사용자용 5단계 플로우, 2. 정보 구조 및 핵심 UX 플로우, 3. 주요 화면 제안, 3.1 Home / Landing, 3.2 New Aquarium / Seed Intake (+22 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.18
-Nodes (21): msg(), build_personas(), build_research_report(), build_simulation_report(), extract_ontology(), _key_points(), run_aquarium_pipeline(), _run_dir() (+13 more)
+Cohesion: 0.16
+Nodes (24): msg(), build_personas(), build_research_report(), build_simulation_report(), extract_ontology(), _key_points(), run_aquarium_pipeline(), _run_dir() (+16 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.14
-Nodes (21): ChatRequest, create_app(), CreateRunRequest, _data_dir(), _result_path(), BaseModel, HandoffManifest, Locale (+13 more)
+Nodes (21): ChatRequest, CreateRunRequest, _data_dir(), _result_path(), BaseModel, BaseSettings, get_settings(), Settings (+13 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.09
@@ -116,12 +116,12 @@ Cohesion: 0.22
 Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.25
-Nodes (7): 현재 검증 상태, Acceptance criteria, Docker, Fail-closed, i18n, Product flow, QA — Aquarium
+Cohesion: 0.47
+Nodes (8): _allowed_extra_env_names(), _command_env(), _read_json(), run_bettafish_cli_adapter(), _run_command(), run_mirofish_cli_adapter(), _validate_simulation_report_artifact(), AdapterStage
 
 ### Community 13 - "Community 13"
-Cohesion: 0.54
-Nodes (7): _allowed_extra_env_names(), _command_env(), _read_json(), run_bettafish_cli_adapter(), _run_command(), run_mirofish_cli_adapter(), AdapterStage
+Cohesion: 0.25
+Nodes (7): 현재 검증 상태, Acceptance criteria, Docker, Fail-closed, i18n, Product flow, QA — Aquarium
 
 ### Community 14 - "Community 14"
 Cohesion: 0.29
@@ -129,11 +129,11 @@ Nodes (6): code:bash (cd backend && uv run pytest -q), Docker endpoints, Local r
 
 ### Community 15 - "Community 15"
 Cohesion: 0.33
-Nodes (5): 한 줄 정의, 성공 순간, MVP 목표, Non-goals, Product — Aquarium
+Nodes (5): 시뮬레이션 보고서, 앙상블 빈도, Universe 1, Universe 2, Universe 3
 
 ### Community 16 - "Community 16"
 Cohesion: 0.33
-Nodes (5): 시뮬레이션 보고서, 앙상블 빈도, Universe 1, Universe 2, Universe 3
+Nodes (5): 한 줄 정의, 성공 순간, MVP 목표, Non-goals, Product — Aquarium
 
 ### Community 17 - "Community 17"
 Cohesion: 0.4
@@ -144,20 +144,20 @@ Cohesion: 0.6
 Nodes (3): test_real_integration_canary_fails_when_runner_provider_is_not_real(), test_real_integration_canary_passes_with_fake_contract_runners(), _write_executable()
 
 ### Community 19 - "Community 19"
-Cohesion: 0.67
-Nodes (3): BaseSettings, get_settings(), Settings
-
-### Community 20 - "Community 20"
 Cohesion: 0.5
 Nodes (3): 시뮬레이션 보고서, 단일 해류, Single Current
 
-### Community 21 - "Community 21"
+### Community 20 - "Community 20"
 Cohesion: 0.5
-Nodes (3): Aquarium Docs, Canonical current docs, Setup docs
+Nodes (3): 조사 보고서: 아쿠아리움 도커 스모크, 핵심 신호, 핸드오프 메모
+
+### Community 21 - "Community 21"
+Cohesion: 0.67
+Nodes (3): create_app(), test_create_run_and_chat(), test_rejects_unsupported_locale()
 
 ### Community 22 - "Community 22"
 Cohesion: 0.5
-Nodes (3): 조사 보고서: 아쿠아리움 도커 스모크, 핵심 신호, 핸드오프 메모
+Nodes (3): 2026-06-29 — Initial MVP scaffold, 2026-06-29 — Real runner canary and state visibility, Changelog — Aquarium
 
 ### Community 23 - "Community 23"
 Cohesion: 0.5
@@ -165,7 +165,7 @@ Nodes (3): 핵심 신호, 핸드오프 메모, 조사 보고서: AI 검색엔진
 
 ### Community 24 - "Community 24"
 Cohesion: 0.5
-Nodes (3): 2026-06-29 — Initial MVP scaffold, 2026-06-29 — Real runner canary and state visibility, Changelog — Aquarium
+Nodes (3): Aquarium Docs, Canonical current docs, Setup docs
 
 ## Knowledge Gaps
 - **158 isolated node(s):** `Locale`, `Mode`, `Stage`, `ProviderKey`, `StatusKey` (+153 more)
@@ -174,14 +174,14 @@ Nodes (3): 2026-06-29 — Initial MVP scaffold, 2026-06-29 — Real runner canar
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Aquarium Architecture Slice` connect `Community 0` to `Community 10`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `Aquarium Architecture Slice` connect `Community 1` to `Community 11`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `run_aquarium_pipeline()` connect `Community 3` to `Community 4`, `Community 13`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
-- **Are the 11 inferred relationships involving `run_aquarium_pipeline()` (e.g. with `RunRecord` and `run_bettafish_cli_adapter()`) actually correct?**
-  _`run_aquarium_pipeline()` has 11 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `Aquarium Architecture Slice` connect `Community 1` to `Community 10`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `Aquarium Architecture Slice` connect `Community 0` to `Community 11`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `run_aquarium_pipeline()` connect `Community 3` to `Community 4`, `Community 12`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Are the 14 inferred relationships involving `run_aquarium_pipeline()` (e.g. with `RunRecord` and `run_bettafish_cli_adapter()`) actually correct?**
+  _`run_aquarium_pipeline()` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Locale`, `Mode`, `Stage` to the rest of the system?**
   _158 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**

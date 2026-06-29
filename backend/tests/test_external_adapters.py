@@ -150,3 +150,94 @@ payload = {
     assert result.simulation_report.path.endswith("real_mirofish_report.md")
     assert result.run.stages[-1].provider == "mirofish_cli"
     assert result.run.stages[-1].status == "completed"
+
+
+def test_pipeline_rejects_mirofish_completed_result_with_missing_report_path(tmp_path: Path, monkeypatch):
+    script = _write_executable(
+        tmp_path / "fake_mirofish_missing_report.py",
+        """
+#!/usr/bin/env python3
+import json, os, pathlib
+run_dir = pathlib.Path(os.environ['AQUARIUM_RUN_DIR'])
+missing = run_dir / 'missing_real_mirofish_report.md'
+payload = {
+  'provider': 'mirofish_cli',
+  'ontology': {'entities': [{'name': '실제 엔티티', 'type': 'Signal', 'rationale': 'fake cli'}], 'relations': []},
+  'personas': [{'name': '실제 페르소나', 'role': '현장 관찰자', 'stance': '증거 중심'}],
+  'simulation': {'mode': os.environ['AQUARIUM_MODE'], 'universes': [{'name': 'Real Universe', 'variation': 'adapter', 'dominant_signal': '실제 조사 결과', 'events': ['external cli event']}]},
+  'simulation_report': {'path': str(missing), 'body': '# FAKE BODY WITHOUT FILE'},
+  'warnings': []
+}
+(run_dir / 'mirofish_result.json').write_text(json.dumps(payload, ensure_ascii=False), encoding='utf-8')
+""".lstrip(),
+    )
+    monkeypatch.setenv("AQUARIUM_MIROFISH_COMMAND", f"python3 {script}")
+
+    result = run_aquarium_pipeline("missing report guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
+
+    assert result.run.stages[-1].provider == "local_stub"
+    assert result.run.stages[-1].status == "degraded"
+    assert any("report path is not readable" in warning for warning in result.run.stages[-1].warnings)
+    assert not result.simulation_report.path.endswith("missing_real_mirofish_report.md")
+
+
+def test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file(tmp_path: Path, monkeypatch):
+    script = _write_executable(
+        tmp_path / "fake_mirofish_mismatched_report.py",
+        """
+#!/usr/bin/env python3
+import json, os, pathlib
+run_dir = pathlib.Path(os.environ['AQUARIUM_RUN_DIR'])
+report = run_dir / 'real_mirofish_report.md'
+report.write_text('# REAL MIROFISH\\n\\n파일의 실제 본문', encoding='utf-8')
+payload = {
+  'provider': 'mirofish_cli',
+  'ontology': {'entities': [{'name': '실제 엔티티', 'type': 'Signal', 'rationale': 'fake cli'}], 'relations': []},
+  'personas': [{'name': '실제 페르소나', 'role': '현장 관찰자', 'stance': '증거 중심'}],
+  'simulation': {'mode': os.environ['AQUARIUM_MODE'], 'universes': [{'name': 'Real Universe', 'variation': 'adapter', 'dominant_signal': '실제 조사 결과', 'events': ['external cli event']}]},
+  'simulation_report': {'path': str(report), 'body': '# SYNTHETIC CHAT PREVIEW'},
+  'warnings': []
+}
+(run_dir / 'mirofish_result.json').write_text(json.dumps(payload, ensure_ascii=False), encoding='utf-8')
+""".lstrip(),
+    )
+    monkeypatch.setenv("AQUARIUM_MIROFISH_COMMAND", f"python3 {script}")
+
+    result = run_aquarium_pipeline("mismatched report guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
+
+    assert result.run.stages[-1].provider == "local_stub"
+    assert result.run.stages[-1].status == "degraded"
+    assert any("report body does not match" in warning for warning in result.run.stages[-1].warnings)
+
+
+def test_pipeline_rejects_mirofish_report_path_outside_run_dir(tmp_path: Path, monkeypatch):
+    outside_dir = tmp_path.parent / f"{tmp_path.name}_outside"
+    outside_dir.mkdir()
+    outside_report = outside_dir / "outside_report.md"
+    outside_report.write_text("# OUTSIDE\n\nnot an Aquarium run artifact", encoding="utf-8")
+    script = _write_executable(
+        tmp_path / "fake_mirofish_outside_report.py",
+        f"""
+#!/usr/bin/env python3
+import json, os, pathlib
+run_dir = pathlib.Path(os.environ['AQUARIUM_RUN_DIR'])
+report = pathlib.Path({str(outside_report)!r})
+body = report.read_text(encoding='utf-8')
+payload = {{
+  'provider': 'mirofish_cli',
+  'ontology': {{'entities': [{{'name': '실제 엔티티', 'type': 'Signal', 'rationale': 'fake cli'}}], 'relations': []}},
+  'personas': [{{'name': '실제 페르소나', 'role': '현장 관찰자', 'stance': '증거 중심'}}],
+  'simulation': {{'mode': os.environ['AQUARIUM_MODE'], 'universes': [{{'name': 'Real Universe', 'variation': 'adapter', 'dominant_signal': '실제 조사 결과', 'events': ['external cli event']}}]}},
+  'simulation_report': {{'path': str(report), 'body': body}},
+  'warnings': []
+}}
+(run_dir / 'mirofish_result.json').write_text(json.dumps(payload, ensure_ascii=False), encoding='utf-8')
+""".lstrip(),
+    )
+    monkeypatch.setenv("AQUARIUM_MIROFISH_COMMAND", f"python3 {script}")
+
+    result = run_aquarium_pipeline("outside report guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
+
+    assert result.run.stages[-1].provider == "local_stub"
+    assert result.run.stages[-1].status == "degraded"
+    assert any("outside run directory" in warning for warning in result.run.stages[-1].warnings)

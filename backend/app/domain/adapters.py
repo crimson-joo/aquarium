@@ -69,6 +69,31 @@ def _read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _validate_simulation_report_artifact(payload: dict[str, Any], run_dir: Path) -> None:
+    run_dir = run_dir.resolve()
+    report = SimulationReport.model_validate(payload["simulation_report"])
+    report_path = Path(report.path).expanduser()
+    if not report_path.is_absolute():
+        report_path = (run_dir / report_path).resolve()
+    else:
+        report_path = report_path.resolve()
+    try:
+        report_path.relative_to(run_dir)
+    except ValueError as exc:
+        raise RuntimeError(f"MiroFish simulation report path is outside run directory: {report_path}") from exc
+    try:
+        file_body = report_path.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise RuntimeError(f"MiroFish simulation report path is not readable: {report_path}") from exc
+    if not file_body.strip():
+        raise RuntimeError(f"MiroFish simulation report file is empty: {report_path}")
+    if not report.body.strip():
+        raise RuntimeError("MiroFish simulation report body is empty")
+    if report.body != file_body:
+        raise RuntimeError("MiroFish simulation report body does not match report file contents")
+    payload["simulation_report"] = {"path": str(report_path), "body": report.body}
+
+
 def run_bettafish_cli_adapter(topic: str, locale: Locale, mode: SimulationMode, run_dir: Path) -> tuple[HandoffManifest | None, AdapterStage | None]:
     command = os.environ.get("AQUARIUM_BETTAFISH_COMMAND", "").strip()
     if not command:
@@ -124,7 +149,7 @@ def run_mirofish_cli_adapter(
         Ontology.model_validate(payload["ontology"])
         [Persona.model_validate(item) for item in payload["personas"]]
         SimulationResult.model_validate(payload["simulation"])
-        SimulationReport.model_validate(payload["simulation_report"])
+        _validate_simulation_report_artifact(payload, run_dir)
         stage.warnings.extend(str(item) for item in payload.get("warnings", []))
         stage.artifacts = {"mirofish_result": str(result_path), "simulation_report": payload["simulation_report"]["path"]}
         return payload, stage
