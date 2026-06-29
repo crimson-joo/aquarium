@@ -9,6 +9,13 @@ MVP vertical slice 기준 검증 완료:
 - Frontend i18n test: 통과
 - Frontend production build: 통과
 
+실제 runner 통합 canary 기준:
+
+- `scripts/run_real_integration_canary.sh`가 추가되었다.
+- fake BettaFish/MiroFish contract runner로 canary PASS 경로를 검증한다.
+- runner 미설정 상태는 `local_stub` degraded로 JSON summary를 출력하고 exit code `2`를 반환해야 한다.
+- real PASS 조건은 BettaFish=`bettafish_cli completed`, MiroFish=`mirofish_cli completed` 둘 다 만족할 때뿐이다.
+
 ## Acceptance criteria
 
 ### Product flow

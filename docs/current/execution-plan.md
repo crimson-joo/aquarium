@@ -60,6 +60,7 @@
 
 - Docker Compose profiles를 `minimal`, `local-search`, `graph-memory`, `full`로 정리한다.
 - `.env.example`에 adapter command 예시가 포함된다.
+- `scripts/run_real_integration_canary.sh`로 local/fake 또는 sibling runner 기반 통합 canary를 한 번에 실행할 수 있다.
 - README quickstart가 실제 adapter 연결과 stub 모드를 구분한다.
 - CI와 local compose smoke가 통과한다.
 

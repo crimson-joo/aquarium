@@ -51,6 +51,75 @@ manifest = {
     assert result.run.stages[0].status == "completed"
 
 
+def test_pipeline_rejects_mismatched_bettafish_provider(tmp_path: Path, monkeypatch):
+    script = _write_executable(
+        tmp_path / "fake_bettafish_stub_provider.py",
+        """
+#!/usr/bin/env python3
+import json, os, pathlib
+run_dir = pathlib.Path(os.environ['AQUARIUM_RUN_DIR'])
+report = run_dir / 'stub_report.md'
+report.write_text('# Stub report\\n\\n- should not pass as real\\n', encoding='utf-8')
+manifest = {
+  'handoff_version': 'aquarium.v1',
+  'source_product': 'bettafish-localized',
+  'target_product': 'aquarium',
+  'topic': os.environ['AQUARIUM_TOPIC'],
+  'locale': os.environ['AQUARIUM_LOCALE'],
+  'final_report_path': str(report),
+  'provider': 'local_stub',
+  'warnings': [],
+  'data_gaps': []
+}
+(run_dir / 'bettafish_handoff_manifest.json').write_text(json.dumps(manifest, ensure_ascii=False), encoding='utf-8')
+""".lstrip(),
+    )
+    monkeypatch.setenv("AQUARIUM_BETTAFISH_COMMAND", f"python3 {script}")
+
+    result = run_aquarium_pipeline("provider mismatch", Locale.KO, SimulationMode.SINGLE, tmp_path)
+
+    assert result.manifest.provider == "local_stub"
+    assert result.run.stages[0].provider == "local_stub"
+    assert result.run.stages[0].status == "degraded"
+    assert any("provider" in warning for warning in result.run.stages[0].warnings)
+
+
+def test_adapter_env_does_not_leak_unallowlisted_secret(tmp_path: Path, monkeypatch):
+    script = _write_executable(
+        tmp_path / "fake_bettafish_env_probe.py",
+        """
+#!/usr/bin/env python3
+import json, os, pathlib
+run_dir = pathlib.Path(os.environ['AQUARIUM_RUN_DIR'])
+probe = run_dir / 'env_probe.json'
+probe.write_text(json.dumps({'has_secret': 'SECRET_TOKEN' in os.environ, 'has_topic': os.environ.get('AQUARIUM_TOPIC')}), encoding='utf-8')
+report = run_dir / 'real_bettafish_report.md'
+report.write_text('# REAL BETTAFISH\\n\\n- env probe\\n', encoding='utf-8')
+manifest = {
+  'handoff_version': 'aquarium.v1',
+  'source_product': 'bettafish-localized',
+  'target_product': 'aquarium',
+  'topic': os.environ['AQUARIUM_TOPIC'],
+  'locale': os.environ['AQUARIUM_LOCALE'],
+  'final_report_path': str(report),
+  'intermediate_outputs': {'probe': str(probe)},
+  'sources': [],
+  'provider': 'bettafish_cli',
+  'warnings': [],
+  'data_gaps': []
+}
+(run_dir / 'bettafish_handoff_manifest.json').write_text(json.dumps(manifest, ensure_ascii=False), encoding='utf-8')
+""".lstrip(),
+    )
+    monkeypatch.setenv("AQUARIUM_BETTAFISH_COMMAND", f"python3 {script}")
+    monkeypatch.setenv("SECRET_TOKEN", "do-not-leak")
+
+    result = run_aquarium_pipeline("secret env guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
+    probe = json.loads(Path(result.manifest.intermediate_outputs["probe"]).read_text(encoding="utf-8"))
+
+    assert probe == {"has_secret": False, "has_topic": "secret env guard"}
+
+
 def test_pipeline_uses_configured_mirofish_cli_adapter(tmp_path: Path, monkeypatch):
     script = _write_executable(
         tmp_path / "fake_mirofish.py",

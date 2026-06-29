@@ -6,6 +6,18 @@ export const messages = {
     statusTitle: '흐름 상태',
     emptyStatus: '주제를 입력하고 수조를 준비하면 보고서 seed부터 시뮬레이션 리포트까지 한 번에 생성됩니다.',
     topicPlaceholder: '예: AI 검색엔진 시장 변화',
+    warningsTitle: '경고 / 제한',
+    artifactsTitle: '산출물',
+    providerLabels: {
+      local_stub: '데모 대체 처리(local_stub)',
+      bettafish_cli: '실제 조사 보고서(BettaFish)',
+      mirofish_cli: '실제 시뮬레이션(MiroFish)',
+    },
+    statusExplanations: {
+      completed: '완료 — 이 단계의 계약 산출물을 검증했습니다.',
+      degraded: '부분 처리 — 결과는 볼 수 있지만 실제/native 성공으로 보지 않습니다.',
+      failed: '실패 — 다음 단계는 대체 처리 또는 중단 상태입니다.',
+    },
     steps: { seed: '수조 열기', map: '생태계 스캔', current: '해류 설계', observe: '멀티버스 관찰', report: '리포트와 대화' },
   },
   zh: {
@@ -15,6 +27,18 @@ export const messages = {
     statusTitle: '流程状态',
     emptyStatus: '输入主题并准备水族箱后，报告种子到模拟报告会一次生成。',
     topicPlaceholder: '例：AI 搜索引擎市场变化',
+    warningsTitle: '警告 / 限制',
+    artifactsTitle: '产物',
+    providerLabels: {
+      local_stub: '本地演示替代(local_stub)',
+      bettafish_cli: '真实研究报告(BettaFish)',
+      mirofish_cli: '真实模拟(MiroFish)',
+    },
+    statusExplanations: {
+      completed: '完成 — 已验证此阶段的契约产物。',
+      degraded: '降级 — 可以查看结果，但不能视为真实/native 成功。',
+      failed: '失败 — 下一阶段处于替代处理或停止状态。',
+    },
     steps: { seed: '打开水族箱', map: '扫描生态', current: '设计水流', observe: '观察多宇宙', report: '报告与对话' },
   },
   en: {
@@ -24,6 +48,18 @@ export const messages = {
     statusTitle: 'Flow status',
     emptyStatus: 'Enter a topic and prepare the aquarium to generate a report seed through simulation report in one pass.',
     topicPlaceholder: 'e.g. AI search engine market shift',
+    warningsTitle: 'Warnings / limits',
+    artifactsTitle: 'Artifacts',
+    providerLabels: {
+      local_stub: 'Local demo stub(local_stub)',
+      bettafish_cli: 'Real research report(BettaFish)',
+      mirofish_cli: 'Real simulation(MiroFish)',
+    },
+    statusExplanations: {
+      completed: 'Completed — contract artifacts were validated for this stage.',
+      degraded: 'Degraded — usable output, but not a real/native success claim.',
+      failed: 'Failed — the next stage is fallback or stopped.',
+    },
     steps: { seed: 'Open tank', map: 'Map ecosystem', current: 'Design current', observe: 'Observe multiverse', report: 'Report & chat' },
   },
 };
