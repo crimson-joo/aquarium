@@ -7,6 +7,8 @@ import { messages } from './i18n.messages.mjs';
 type Locale = 'ko' | 'zh' | 'en';
 type Mode = 'single' | 'multiverse';
 type Stage = { name: string; provider: string; status: string; warnings?: string[] };
+type ProviderKey = 'local_stub' | 'bettafish_cli' | 'mirofish_cli';
+type StatusKey = 'completed' | 'degraded' | 'failed';
 type RunResult = { run_id: string; mode: Mode; status: string; summary?: string[]; stages?: Stage[]; artifacts?: Record<string, string> };
 
 function App() {
@@ -68,14 +70,21 @@ function App() {
         {result && <div className="result">
           <b>{result.status.toUpperCase()}</b><p>Run: {result.run_id}</p><p>Mode: {result.mode}</p><p>{result.summary?.join(' ')}</p>
           <div className="stageGrid">
-            {result.stages?.map((stage) => <div className="stageCard" key={stage.name}>
-              <span className={`badge ${stage.status}`}>{stage.status}</span>
-              <strong>{stage.name}</strong>
-              <small>{stage.provider}</small>
-              {stage.warnings?.map((warning) => <p className="warning" key={warning}>{warning}</p>)}
-            </div>)}
+            {result.stages?.map((stage) => {
+              const providerLabel = t.providerLabels[stage.provider as ProviderKey] ?? stage.provider;
+              const statusExplanation = t.statusExplanations[stage.status as StatusKey] ?? stage.status;
+              return <div className="stageCard" key={stage.name}>
+                <span className={`badge ${stage.status}`}>{stage.status}</span>
+                <strong>{stage.name}</strong>
+                <small>{providerLabel}</small>
+                <p className="stageHint">{statusExplanation}</p>
+                {!!stage.warnings?.length && <b className="sectionLabel">{t.warningsTitle}</b>}
+                {stage.warnings?.map((warning) => <p className="warning" key={warning}>{warning}</p>)}
+              </div>;
+            })}
           </div>
           {result.artifacts && <div className="artifactList">
+            <b className="sectionLabel">{t.artifactsTitle}</b>
             {Object.entries(result.artifacts).map(([name, path]) => <p key={name}><span>{name}</span><code>{path}</code></p>)}
           </div>}
         </div>}
