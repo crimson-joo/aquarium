@@ -1,5 +1,14 @@
 # Changelog — Aquarium
 
+## 2026-06-29 — Real runner release
+
+- Merged Aquarium release PR #1 to `main`.
+- Merged BettaFish-localized release PR #16 to `main` for Aquarium BettaFish runner support.
+- Merged MiroFish-localized release PR #48 to `main` for Aquarium MiroFish runner support.
+- Synced `develop` branches back from `main` after release.
+- Verified Aquarium and MiroFish GitHub Actions success; BettaFish had no remote checks configured/reported, with local focused runner tests passing before merge.
+- Captured release QA caveat: live native Graphiti/OASIS execution remains separate from contract-level runner proof.
+
 ## 2026-06-29 — Real runner canary and state visibility
 
 - Added `scripts/run_real_integration_canary.sh` so local integration canaries fail unless both BettaFish and MiroFish stages are real completed runners.
