@@ -9,7 +9,7 @@
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
       "id": "frontend_vite_config_ts",
-      "community": 25,
+      "community": 26,
       "norm_label": "vite.config.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L1",
       "id": "frontend_src_main_tsx",
-      "community": 9,
+      "community": 8,
       "norm_label": "main.tsx"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L7",
       "id": "src_main_locale",
-      "community": 9,
+      "community": 8,
       "norm_label": "locale"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L8",
       "id": "src_main_mode",
-      "community": 9,
+      "community": 8,
       "norm_label": "mode"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L9",
       "id": "src_main_stage",
-      "community": 9,
+      "community": 8,
       "norm_label": "stage"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L10",
       "id": "src_main_providerkey",
-      "community": 9,
+      "community": 8,
       "norm_label": "providerkey"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L11",
       "id": "src_main_statuskey",
-      "community": 9,
+      "community": 8,
       "norm_label": "statuskey"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L12",
       "id": "src_main_runresult",
-      "community": 9,
+      "community": 8,
       "norm_label": "runresult"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L14",
       "id": "src_main_app",
-      "community": 9,
+      "community": 8,
       "norm_label": "app()"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "frontend/src/i18n.messages.mjs",
       "source_location": "L1",
       "id": "frontend_src_i18n_messages_mjs",
-      "community": 9,
+      "community": 8,
       "norm_label": "i18n.messages.mjs"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "frontend/src/i18n.messages.mjs",
       "source_location": "L1",
       "id": "src_i18n_messages_messages",
-      "community": 9,
+      "community": 8,
       "norm_label": "messages"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "frontend/src/i18n.test.mjs",
       "source_location": "L1",
       "id": "frontend_src_i18n_test_mjs",
-      "community": 9,
+      "community": 8,
       "norm_label": "i18n.test.mjs"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "frontend/src/vite-env.d.ts",
       "source_location": "L1",
       "id": "frontend_src_vite_env_d_ts",
-      "community": 26,
+      "community": 27,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "backend/app/__init__.py",
       "source_location": "L1",
       "id": "backend_app_init_py",
-      "community": 27,
+      "community": 28,
       "norm_label": "__init__.py"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L1",
       "id": "backend_app_main_py",
-      "community": 5,
+      "community": 9,
       "norm_label": "main.py"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L14",
       "id": "app_main_createrunrequest",
-      "community": 5,
+      "community": 2,
       "norm_label": "createrunrequest"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L20",
       "id": "app_main_chatrequest",
-      "community": 5,
+      "community": 2,
       "norm_label": "chatrequest"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L24",
       "id": "app_main_data_dir",
-      "community": 5,
+      "community": 9,
       "norm_label": "_data_dir()"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L30",
       "id": "app_main_result_path",
-      "community": 5,
+      "community": 9,
       "norm_label": "_result_path()"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L34",
       "id": "app_main_create_app",
-      "community": 5,
+      "community": 9,
       "norm_label": "create_app()"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L1",
       "id": "backend_app_core_config_py",
-      "community": 5,
+      "community": 9,
       "norm_label": "config.py"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L7",
       "id": "core_config_settings",
-      "community": 5,
+      "community": 9,
       "norm_label": "settings"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "",
       "source_location": "",
       "id": "basesettings",
-      "community": 5,
+      "community": 9,
       "norm_label": "basesettings"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L16",
       "id": "core_config_get_settings",
-      "community": 5,
+      "community": 9,
       "norm_label": "get_settings()"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "backend/app/core/__init__.py",
       "source_location": "L1",
       "id": "backend_app_core_init_py",
-      "community": 28,
+      "community": 29,
       "norm_label": "__init__.py"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "backend/app/domain/__init__.py",
       "source_location": "L1",
       "id": "backend_app_domain_init_py",
-      "community": 29,
+      "community": 30,
       "norm_label": "__init__.py"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L8",
       "id": "domain_contracts_locale",
-      "community": 5,
+      "community": 2,
       "norm_label": "locale"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "",
       "source_location": "",
       "id": "strenum",
-      "community": 5,
+      "community": 2,
       "norm_label": "strenum"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L14",
       "id": "domain_contracts_simulationmode",
-      "community": 5,
+      "community": 2,
       "norm_label": "simulationmode"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L19",
       "id": "domain_contracts_adapterstage",
-      "community": 11,
+      "community": 13,
       "norm_label": "adapterstage"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L1",
       "id": "backend_app_domain_adapters_py",
-      "community": 11,
+      "community": 13,
       "norm_label": "adapters.py"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L35",
       "id": "domain_adapters_allowed_extra_env_names",
-      "community": 11,
+      "community": 13,
       "norm_label": "_allowed_extra_env_names()"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L40",
       "id": "domain_adapters_command_env",
-      "community": 11,
+      "community": 13,
       "norm_label": "_command_env()"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L56",
       "id": "domain_adapters_run_command",
-      "community": 11,
+      "community": 13,
       "norm_label": "_run_command()"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L68",
       "id": "domain_adapters_read_json",
-      "community": 11,
+      "community": 13,
       "norm_label": "_read_json()"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L72",
       "id": "domain_adapters_validate_simulation_report_artifact",
-      "community": 11,
+      "community": 13,
       "norm_label": "_validate_simulation_report_artifact()"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L97",
       "id": "domain_adapters_run_bettafish_cli_adapter",
-      "community": 11,
+      "community": 13,
       "norm_label": "run_bettafish_cli_adapter()"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L124",
       "id": "domain_adapters_run_mirofish_cli_adapter",
-      "community": 11,
+      "community": 13,
       "norm_label": "run_mirofish_cli_adapter()"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L1",
       "id": "backend_tests_test_api_py",
-      "community": 5,
+      "community": 9,
       "norm_label": "test_api.py"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L6",
       "id": "tests_test_api_test_create_run_and_chat",
-      "community": 5,
+      "community": 9,
       "norm_label": "test_create_run_and_chat()"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L33",
       "id": "tests_test_api_test_rejects_unsupported_locale",
-      "community": 5,
+      "community": 9,
       "norm_label": "test_rejects_unsupported_locale()"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 6,
+      "community": 5,
       "norm_label": "readme.md"
     },
     {
@@ -792,7 +792,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "aquarium_readme_aquarium",
-      "community": 6,
+      "community": 5,
       "norm_label": "aquarium / \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7"
     },
     {
@@ -801,7 +801,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "aquarium_readme_mvp",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "README.md",
       "source_location": "L18",
       "id": "aquarium_readme",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u1108\u1161\u1105\u1173\u11ab \u1109\u1175\u110c\u1161\u11a8"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "README.md",
       "source_location": "L20",
       "id": "aquarium_readme_codeblock_1",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "README.md",
       "source_location": "L32",
       "id": "aquarium_readme_codeblock_2",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:bash (cd backend)"
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "README.md",
       "source_location": "L43",
       "id": "aquarium_readme_adapter",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af"
     },
     {
@@ -846,7 +846,7 @@
       "source_file": "README.md",
       "source_location": "L47",
       "id": "aquarium_readme_codeblock_3",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /path/to/bettafish_aquar)"
     },
     {
@@ -855,7 +855,7 @@
       "source_file": "README.md",
       "source_location": "L56",
       "id": "aquarium_readme_codeblock_4",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:bash (./scripts/run_real_integration_canary.sh)"
     },
     {
@@ -864,7 +864,7 @@
       "source_file": "README.md",
       "source_location": "L62",
       "id": "aquarium_readme_mvp_flow",
-      "community": 6,
+      "community": 5,
       "norm_label": "mvp flow"
     },
     {
@@ -873,7 +873,7 @@
       "source_file": "README.md",
       "source_location": "L64",
       "id": "aquarium_readme_codeblock_5",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)"
     },
     {
@@ -882,7 +882,7 @@
       "source_file": "README.md",
       "source_location": "L75",
       "id": "aquarium_readme_75",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165"
     },
     {
@@ -891,7 +891,7 @@
       "source_file": "README.md",
       "source_location": "L86",
       "id": "aquarium_readme_86",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_md",
-      "community": 23,
+      "community": 22,
       "norm_label": "changelog.md"
     },
     {
@@ -909,7 +909,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_changelog_aquarium",
-      "community": 23,
+      "community": 22,
       "norm_label": "changelog \u2014 aquarium"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "id": "docs_changelog_2026_06_29_real_runner_canary_and_state_visibility",
-      "community": 23,
+      "community": 22,
       "norm_label": "2026-06-29 \u2014 real runner canary and state visibility"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L13",
       "id": "docs_changelog_2026_06_29_initial_mvp_scaffold",
-      "community": 23,
+      "community": 22,
       "norm_label": "2026-06-29 \u2014 initial mvp scaffold"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "id": "docs_readme_md",
-      "community": 21,
+      "community": 24,
       "norm_label": "readme.md"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "id": "docs_readme_aquarium_docs",
-      "community": 21,
+      "community": 24,
       "norm_label": "aquarium docs"
     },
     {
@@ -954,7 +954,7 @@
       "source_file": "docs/README.md",
       "source_location": "L5",
       "id": "docs_readme_canonical_current_docs",
-      "community": 21,
+      "community": 24,
       "norm_label": "canonical current docs"
     },
     {
@@ -963,7 +963,7 @@
       "source_file": "docs/README.md",
       "source_location": "L14",
       "id": "docs_readme_setup_docs",
-      "community": 21,
+      "community": 24,
       "norm_label": "setup docs"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L232",
       "id": "docs_architecture_slice_ko_7_job_flow_handoff_contract",
-      "community": 12,
+      "community": 15,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L234",
       "id": "docs_architecture_slice_ko_codeblock_6",
-      "community": 12,
+      "community": 15,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L247",
       "id": "docs_architecture_slice_ko_stage_1_researchreport",
-      "community": 12,
+      "community": 15,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L250",
       "id": "docs_architecture_slice_ko_codeblock_7",
-      "community": 12,
+      "community": 15,
       "norm_label": "code:json ({)"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L264",
       "id": "docs_architecture_slice_ko_stage_2_seeddocument",
-      "community": 12,
+      "community": 15,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L270",
       "id": "docs_architecture_slice_ko_stage_3_ontology_persona_extraction",
-      "community": 12,
+      "community": 15,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L276",
       "id": "docs_architecture_slice_ko_stage_4_simulation",
-      "community": 12,
+      "community": 15,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L281",
       "id": "docs_architecture_slice_ko_stage_5_simulationreport",
-      "community": 12,
+      "community": 15,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L285",
       "id": "docs_architecture_slice_ko_stage_6_agent_chat",
-      "community": 12,
+      "community": 15,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L1",
       "id": "docs_contracts_handoff_manifest_v1_md",
-      "community": 18,
+      "community": 20,
       "norm_label": "handoff-manifest-v1.md"
     },
     {
@@ -1503,7 +1503,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L1",
       "id": "contracts_handoff_manifest_v1_handoff_manifest_v1",
-      "community": 18,
+      "community": 20,
       "norm_label": "handoff manifest v1"
     },
     {
@@ -1512,7 +1512,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L5",
       "id": "contracts_handoff_manifest_v1_schema",
-      "community": 18,
+      "community": 20,
       "norm_label": "schema"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L7",
       "id": "contracts_handoff_manifest_v1_codeblock_1",
-      "community": 18,
+      "community": 20,
       "norm_label": "code:json ({)"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L27",
       "id": "contracts_handoff_manifest_v1_policy",
-      "community": 18,
+      "community": 20,
       "norm_label": "policy"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L232",
       "id": "current_architecture_7_job_flow_handoff_contract",
-      "community": 0,
+      "community": 12,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -1962,7 +1962,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L234",
       "id": "current_architecture_codeblock_6",
-      "community": 0,
+      "community": 12,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L247",
       "id": "current_architecture_stage_1_researchreport",
-      "community": 0,
+      "community": 12,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L250",
       "id": "current_architecture_codeblock_7",
-      "community": 0,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L264",
       "id": "current_architecture_stage_2_seeddocument",
-      "community": 0,
+      "community": 12,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L270",
       "id": "current_architecture_stage_3_ontology_persona_extraction",
-      "community": 0,
+      "community": 12,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L276",
       "id": "current_architecture_stage_4_simulation",
-      "community": 0,
+      "community": 12,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L281",
       "id": "current_architecture_stage_5_simulationreport",
-      "community": 0,
+      "community": 12,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L285",
       "id": "current_architecture_stage_6_agent_chat",
-      "community": 0,
+      "community": 12,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "docs_current_qa_md",
-      "community": 15,
+      "community": 16,
       "norm_label": "qa.md"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "current_qa_qa_aquarium",
-      "community": 15,
+      "community": 16,
       "norm_label": "qa \u2014 aquarium"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "id": "current_qa",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1100\u1165\u11b7\u110c\u1173\u11bc \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L19",
       "id": "current_qa_acceptance_criteria",
-      "community": 15,
+      "community": 16,
       "norm_label": "acceptance criteria"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L21",
       "id": "current_qa_product_flow",
-      "community": 15,
+      "community": 16,
       "norm_label": "product flow"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L27",
       "id": "current_qa_i18n",
-      "community": 15,
+      "community": 16,
       "norm_label": "i18n"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L33",
       "id": "current_qa_fail_closed",
-      "community": 15,
+      "community": 16,
       "norm_label": "fail-closed"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L39",
       "id": "current_qa_docker",
-      "community": 15,
+      "community": 16,
       "norm_label": "docker"
     },
     {
@@ -2277,7 +2277,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "docs_current_release_md",
-      "community": 13,
+      "community": 11,
       "norm_label": "release.md"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "current_release_release_aquarium",
-      "community": 13,
+      "community": 11,
       "norm_label": "release \u2014 aquarium"
     },
     {
@@ -2295,7 +2295,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "id": "current_release_release",
-      "community": 13,
+      "community": 11,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 release \u1109\u116e\u110c\u116e\u11ab"
     },
     {
@@ -2304,7 +2304,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L7",
       "id": "current_release_local_release_gate",
-      "community": 13,
+      "community": 11,
       "norm_label": "local release gate"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L9",
       "id": "current_release_codeblock_1",
-      "community": 13,
+      "community": 11,
       "norm_label": "code:bash (cd backend && uv run pytest -q)"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L18",
       "id": "current_release_github_actions_contract",
-      "community": 13,
+      "community": 11,
       "norm_label": "github actions contract"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L29",
       "id": "current_release_docker_endpoints",
-      "community": 13,
+      "community": 11,
       "norm_label": "docker endpoints"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L35",
       "id": "current_release_release_caveats",
-      "community": 13,
+      "community": 11,
       "norm_label": "release caveats"
     },
     {
@@ -2628,7 +2628,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_research_report_md",
-      "community": 20,
+      "community": 21,
       "norm_label": "research_report.md"
     },
     {
@@ -2637,7 +2637,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_research_report_ai",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: ai \u1100\u1165\u11b7\u1109\u1162\u11a8\u110b\u1166\u11ab\u110c\u1175\u11ab \u1109\u1175\u110c\u1161\u11bc \u1107\u1167\u11ab\u1112\u116a"
     },
     {
@@ -2646,7 +2646,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L3",
       "id": "aq_6ede9411e4ba_research_report",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2655,7 +2655,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L9",
       "id": "aq_6ede9411e4ba_research_report_9",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2664,7 +2664,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_simulation_report_md",
-      "community": 16,
+      "community": 18,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2673,7 +2673,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_simulation_report",
-      "community": 16,
+      "community": 18,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2682,7 +2682,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L5",
       "id": "aq_6ede9411e4ba_simulation_report_5",
-      "community": 16,
+      "community": 18,
       "norm_label": "\u110b\u1161\u11bc\u1109\u1161\u11bc\u1107\u1173\u11af \u1107\u1175\u11ab\u1103\u1169"
     },
     {
@@ -2691,7 +2691,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L8",
       "id": "aq_6ede9411e4ba_simulation_report_universe_1",
-      "community": 16,
+      "community": 18,
       "norm_label": "universe 1"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L15",
       "id": "aq_6ede9411e4ba_simulation_report_universe_2",
-      "community": 16,
+      "community": 18,
       "norm_label": "universe 2"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L22",
       "id": "aq_6ede9411e4ba_simulation_report_universe_3",
-      "community": 16,
+      "community": 18,
       "norm_label": "universe 3"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_research_report_md",
-      "community": 24,
+      "community": 23,
       "norm_label": "research_report.md"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_research_report",
-      "community": 24,
+      "community": 23,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7 \u1103\u1169\u110f\u1165 \u1109\u1173\u1106\u1169\u110f\u1173"
     },
     {
@@ -2736,7 +2736,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L3",
       "id": "aq_3f8c20f490b8_research_report_3",
-      "community": 24,
+      "community": 23,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2745,7 +2745,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L9",
       "id": "aq_3f8c20f490b8_research_report_9",
-      "community": 24,
+      "community": 23,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2754,7 +2754,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_simulation_report_md",
-      "community": 22,
+      "community": 25,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2763,7 +2763,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_simulation_report",
-      "community": 22,
+      "community": 25,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L5",
       "id": "aq_3f8c20f490b8_simulation_report_5",
-      "community": 22,
+      "community": 25,
       "norm_label": "\u1103\u1161\u11ab\u110b\u1175\u11af \u1112\u1162\u1105\u1172"
     },
     {
@@ -2781,7 +2781,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L8",
       "id": "aq_3f8c20f490b8_simulation_report_single_current",
-      "community": 22,
+      "community": 25,
       "norm_label": "single current"
     },
     {
@@ -2789,7 +2789,7 @@
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L24",
-      "community": 13,
+      "community": 11,
       "norm_label": "release caveat",
       "id": "current_release_release_caveat"
     },
@@ -2798,7 +2798,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "community": 7,
+      "community": 6,
       "norm_label": "aquarium / \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7",
       "id": "feat_real_runner_integration_readme_aquarium"
     },
@@ -2807,7 +2807,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162",
       "id": "feat_real_runner_integration_readme_mvp"
     },
@@ -2816,7 +2816,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L18",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1108\u1161\u1105\u1173\u11ab \u1109\u1175\u110c\u1161\u11a8",
       "id": "feat_real_runner_integration_readme"
     },
@@ -2825,7 +2825,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L20",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:bash (cp .env.example .env)",
       "id": "feat_real_runner_integration_readme_codeblock_1"
     },
@@ -2834,7 +2834,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L32",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:bash (cd backend)",
       "id": "feat_real_runner_integration_readme_codeblock_2"
     },
@@ -2843,7 +2843,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L43",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af",
       "id": "feat_real_runner_integration_readme_adapter"
     },
@@ -2852,7 +2852,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L47",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /path/to/bettafish_aquar)",
       "id": "feat_real_runner_integration_readme_codeblock_3"
     },
@@ -2861,7 +2861,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L56",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:bash (./scripts/run_real_integration_canary.sh)",
       "id": "feat_real_runner_integration_readme_codeblock_4"
     },
@@ -2870,7 +2870,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L62",
-      "community": 7,
+      "community": 6,
       "norm_label": "mvp flow",
       "id": "feat_real_runner_integration_readme_mvp_flow"
     },
@@ -2879,7 +2879,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L64",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)",
       "id": "feat_real_runner_integration_readme_codeblock_5"
     },
@@ -2888,7 +2888,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L75",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_real_runner_integration_readme_75"
     },
@@ -2897,7 +2897,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L86",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_real_runner_integration_readme_86"
     },
@@ -2906,7 +2906,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L67",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_real_runner_integration_readme_67"
     },
@@ -2915,7 +2915,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L78",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_real_runner_integration_readme_78"
     },
@@ -2933,7 +2933,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "community": 8,
+      "community": 7,
       "norm_label": "aquarium / \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7",
       "id": "feat_adapter_orchestration_readme_aquarium"
     },
@@ -2942,7 +2942,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162",
       "id": "feat_adapter_orchestration_readme_mvp"
     },
@@ -2951,7 +2951,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L18",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u1108\u1161\u1105\u1173\u11ab \u1109\u1175\u110c\u1161\u11a8",
       "id": "feat_adapter_orchestration_readme"
     },
@@ -2960,7 +2960,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L20",
-      "community": 8,
+      "community": 7,
       "norm_label": "code:bash (cp .env.example .env)",
       "id": "feat_adapter_orchestration_readme_codeblock_1"
     },
@@ -2969,7 +2969,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L32",
-      "community": 8,
+      "community": 7,
       "norm_label": "code:bash (cd backend)",
       "id": "feat_adapter_orchestration_readme_codeblock_2"
     },
@@ -2978,7 +2978,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L43",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af",
       "id": "feat_adapter_orchestration_readme_adapter"
     },
@@ -2987,7 +2987,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L47",
-      "community": 8,
+      "community": 7,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /path/to/bettafish_aquar)",
       "id": "feat_adapter_orchestration_readme_codeblock_3"
     },
@@ -2996,7 +2996,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L54",
-      "community": 8,
+      "community": 7,
       "norm_label": "mvp flow",
       "id": "feat_adapter_orchestration_readme_mvp_flow"
     },
@@ -3005,7 +3005,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L56",
-      "community": 8,
+      "community": 7,
       "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)",
       "id": "feat_adapter_orchestration_readme_codeblock_4"
     },
@@ -3014,7 +3014,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L67",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_adapter_orchestration_readme_67"
     },
@@ -3023,7 +3023,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L78",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_adapter_orchestration_readme_78"
     },
@@ -3032,7 +3032,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L55",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_adapter_orchestration_readme_55"
     },
@@ -3041,7 +3041,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L66",
-      "community": 8,
+      "community": 7,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_adapter_orchestration_readme_66"
     },
@@ -3050,7 +3050,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L55",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "aquarium_readme_55"
     },
@@ -3059,7 +3059,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L66",
-      "community": 6,
+      "community": 5,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "aquarium_readme_66"
     }
@@ -7141,5 +7141,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5ed2a84e3231d73704efd7a25896d81e3b7b2512"
+  "built_at_commit": "fa7cbedfdc0a63b38dd4ab271328a0219f57c653"
 }
