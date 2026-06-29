@@ -7,9 +7,10 @@
 ## 현재 완료 상태
 
 - 신규 repo, Docker Compose, backend/frontend, docs/current, CI, Graphify가 준비되어 있다.
-- 기본 vertical slice는 `local_stub`로 동작한다.
-- 이번 단계에서 실제 엔진 연결을 위한 CLI adapter contract가 추가되었다.
+- 기본 vertical slice는 `local_stub` degraded mode로 clone 직후 동작한다.
+- 실제 엔진 연결을 위한 CLI adapter contract가 추가되었고, BettaFish-localized/MiroFish-localized runner 지원이 각 repo `main`에 반영되었다.
 - API/UI는 각 단계가 `local_stub`, `bettafish_cli`, `mirofish_cli` 중 무엇으로 실행됐는지 표시한다.
+- real integration PASS는 두 외부 runner가 모두 completed 상태로 계약 산출물을 생성할 때만 인정한다.
 
 ## 실행 단계
 
@@ -132,4 +133,10 @@ $AQUARIUM_RUN_DIR/mirofish_result.json
 
 ## 다음 작업 추천
 
-바로 다음 목표는 Phase 2다. 즉 Aquarium repo 내부 작업이 아니라, BettaFish-localized에 Aquarium runner를 추가/연결하고 Aquarium에서 `AQUARIUM_BETTAFISH_COMMAND`로 실제 report를 생성하는 것이다.
+Phase 2~3의 runner contract 연결은 release 후보로 `main`에 반영되었다. 바로 다음 목표는 live native Graphiti/OASIS까지 포함한 장시간 실제 실행 증명이 아니라면, 현재 release line은 여기서 멈추고 local runtime 품질을 유지하는 것이다.
+
+후속이 필요할 때는 다음 순서가 적절하다.
+
+1. 실제 sibling repo 경로를 `.env`의 `AQUARIUM_BETTAFISH_COMMAND` / `AQUARIUM_MIROFISH_COMMAND`에 지정한다.
+2. `./scripts/run_real_integration_canary.sh`로 두 runner contract가 모두 PASS인지 확인한다.
+3. 별도 승인 후 live native Graphiti/OASIS 장시간 실행 QA를 진행한다.

@@ -49,7 +49,7 @@ AQUARIUM_BETTAFISH_COMMAND="python3 /path/to/bettafish_aquarium_runner.py"
 AQUARIUM_MIROFISH_COMMAND="python3 /path/to/mirofish_aquarium_runner.py"
 ```
 
-현재 sibling runner 브랜치 기준 예시는 `.env.example`에 주석으로 포함되어 있습니다. BettaFish command는 `$AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json`을 생성해야 하고, MiroFish command는 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다. 자세한 계약은 [Execution Plan](docs/current/execution-plan.md)을 참고하세요.
+현재 sibling repo 기준 예시는 `.env.example`에 주석으로 포함되어 있습니다. BettaFish command는 `$AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json`을 생성해야 하고, MiroFish command는 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다. 자세한 계약은 [Execution Plan](docs/current/execution-plan.md)을 참고하세요.
 
 로컬 통합 canary:
 
@@ -85,4 +85,4 @@ AQUARIUM_MIROFISH_COMMAND="python3 /path/to/mirofish_aquarium_runner.py"
 
 ## 중요한 한계
 
-현재 MVP는 실제 BettaFish/MiroFish 코드를 통째로 복사한 것이 아니라, 두 프로젝트에서 안정화한 **handoff contract와 제품 흐름**을 기준으로 만든 최소 vertical slice입니다. 실제 SearXNG/Graphiti/LLM provider adapter는 다음 단계에서 연결합니다.
+현재 release는 BettaFish/MiroFish 코드를 통째로 복사한 것이 아니라, 두 프로젝트의 외부 runner contract를 Aquarium에서 호출하는 방식입니다. `local_stub`는 기본 degraded mode이고, 실제 runner canary는 contract wiring과 artifact 보존을 증명합니다. live native Graphiti/OASIS 장시간 실행 증명은 별도 QA 범위입니다.

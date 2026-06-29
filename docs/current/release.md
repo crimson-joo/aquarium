@@ -4,7 +4,21 @@
 
 Aquarium은 public hosted SaaS production release가 아니라, Docker Compose로 실행 가능한 local research/simulation runtime입니다. 기본 `.env`는 `local_stub` degraded mode로 clone 직후 검증 가능해야 하며, real integration release 후보는 `AQUARIUM_BETTAFISH_COMMAND`와 `AQUARIUM_MIROFISH_COMMAND`가 모두 설정된 상태에서만 판정합니다.
 
-BettaFish-localized와 MiroFish-localized를 외부 runner contract로 연결하는 release candidate는 `main`에 반영되어 있습니다.
+BettaFish-localized와 MiroFish-localized를 외부 runner contract로 연결하는 release candidate는 `main`에 반영되어 있습니다. 이 release는 “실제 제품 runner contract 연결”을 증명하지만, live native Graphiti/OASIS 장시간 실행을 증명한 것은 아닙니다.
+
+## 현재 실제 통합 실행 경로
+
+실제 runner 연결은 Aquarium repo 안에서 두 command를 `.env`에 지정하는 방식입니다.
+
+```bash
+AQUARIUM_BETTAFISH_COMMAND="python3 /Users/crimson/Projects/bettafish-localized/scripts/bettafish_aquarium_runner.py"
+AQUARIUM_MIROFISH_COMMAND="python3 /Users/crimson/Projects/mirofish-localized/scripts/mirofish_aquarium_runner.py"
+./scripts/run_real_integration_canary.sh
+```
+
+- BettaFish command는 `AQUARIUM_TOPIC`, `AQUARIUM_LOCALE`, `AQUARIUM_MODE`, `AQUARIUM_RUN_DIR`를 받아 `$AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json`을 생성해야 합니다.
+- MiroFish command는 위 변수와 `AQUARIUM_HANDOFF_MANIFEST`를 받아 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다.
+- 두 단계가 모두 `bettafish_cli completed` / `mirofish_cli completed`일 때만 real integration PASS입니다.
 
 ## Local release gate
 
