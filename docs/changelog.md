@@ -8,6 +8,7 @@
 - Synced `develop` branches back from `main` after release.
 - Verified Aquarium and MiroFish GitHub Actions success; BettaFish had no remote checks configured/reported, with local focused runner tests passing before merge.
 - Captured release QA caveat: live native Graphiti/OASIS execution remains separate from contract-level runner proof.
+- Reconciled current docs so the real integration path now points at sibling repo runner commands instead of stale feature-worktree examples.
 
 ## 2026-06-29 — Real runner canary and state visibility
 
