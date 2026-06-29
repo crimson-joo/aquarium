@@ -2,18 +2,29 @@
 
 ## 현재 release 수준
 
-초기 MVP scaffold입니다. Public production release가 아니라, Docker Compose로 실행 가능한 local demo/research simulator 기준입니다.
+Aquarium은 아직 public production release가 아니라, Docker Compose로 실행 가능한 local demo/research simulator입니다. 기본 `.env`는 `local_stub` degraded mode로 clone 직후 검증 가능해야 하며, real integration release 후보는 `AQUARIUM_BETTAFISH_COMMAND`와 `AQUARIUM_MIROFISH_COMMAND`가 모두 설정된 상태에서만 판정합니다.
 
 ## Local release gate
 
 ```bash
 cd backend && uv run pytest -q
 cd ../frontend && npm test && npm run build
-cd .. && docker compose config
+cd .. && docker compose config  # or docker-compose config when the Docker CLI compose plugin is unavailable
 ./scripts/run_real_integration_canary.sh
 ```
 
 `run_real_integration_canary.sh`는 실제 runner가 모두 연결된 release 후보에서만 exit code `0`이어야 합니다. runner가 비어 있거나 한 단계라도 degraded/fallback이면 exit code `2`가 정상적인 “real integration 미충족” 신호입니다.
+
+## GitHub Actions contract
+
+- Workflow: `.github/workflows/validate.yml`
+- Triggers: `push` to `main`/`develop`, `pull_request` to `main`/`develop`
+- Required release check candidate: `Local Runtime CI / validate`
+- CI commands:
+  - `backend`: `uv sync --group dev`, `uv run pytest -q`
+  - `frontend`: `npm ci`, `npm test`, `npm run build`
+  - repo root: `docker compose config --quiet`
+- Deployment: none. GitHub Actions currently validates local runtime readiness only; it does not publish a public URL.
 
 ## Docker endpoints
 
@@ -21,6 +32,8 @@ cd .. && docker compose config
 - Backend: `http://localhost:8008`
 - Health: `http://localhost:8008/api/health`
 
-## Release caveat
+## Release caveats
 
-현재 provider는 `local_stub`입니다. 실제 BettaFish/SearXNG/Graphiti provider adapter가 연결되기 전에는 “제품 흐름 검증용 vertical slice”로 표기해야 합니다.
+- `local_stub` remains the default degraded provider and must not be reported as native/real integration.
+- The current real-runner canary proves Aquarium runner contract wiring. If the MiroFish command uses a fixtured bridge, it is not evidence of live native Graphiti/OASIS execution.
+- Public deployment, repo visibility changes, secrets, or cost-incurring provider setup require separate approval.

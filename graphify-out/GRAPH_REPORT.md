@@ -1,16 +1,16 @@
 # Graph Report - aquarium  (2026-06-30)
 
 ## Corpus Check
-- 34 files · ~10,916 words
+- 34 files · ~11,058 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 338 nodes · 398 edges · 31 communities
+- 340 nodes · 400 edges · 32 communities
 - Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `47f2cb4d`
+- Built from commit: `e4b6df0f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,6 +41,7 @@
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `run_aquarium_pipeline()` - 26 edges
@@ -66,15 +67,15 @@
 - `test_pipeline_uses_configured_bettafish_cli_adapter()` --calls--> `run_aquarium_pipeline()`  [INFERRED]
   backend/tests/test_external_adapters.py → backend/app/domain/pipeline.py
 
-## Communities (31 total, 0 thin omitted)
+## Communities (32 total, 0 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
 Nodes (38): 목표, 1. 목표와 비목표, 10. Tests 전략, 11. Docs 구조, 12. 추천 초기 파일 구조, 13. Vertical slice 구현 순서, 14. 핵심 결정, 2. 최소 견고 아키텍처 (+30 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.05
-Nodes (38): 목표, 1. 목표와 비목표, 10. Tests 전략, 11. Docs 구조, 12. 추천 초기 파일 구조, 13. Vertical slice 구현 순서, 14. 핵심 결정, 2. 최소 견고 아키텍처 (+30 more)
+Cohesion: 0.06
+Nodes (31): 목표, 1. 목표와 비목표, 11. Docs 구조, 12. 추천 초기 파일 구조, 13. Vertical slice 구현 순서, 14. 핵심 결정, 2. 최소 견고 아키텍처, 비목표 (+23 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.06
@@ -113,83 +114,87 @@ Cohesion: 0.2
 Nodes (9): 1. 환경 파일 준비, 2. Docker Compose 실행, 3. 접속, 4. 로컬 개발 검증, 5. 현재 MVP 주의사항, Aquarium Quickstart, code:bash (cp .env.example .env), code:bash (docker compose up --build) (+1 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.47
-Nodes (8): _allowed_extra_env_names(), _command_env(), _read_json(), run_bettafish_cli_adapter(), _run_command(), run_mirofish_cli_adapter(), _validate_simulation_report_artifact(), AdapterStage
+Cohesion: 0.22
+Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.42
-Nodes (8): test_adapter_env_does_not_leak_unallowlisted_secret(), test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file(), test_pipeline_rejects_mirofish_completed_result_with_missing_report_path(), test_pipeline_rejects_mirofish_report_path_outside_run_dir(), test_pipeline_rejects_mismatched_bettafish_provider(), test_pipeline_uses_configured_bettafish_cli_adapter(), test_pipeline_uses_configured_mirofish_cli_adapter(), _write_executable()
+Cohesion: 0.22
+Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.22
-Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
+Nodes (8): code:bash (cd backend && uv run pytest -q), Docker endpoints, GitHub Actions contract, Local release gate, 현재 release 수준, Release — Aquarium, Release caveat, Release caveats
 
 ### Community 14 - "Community 14"
-Cohesion: 0.22
-Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
+Cohesion: 0.42
+Nodes (8): test_adapter_env_does_not_leak_unallowlisted_secret(), test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file(), test_pipeline_rejects_mirofish_completed_result_with_missing_report_path(), test_pipeline_rejects_mirofish_report_path_outside_run_dir(), test_pipeline_rejects_mismatched_bettafish_provider(), test_pipeline_uses_configured_bettafish_cli_adapter(), test_pipeline_uses_configured_mirofish_cli_adapter(), _write_executable()
 
 ### Community 15 - "Community 15"
+Cohesion: 0.47
+Nodes (8): _allowed_extra_env_names(), _command_env(), _read_json(), run_bettafish_cli_adapter(), _run_command(), run_mirofish_cli_adapter(), _validate_simulation_report_artifact(), AdapterStage
+
+### Community 16 - "Community 16"
 Cohesion: 0.25
 Nodes (7): 현재 검증 상태, Acceptance criteria, Docker, Fail-closed, i18n, Product flow, QA — Aquarium
 
-### Community 16 - "Community 16"
-Cohesion: 0.29
-Nodes (6): code:bash (cd backend && uv run pytest -q), Docker endpoints, Local release gate, 현재 release 수준, Release — Aquarium, Release caveat
-
 ### Community 17 - "Community 17"
-Cohesion: 0.33
-Nodes (5): 시뮬레이션 보고서, 앙상블 빈도, Universe 1, Universe 2, Universe 3
+Cohesion: 0.29
+Nodes (7): 10. Tests 전략, CI 최소 세트, code:text (lint backend), Contract tests, E2E/UI tests, Integration tests, Unit tests
 
 ### Community 18 - "Community 18"
 Cohesion: 0.33
 Nodes (5): 한 줄 정의, 성공 순간, MVP 목표, Non-goals, Product — Aquarium
 
 ### Community 19 - "Community 19"
-Cohesion: 0.6
-Nodes (3): test_real_integration_canary_fails_when_runner_provider_is_not_real(), test_real_integration_canary_passes_with_fake_contract_runners(), _write_executable()
+Cohesion: 0.33
+Nodes (5): 시뮬레이션 보고서, 앙상블 빈도, Universe 1, Universe 2, Universe 3
 
 ### Community 20 - "Community 20"
 Cohesion: 0.4
 Nodes (4): code:json ({), Handoff Manifest v1, Policy, Schema
 
 ### Community 21 - "Community 21"
-Cohesion: 0.5
-Nodes (3): 핵심 신호, 핸드오프 메모, 조사 보고서: AI 검색엔진 시장 변화
+Cohesion: 0.6
+Nodes (3): test_real_integration_canary_fails_when_runner_provider_is_not_real(), test_real_integration_canary_passes_with_fake_contract_runners(), _write_executable()
 
 ### Community 22 - "Community 22"
 Cohesion: 0.5
-Nodes (3): Aquarium Docs, Canonical current docs, Setup docs
+Nodes (3): 시뮬레이션 보고서, 단일 해류, Single Current
 
 ### Community 23 - "Community 23"
 Cohesion: 0.5
-Nodes (3): 조사 보고서: 아쿠아리움 도커 스모크, 핵심 신호, 핸드오프 메모
+Nodes (3): 2026-06-29 — Initial MVP scaffold, 2026-06-29 — Real runner canary and state visibility, Changelog — Aquarium
 
 ### Community 24 - "Community 24"
 Cohesion: 0.5
-Nodes (3): 시뮬레이션 보고서, 단일 해류, Single Current
+Nodes (3): 핵심 신호, 핸드오프 메모, 조사 보고서: AI 검색엔진 시장 변화
 
 ### Community 25 - "Community 25"
 Cohesion: 0.5
-Nodes (3): 2026-06-29 — Initial MVP scaffold, 2026-06-29 — Real runner canary and state visibility, Changelog — Aquarium
+Nodes (3): Aquarium Docs, Canonical current docs, Setup docs
+
+### Community 26 - "Community 26"
+Cohesion: 0.5
+Nodes (3): 조사 보고서: 아쿠아리움 도커 스모크, 핵심 신호, 핸드오프 메모
 
 ## Knowledge Gaps
-- **161 isolated node(s):** `Locale`, `Mode`, `Stage`, `ProviderKey`, `StatusKey` (+156 more)
+- **163 isolated node(s):** `Locale`, `Mode`, `Stage`, `ProviderKey`, `StatusKey` (+158 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Aquarium Architecture Slice` connect `Community 1` to `Community 13`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `Aquarium Architecture Slice` connect `Community 0` to `Community 14`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `run_aquarium_pipeline()` connect `Community 3` to `Community 11`, `Community 12`?**
+- **Why does `Aquarium Architecture Slice` connect `Community 1` to `Community 17`, `Community 11`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `Aquarium Architecture Slice` connect `Community 0` to `Community 12`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `run_aquarium_pipeline()` connect `Community 3` to `Community 14`, `Community 15`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **Are the 14 inferred relationships involving `run_aquarium_pipeline()` (e.g. with `RunRecord` and `run_bettafish_cli_adapter()`) actually correct?**
   _`run_aquarium_pipeline()` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Locale`, `Mode`, `Stage` to the rest of the system?**
-  _161 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _163 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
