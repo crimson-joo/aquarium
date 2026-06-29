@@ -6,8 +6,9 @@ from pathlib import Path
 from uuid import uuid4
 
 from app.core.i18n import msg
+from app.domain.adapters import run_bettafish_cli_adapter, run_mirofish_cli_adapter
 from app.domain.contracts import (
-    HandoffManifest, Locale, Ontology, OntologyEntity, Persona, PipelineResult,
+    AdapterStage, HandoffManifest, Locale, Ontology, OntologyEntity, Persona, PipelineResult,
     RunRecord, SeedDocument, SimulationMode, SimulationReport, SimulationResult, UniverseResult,
 )
 
@@ -133,12 +134,12 @@ def build_simulation_report(locale: Locale, simulation: SimulationResult, path: 
     return SimulationReport(path=str(path), body=body)
 
 
-def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, storage_root: Path) -> PipelineResult:
-    run = RunRecord(run_id=f"aq_{uuid4().hex[:12]}", topic=topic, locale=locale, mode=mode, status="running")
-    root = _run_dir(storage_root, run.run_id)
+def _stub_manifest(topic: str, locale: Locale, root: Path) -> tuple[HandoffManifest, AdapterStage]:
     report = build_research_report(topic, locale)
     research_report_path = _write_text(root / "research_report.md", report)
     manifest = HandoffManifest(
+        source_product="aquarium-local-stub",
+        target_product="aquarium",
         topic=topic,
         locale=locale,
         final_report_path=research_report_path,
@@ -146,13 +147,63 @@ def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, stor
         sources=[{"title": "local_stub source", "url": "local://stub", "snippet": topic}],
         data_gaps=["local_stub provider uses deterministic evidence until real BettaFish adapter is configured"],
     )
-    _write_json(root / "handoff_manifest.json", manifest.model_dump(mode="json"))
-    seed = seed_from_report(topic, locale, report)
+    stage = AdapterStage(
+        name="bettafish_report",
+        provider="local_stub",
+        status="degraded",
+        artifacts={"final_report": research_report_path},
+        warnings=["AQUARIUM_BETTAFISH_COMMAND is not configured; using deterministic local_stub research report."],
+    )
+    return manifest, stage
+
+
+def _stub_simulation(locale: Locale, mode: SimulationMode, root: Path, seed: SeedDocument) -> tuple[Ontology, list[Persona], SimulationResult, SimulationReport, AdapterStage]:
     ontology = extract_ontology(seed)
     personas = build_personas(ontology, locale)
     simulation = run_simulation(mode, seed, personas)
     simulation_report = build_simulation_report(locale, simulation, root / "simulation_report.md")
-    run.status = "completed"
+    stage = AdapterStage(
+        name="mirofish_simulation",
+        provider="local_stub",
+        status="degraded",
+        artifacts={"simulation_report": simulation_report.path},
+        warnings=["AQUARIUM_MIROFISH_COMMAND is not configured; using deterministic local_stub simulation."],
+    )
+    return ontology, personas, simulation, simulation_report, stage
+
+
+def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, storage_root: Path) -> PipelineResult:
+    run = RunRecord(run_id=f"aq_{uuid4().hex[:12]}", topic=topic, locale=locale, mode=mode, status="running")
+    root = _run_dir(storage_root, run.run_id)
+
+    manifest, betta_stage = run_bettafish_cli_adapter(topic, locale, mode, root)
+    if manifest is None:
+        manifest, stub_betta_stage = _stub_manifest(topic, locale, root)
+        if betta_stage is not None:
+            stub_betta_stage.warnings = betta_stage.warnings + stub_betta_stage.warnings
+        betta_stage = stub_betta_stage
+    assert betta_stage is not None
+    run.stages.append(betta_stage)
+    manifest_path = Path(_write_json(root / "handoff_manifest.json", manifest.model_dump(mode="json")))
+
+    report = Path(manifest.final_report_path).read_text(encoding="utf-8")
+    seed = seed_from_report(topic, locale, report)
+
+    miro_payload, miro_stage = run_mirofish_cli_adapter(topic, locale, mode, root, manifest_path)
+    if miro_payload is None:
+        ontology, personas, simulation, simulation_report, stub_miro_stage = _stub_simulation(locale, mode, root, seed)
+        if miro_stage is not None:
+            stub_miro_stage.warnings = miro_stage.warnings + stub_miro_stage.warnings
+        miro_stage = stub_miro_stage
+    else:
+        ontology = Ontology.model_validate(miro_payload["ontology"])
+        personas = [Persona.model_validate(item) for item in miro_payload["personas"]]
+        simulation = SimulationResult.model_validate(miro_payload["simulation"])
+        simulation_report = SimulationReport.model_validate(miro_payload["simulation_report"])
+    assert miro_stage is not None
+    run.stages.append(miro_stage)
+
+    run.status = "completed" if all(stage.status != "failed" for stage in run.stages) else "failed"
     result = PipelineResult(run=run, manifest=manifest, seed=seed, ontology=ontology, personas=personas, simulation=simulation, simulation_report=simulation_report)
     _write_json(root / "result.json", result.model_dump(mode="json"))
     return result

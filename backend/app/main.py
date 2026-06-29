@@ -47,6 +47,12 @@ def create_app() -> FastAPI:
             "locale": result.run.locale,
             "mode": result.run.mode,
             "status": result.run.status,
+            "stages": [stage.model_dump(mode="json") for stage in result.run.stages],
+            "artifacts": {
+                "research_report": result.manifest.final_report_path,
+                "handoff_manifest": str(_data_dir() / "runs" / result.run.run_id / "handoff_manifest.json"),
+                "simulation_report": result.simulation_report.path,
+            },
             "summary": result.simulation_report.body.splitlines()[:6],
         }
 

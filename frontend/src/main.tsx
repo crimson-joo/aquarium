@@ -6,12 +6,14 @@ import { messages } from './i18n.messages.mjs';
 
 type Locale = 'ko' | 'zh' | 'en';
 type Mode = 'single' | 'multiverse';
+type Stage = { name: string; provider: string; status: string; warnings?: string[] };
+type RunResult = { run_id: string; mode: Mode; status: string; summary?: string[]; stages?: Stage[]; artifacts?: Record<string, string> };
 
 function App() {
   const [locale, setLocale] = useState<Locale>('ko');
   const [topic, setTopic] = useState('AI 검색엔진 시장 변화');
   const [mode, setMode] = useState<Mode>('multiverse');
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<RunResult | null>(null);
   const [loading, setLoading] = useState(false);
   const t = messages[locale];
   const steps = useMemo(() => [
@@ -63,7 +65,20 @@ function App() {
       <section className="panel">
         <h2>{t.statusTitle}</h2>
         {!result && <p>{t.emptyStatus}</p>}
-        {result && <div className="result"><b>{result.status.toUpperCase()}</b><p>Run: {result.run_id}</p><p>Mode: {result.mode}</p><p>{result.summary?.join(' ')}</p></div>}
+        {result && <div className="result">
+          <b>{result.status.toUpperCase()}</b><p>Run: {result.run_id}</p><p>Mode: {result.mode}</p><p>{result.summary?.join(' ')}</p>
+          <div className="stageGrid">
+            {result.stages?.map((stage) => <div className="stageCard" key={stage.name}>
+              <span className={`badge ${stage.status}`}>{stage.status}</span>
+              <strong>{stage.name}</strong>
+              <small>{stage.provider}</small>
+              {stage.warnings?.map((warning) => <p className="warning" key={warning}>{warning}</p>)}
+            </div>)}
+          </div>
+          {result.artifacts && <div className="artifactList">
+            {Object.entries(result.artifacts).map(([name, path]) => <p key={name}><span>{name}</span><code>{path}</code></p>)}
+          </div>}
+        </div>}
       </section>
     </section>
   </main>;

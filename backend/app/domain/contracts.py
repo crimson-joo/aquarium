@@ -16,16 +16,27 @@ class SimulationMode(StrEnum):
     MULTIVERSE = "multiverse"
 
 
+class AdapterStage(BaseModel):
+    name: str
+    provider: str
+    status: Literal["completed", "degraded", "failed"]
+    artifacts: dict[str, str] = Field(default_factory=dict)
+    warnings: list[str] = Field(default_factory=list)
+
+
 class RunRecord(BaseModel):
     run_id: str
     topic: str
     locale: Locale
     mode: SimulationMode
     status: Literal["pending", "running", "completed", "failed"] = "pending"
+    stages: list[AdapterStage] = Field(default_factory=list)
 
 
 class HandoffManifest(BaseModel):
     handoff_version: str = "aquarium.v1"
+    source_product: str = "aquarium"
+    target_product: str = "aquarium"
     topic: str
     locale: Locale
     final_report_path: str

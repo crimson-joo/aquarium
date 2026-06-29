@@ -17,6 +17,8 @@ def test_create_run_and_chat(tmp_path, monkeypatch):
     body = response.json()
     assert body["status"] == "completed"
     assert body["mode"] == "multiverse"
+    assert [stage["name"] for stage in body["stages"]] == ["bettafish_report", "mirofish_simulation"]
+    assert body["artifacts"]["handoff_manifest"].endswith("handoff_manifest.json")
     run_id = body["run_id"]
 
     detail = client.get(f"/api/runs/{run_id}")

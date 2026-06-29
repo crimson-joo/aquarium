@@ -8,6 +8,7 @@
 
 - 한국어/중국어/영어 UI copy 기반
 - deterministic `local_stub` provider로 vertical slice 동작
+- `AQUARIUM_BETTAFISH_COMMAND` / `AQUARIUM_MIROFISH_COMMAND` 기반 외부 CLI adapter contract 지원
 - FastAPI backend + Vite React frontend
 - Docker Compose-first 실행 구조
 - BettaFish→MiroFish handoff contract 개념 반영
@@ -38,6 +39,17 @@ npm install
 npm test
 npm run build
 ```
+
+## 실제 adapter 연결
+
+기본값은 `local_stub`이며 UI/API에서 degraded 단계로 표시됩니다. 실제 BettaFish/MiroFish runner를 연결하려면 `.env`에 command를 지정합니다.
+
+```bash
+AQUARIUM_BETTAFISH_COMMAND="python3 /path/to/bettafish_aquarium_runner.py"
+AQUARIUM_MIROFISH_COMMAND="python3 /path/to/mirofish_aquarium_runner.py"
+```
+
+BettaFish command는 `$AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json`을 생성해야 하고, MiroFish command는 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다. 자세한 계약은 [Execution Plan](docs/current/execution-plan.md)을 참고하세요.
 
 ## MVP Flow
 
