@@ -5,12 +5,12 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 355 nodes · 422 edges · 30 communities
+- 355 nodes · 422 edges · 31 communities
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 35 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `83b81e80`
+- Built from commit: `955eeb39`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,6 +40,7 @@
 - [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 23|Community 23]]
 - [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `run_aquarium_pipeline()` - 27 edges
@@ -54,18 +55,18 @@
 10. `Aquarium / 아쿠아리움` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `seed_from_report()` --calls--> `SeedDocument`  [INFERRED]
+- `_stub_manifest()` --calls--> `AdapterStage`  [INFERRED]
   backend/app/domain/pipeline.py → backend/app/domain/contracts.py
-- `extract_ontology()` --calls--> `OntologyEntity`  [INFERRED]
+- `_stub_simulation()` --calls--> `AdapterStage`  [INFERRED]
   backend/app/domain/pipeline.py → backend/app/domain/contracts.py
-- `extract_ontology()` --calls--> `Ontology`  [INFERRED]
-  backend/app/domain/pipeline.py → backend/app/domain/contracts.py
-- `build_personas()` --calls--> `Persona`  [INFERRED]
-  backend/app/domain/pipeline.py → backend/app/domain/contracts.py
-- `run_simulation()` --calls--> `UniverseResult`  [INFERRED]
-  backend/app/domain/pipeline.py → backend/app/domain/contracts.py
+- `run_aquarium_pipeline()` --calls--> `run_bettafish_cli_adapter()`  [INFERRED]
+  backend/app/domain/pipeline.py → backend/app/domain/adapters.py
+- `run_aquarium_pipeline()` --calls--> `run_mirofish_cli_adapter()`  [INFERRED]
+  backend/app/domain/pipeline.py → backend/app/domain/adapters.py
+- `test_pipeline_uses_configured_bettafish_cli_adapter()` --calls--> `run_aquarium_pipeline()`  [INFERRED]
+  backend/tests/test_external_adapters.py → backend/app/domain/pipeline.py
 
-## Communities (30 total, 0 thin omitted)
+## Communities (31 total, 0 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.05
@@ -76,40 +77,40 @@ Cohesion: 0.05
 Nodes (38): 목표, 1. 목표와 비목표, 10. Tests 전략, 11. Docs 구조, 12. 추천 초기 파일 구조, 13. Vertical slice 구현 순서, 14. 핵심 결정, 2. 최소 견고 아키텍처 (+30 more)
 
 ### Community 2 - "Community 2"
+Cohesion: 0.12
+Nodes (34): ChatRequest, CreateRunRequest, BaseModel, msg(), HandoffManifest, Locale, Ontology, OntologyEntity (+26 more)
+
+### Community 3 - "Community 3"
 Cohesion: 0.06
 Nodes (30): 1. 제품/브랜드 방향, 10. 구현팀 전달 메모, 2.1 권장 전역 구조, 2.2 신규 사용자용 5단계 플로우, 2. 정보 구조 및 핵심 UX 플로우, 3. 주요 화면 제안, 3.1 Home / Landing, 3.2 New Aquarium / Seed Intake (+22 more)
 
-### Community 3 - "Community 3"
-Cohesion: 0.15
-Nodes (26): msg(), build_personas(), build_research_report(), build_runtime_claim(), build_simulation_report(), extract_ontology(), _key_points(), Summarize what the run can honestly claim at the API/UI boundary. (+18 more)
-
 ### Community 4 - "Community 4"
-Cohesion: 0.12
-Nodes (24): ChatRequest, create_app(), CreateRunRequest, _data_dir(), _result_path(), BaseModel, BaseSettings, get_settings() (+16 more)
-
-### Community 5 - "Community 5"
 Cohesion: 0.11
 Nodes (22): 목표, 다음 작업 추천, 다음 작업 추천, 다음 작업 추천, 실행 단계, 실행 단계, 현재 완료 상태, Adapter command contract (+14 more)
 
-### Community 6 - "Community 6"
+### Community 5 - "Community 5"
 Cohesion: 0.13
 Nodes (16): 빠른 시작, 프로젝트 문서, 중요한 한계, 프로젝트 문서, 프로젝트 문서, 중요한 한계, 중요한 한계, 실제 adapter 연결 (+8 more)
 
-### Community 7 - "Community 7"
-Cohesion: 0.14
-Nodes (14): 빠른 시작, 프로젝트 문서, 프로젝트 문서, 중요한 한계, 중요한 한계, 실제 adapter 연결, Aquarium / 아쿠아리움, code:bash (cp .env.example .env) (+6 more)
+### Community 6 - "Community 6"
+Cohesion: 0.15
+Nodes (13): 빠른 시작, 프로젝트 문서, 중요한 한계, 프로젝트 문서, 중요한 한계, 실제 adapter 연결, Aquarium / 아쿠아리움, code:bash (cp .env.example .env) (+5 more)
 
-### Community 8 - "Community 8"
+### Community 7 - "Community 7"
 Cohesion: 0.16
 Nodes (10): messages, GraphMemoryKey, Locale, Mode, ProviderKey, RunResult, RuntimeClaim, RuntimeLevel (+2 more)
 
-### Community 9 - "Community 9"
-Cohesion: 0.17
-Nodes (13): 빠른 시작, 프로젝트 문서, 중요한 한계, 프로젝트 문서, 중요한 한계, 실제 adapter 연결, Aquarium / 아쿠아리움, code:bash (cp .env.example .env) (+5 more)
+### Community 8 - "Community 8"
+Cohesion: 0.15
+Nodes (14): 빠른 시작, 프로젝트 문서, 프로젝트 문서, 중요한 한계, 중요한 한계, 실제 adapter 연결, Aquarium / 아쿠아리움, code:bash (cp .env.example .env) (+6 more)
 
-### Community 10 - "Community 10"
+### Community 9 - "Community 9"
 Cohesion: 0.18
 Nodes (11): 현재 실제 통합 실행 경로, code:bash (AQUARIUM_BETTAFISH_COMMAND="python3 /Users/crimson/Projects/), code:bash (cd backend && uv run pytest -q), Docker endpoints, GitHub Actions contract, Local release gate, 현재 release 수준, Release — Aquarium (+3 more)
+
+### Community 10 - "Community 10"
+Cohesion: 0.24
+Nodes (8): create_app(), _data_dir(), _result_path(), BaseSettings, get_settings(), Settings, test_create_run_and_chat(), test_rejects_unsupported_locale()
 
 ### Community 11 - "Community 11"
 Cohesion: 0.2
@@ -120,50 +121,54 @@ Cohesion: 0.22
 Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.22
-Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
-
-### Community 14 - "Community 14"
 Cohesion: 0.47
 Nodes (8): _allowed_extra_env_names(), _command_env(), _read_json(), run_bettafish_cli_adapter(), _run_command(), run_mirofish_cli_adapter(), _validate_simulation_report_artifact(), AdapterStage
 
+### Community 14 - "Community 14"
+Cohesion: 0.42
+Nodes (8): test_adapter_env_does_not_leak_unallowlisted_secret(), test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file(), test_pipeline_rejects_mirofish_completed_result_with_missing_report_path(), test_pipeline_rejects_mirofish_report_path_outside_run_dir(), test_pipeline_rejects_mismatched_bettafish_provider(), test_pipeline_uses_configured_bettafish_cli_adapter(), test_pipeline_uses_configured_mirofish_cli_adapter(), _write_executable()
+
 ### Community 15 - "Community 15"
+Cohesion: 0.22
+Nodes (9): 7. Job flow와 handoff contract, code:text (POST /api/runs), code:json ({), Stage 1: ResearchReport, Stage 2: SeedDocument, Stage 3: Ontology/Persona extraction, Stage 4: Simulation, Stage 5: SimulationReport (+1 more)
+
+### Community 16 - "Community 16"
 Cohesion: 0.25
 Nodes (7): 현재 검증 상태, Acceptance criteria, Docker, Fail-closed, i18n, Product flow, QA — Aquarium
 
-### Community 16 - "Community 16"
+### Community 17 - "Community 17"
 Cohesion: 0.29
 Nodes (6): 2026-06-29 — Initial MVP scaffold, 2026-06-29 — Real runner canary and state visibility, 2026-06-29 — Real runner release, 2026-06-30 — Native MiroFish runtime canary, 2026-06-30 — Runtime evidence labeling and multiverse expansion, Changelog — Aquarium
 
-### Community 17 - "Community 17"
+### Community 18 - "Community 18"
 Cohesion: 0.33
 Nodes (5): 한 줄 정의, 성공 순간, MVP 목표, Non-goals, Product — Aquarium
 
-### Community 18 - "Community 18"
+### Community 19 - "Community 19"
 Cohesion: 0.33
 Nodes (5): 시뮬레이션 보고서, 앙상블 빈도, Universe 1, Universe 2, Universe 3
 
-### Community 19 - "Community 19"
+### Community 20 - "Community 20"
 Cohesion: 0.6
 Nodes (3): test_real_integration_canary_fails_when_runner_provider_is_not_real(), test_real_integration_canary_passes_with_fake_contract_runners(), _write_executable()
 
-### Community 20 - "Community 20"
+### Community 21 - "Community 21"
 Cohesion: 0.4
 Nodes (4): code:json ({), Handoff Manifest v1, Policy, Schema
 
-### Community 21 - "Community 21"
-Cohesion: 0.5
-Nodes (3): Aquarium Docs, Canonical current docs, Setup docs
-
 ### Community 22 - "Community 22"
 Cohesion: 0.5
-Nodes (3): 조사 보고서: 아쿠아리움 도커 스모크, 핵심 신호, 핸드오프 메모
+Nodes (3): Aquarium Docs, Canonical current docs, Setup docs
 
 ### Community 23 - "Community 23"
 Cohesion: 0.5
 Nodes (3): 핵심 신호, 핸드오프 메모, 조사 보고서: AI 검색엔진 시장 변화
 
 ### Community 24 - "Community 24"
+Cohesion: 0.5
+Nodes (3): 조사 보고서: 아쿠아리움 도커 스모크, 핵심 신호, 핸드오프 메모
+
+### Community 25 - "Community 25"
 Cohesion: 0.5
 Nodes (3): 시뮬레이션 보고서, 단일 해류, Single Current
 
@@ -174,11 +179,11 @@ Nodes (3): 시뮬레이션 보고서, 단일 해류, Single Current
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `run_aquarium_pipeline()` connect `Community 3` to `Community 4`, `Community 14`?**
+- **Why does `run_aquarium_pipeline()` connect `Community 2` to `Community 13`, `Community 14`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `Aquarium Architecture Slice` connect `Community 1` to `Community 13`?**
+- **Why does `Aquarium Architecture Slice` connect `Community 0` to `Community 15`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `Aquarium Architecture Slice` connect `Community 0` to `Community 12`?**
+- **Why does `Aquarium Architecture Slice` connect `Community 1` to `Community 12`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Are the 14 inferred relationships involving `run_aquarium_pipeline()` (e.g. with `RunRecord` and `run_bettafish_cli_adapter()`) actually correct?**
   _`run_aquarium_pipeline()` has 14 INFERRED edges - model-reasoned connections that need verification._
