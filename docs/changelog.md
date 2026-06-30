@@ -1,5 +1,13 @@
 # Changelog — Aquarium
 
+## 2026-06-30 — Production Readiness Pass 1
+
+- Added DB-backed local job lifecycle in `backend/app/domain/lifecycle.py` with `jobs` and `artifacts` tables in `AQUARIUM_DATA_DIR/aquarium.db`.
+- Changed `POST /api/runs` into a queued job creation path returning `202 Accepted`; added job polling plus cancel/retry/resume endpoints.
+- Added in-process worker execution, progress/stage/attempt/error visibility, persisted terminal results, and UI progress/failure controls.
+- Added Playwright E2E covering Docker Compose UI flow from run creation to result tabs and Graphiti-memory caveat.
+- Updated CI to run browser E2E after Compose startup.
+
 ## 2026-06-30 — Native Productization Pass 1
 
 - Split Aquarium native execution into research/graph/persona/simulation/report engine packages.

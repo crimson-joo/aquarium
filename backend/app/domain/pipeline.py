@@ -119,8 +119,8 @@ def build_runtime_claim(stages: list[AdapterStage], mode: SimulationMode) -> dic
     }
 
 
-def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, storage_root: Path) -> PipelineResult:
-    run = RunRecord(run_id=f"aq_{uuid4().hex[:12]}", topic=topic, locale=locale, mode=mode, status="running")
+def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, storage_root: Path, run_id: str | None = None) -> PipelineResult:
+    run = RunRecord(run_id=run_id or f"aq_{uuid4().hex[:12]}", topic=topic, locale=locale, mode=mode, status="running")
     root = _run_dir(storage_root, run.run_id)
 
     manifest, betta_stage = run_bettafish_cli_adapter(topic, locale, mode, root)

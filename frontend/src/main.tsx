@@ -11,6 +11,7 @@ type ProviderKey = 'aquarium_native' | 'local_stub' | 'bettafish_cli' | 'mirofis
 type StatusKey = 'completed' | 'degraded' | 'failed';
 type RuntimeLevel = 'aquarium_native' | 'native_bounded' | 'real_provider_warning' | 'degraded_stub' | 'contract_only' | 'failed';
 type GraphMemoryKey = 'native_pass' | 'warning' | 'not_configured' | 'not_native';
+type JobStatus = 'queued' | 'running' | 'succeeded' | 'failed' | 'cancelled';
 type RuntimeClaim = {
   real_integration: boolean;
   standalone_native: boolean;
@@ -39,6 +40,16 @@ type RunResult = {
   simulation?: { universes: Universe[] };
   report?: { preview: string[]; path: string };
 };
+type JobResult = {
+  job_id: string;
+  run_id: string;
+  status: JobStatus;
+  progress: number;
+  stage: string;
+  attempts: number;
+  error?: string | null;
+  result?: RunResult | null;
+};
 
 type ResultTab = 'seed' | 'ecosystem' | 'currents' | 'report';
 
@@ -46,26 +57,77 @@ function App() {
   const [locale, setLocale] = useState<Locale>('ko');
   const [topic, setTopic] = useState('AI 검색엔진 시장 변화');
   const [mode, setMode] = useState<Mode>('multiverse');
+  const [job, setJob] = useState<JobResult | null>(null);
   const [result, setResult] = useState<RunResult | null>(null);
   const [activeTab, setActiveTab] = useState<ResultTab>('seed');
   const [loading, setLoading] = useState(false);
+  const [uiError, setUiError] = useState<string | null>(null);
   const t = messages[locale];
   const steps = useMemo(() => [
     [Fish, t.steps.seed], [Network, t.steps.map], [Waves, t.steps.current], [GitBranch, t.steps.observe], [FileText, t.steps.report],
   ] as const, [t]);
 
+  async function pollJob(jobId: string) {
+    const response = await fetch(`/api/jobs/${jobId}`);
+    if (!response.ok) {
+      setUiError(`job polling failed: ${response.status}`);
+      setLoading(false);
+      return;
+    }
+    const nextJob: JobResult = await response.json();
+    nextJob.progress = Math.max(0, Math.min(100, nextJob.progress));
+    setJob(nextJob);
+    if (nextJob.result) setResult(nextJob.result);
+    if (nextJob.status === 'queued' || nextJob.status === 'running') {
+      window.setTimeout(() => pollJob(jobId).catch((error) => { setUiError(String(error)); setLoading(false); }), 500);
+    } else {
+      setLoading(false);
+    }
+  }
+
   async function startRun() {
     setLoading(true);
+    setUiError(null);
     setResult(null);
+    setJob(null);
     try {
       const response = await fetch('/api/runs', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic, locale, mode }),
       });
-      setResult(await response.json());
+      if (!response.ok) throw new Error(`run request failed: ${response.status}`);
+      const createdJob: JobResult = await response.json();
+      setJob(createdJob);
       setActiveTab('seed');
-    } finally {
+      await pollJob(createdJob.job_id);
+    } catch (error) {
+      setUiError(String(error));
+      setLoading(false);
+    }
+  }
+
+  async function mutateJob(action: 'cancel' | 'retry' | 'resume') {
+    if (!job) return;
+    setUiError(null);
+    try {
+      const response = await fetch(`/api/jobs/${job.job_id}/${action}`, { method: 'POST' });
+      if (!response.ok) {
+        setUiError(`${action} failed: ${response.status}`);
+        setLoading(false);
+        return;
+      }
+      const nextJob: JobResult = await response.json();
+      nextJob.progress = Math.max(0, Math.min(100, nextJob.progress));
+      setJob(nextJob);
+      if (action === 'cancel') {
+        setLoading(false);
+      } else {
+        setLoading(true);
+        await pollJob(nextJob.job_id);
+      }
+    } catch (error) {
+      setUiError(String(error));
       setLoading(false);
     }
   }
@@ -113,7 +175,7 @@ function App() {
             <button className={mode === 'single' ? 'active' : ''} onClick={() => setMode('single')}>Single</button>
             <button className={mode === 'multiverse' ? 'active' : ''} onClick={() => setMode('multiverse')}>Multiverse</button>
           </div>
-          <button className="primary" onClick={startRun} disabled={loading}>{loading ? '...' : t.startCta}</button>
+          <button className="primary" onClick={startRun} disabled={loading || !topic.trim()}>{loading ? '...' : t.startCta}</button>
         </div>
       </div>
       <div className="tank" aria-label="aquarium visualization">
@@ -124,7 +186,20 @@ function App() {
       <aside className="stepper">{steps.map(([Icon, label], index) => <div className="step" key={label}><Icon size={18}/><span>{index + 1}. {label}</span></div>)}</aside>
       <section className="panel">
         <h2>{t.statusTitle}</h2>
-        {!result && <p>{t.emptyStatus}</p>}
+        {!job && !result && <p>{t.emptyStatus}</p>}
+        {uiError && <p className="errorBox">{uiError}</p>}
+        {job && <div className={`jobPanel ${job.status}`}>
+          <b>Job: {job.status.toUpperCase()}</b>
+          <p>Job: {job.job_id} · Run: {job.run_id}</p>
+          <p>Stage: {job.stage} · Attempts: {job.attempts}</p>
+          <div className="progressBar"><span style={{ width: `${job.progress}%` }} /></div>
+          <div className="jobActions">
+            {(job.status === 'queued' || job.status === 'running') && <button onClick={() => mutateJob('cancel')}>Cancel</button>}
+            {(job.status === 'failed' || job.status === 'cancelled') && <button onClick={() => mutateJob('retry')}>Retry</button>}
+            {(job.status === 'failed' || job.status === 'cancelled') && <button onClick={() => mutateJob('resume')}>Resume</button>}
+          </div>
+          {job.error && <p className="warning">{job.error}</p>}
+        </div>}
         {result && <div className="result">
           <b>{result.status.toUpperCase()}</b><p>Run: {result.run_id}</p><p>Mode: {result.mode}</p><p>{result.summary?.join(' ')}</p>
           {result.runtime_claim && <div className={`runtimeClaim ${result.runtime_claim.runtime_level}`}>

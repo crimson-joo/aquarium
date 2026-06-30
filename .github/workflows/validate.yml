@@ -38,3 +38,27 @@ jobs:
           npm run build
       - name: Compose config
         run: docker compose config --quiet
+      - name: Browser E2E
+        run: |
+          cd frontend
+          npx playwright install --with-deps chromium
+          cd ..
+          trap 'docker compose down -v' EXIT
+          docker compose up --build -d
+          python - <<'PY'
+          import time, urllib.request
+          for url in ('http://127.0.0.1:8008/api/health', 'http://127.0.0.1:3008'):
+              deadline = time.time() + 90
+              last = None
+              while time.time() < deadline:
+                  try:
+                      with urllib.request.urlopen(url, timeout=3) as response:
+                          if response.status < 500:
+                              break
+                  except Exception as exc:
+                      last = exc
+                      time.sleep(2)
+              else:
+                  raise SystemExit(f'{url} not ready: {last}')
+          PY
+          E2E_BASE_URL=http://127.0.0.1:3008 npm --prefix frontend run test:e2e
