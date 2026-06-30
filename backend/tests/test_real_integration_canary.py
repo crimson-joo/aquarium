@@ -133,7 +133,8 @@ manifest = {
     assert completed.returncode == 2
     summary = json.loads(completed.stdout)
     assert summary["real_integration"] is False
-    assert summary["providers"]["bettafish_report"] == "local_stub"
+    assert summary["providers"]["aquarium_research"] == "aquarium_native"
+    assert summary["runtime_claim"]["standalone_native"] is True
 
 
 def test_real_integration_canary_fails_when_any_stage_is_degraded(tmp_path: Path):
@@ -158,4 +159,5 @@ def test_real_integration_canary_fails_when_any_stage_is_degraded(tmp_path: Path
     summary = json.loads(completed.stdout)
     assert summary["status"] == "degraded"
     assert summary["real_integration"] is False
-    assert summary["providers"] == {"bettafish_report": "local_stub", "mirofish_simulation": "local_stub"}
+    assert summary["providers"] == {"aquarium_research": "aquarium_native", "aquarium_simulation": "aquarium_native"}
+    assert summary["runtime_claim"]["standalone_native"] is True

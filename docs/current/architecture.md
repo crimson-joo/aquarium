@@ -1,6 +1,6 @@
 # Aquarium Architecture Slice
 
-BettaFish의 `topic → research report`와 MiroFish의 `seed → ontology/persona → simulation → report/chat`를 하나의 **Docker Compose-first local product**로 합치는 최소 견고(vertical slice) 제안이다.
+Aquarium은 `topic → native research seed → ontology/persona ecosystem → single/multiverse simulation → report/chat`를 하나의 **Docker Compose-first standalone local product**로 실행한다. BettaFish/MiroFish runner contract는 primary architecture가 아니라 legacy bridge/migration evidence 경로다.
 
 ## 1. 목표와 비목표
 
@@ -14,11 +14,12 @@ BettaFish의 `topic → research report`와 MiroFish의 `seed → ontology/perso
   5. single 또는 multiverse simulation
   6. simulation report
   7. agent chat
-- 초기 research/simulation provider는 deterministic/local stub로 시작 가능하지만, 실제 provider로 교체 가능한 handoff contract를 유지한다.
+- 초기 research/simulation provider는 `aquarium_native`로 시작하며, 외부 sibling runner는 optional legacy bridge로만 유지한다.
 - 한국어/중국어/영어 i18n을 처음부터 도메인 모델, API, UI에 반영한다.
 - fail-closed: 필수 provider/storage/schema가 준비되지 않으면 조용한 fallback 없이 명시적으로 실패한다.
 
 ### 비목표
+- BettaFish/MiroFish repo를 runtime dependency로 두는 제품화.
 - 기존 BettaFish/MiroFish 전체 복사.
 - 처음부터 SearXNG, Graphiti, Neo4j, 멀티모달, 복잡한 에이전트 런타임을 모두 내장.
 - production Kubernetes/Cloud 배포. GitHub 배포 가능한 로컬 제품 기준으로 시작한다.
@@ -30,7 +31,8 @@ Browser UI
   └─ Next.js frontend
       └─ FastAPI backend API
           ├─ Job orchestrator: report/simulation/chat jobs
-          ├─ Provider adapters: local_stub, openai_compatible, searxng(optional), graphiti(optional)
+          ├─ Native engines: research, graph, persona, simulation, report
+          ├─ Legacy provider adapters: bettafish_cli, mirofish_cli(optional)
           ├─ Contract validators: JSON Schema/Pydantic
           ├─ PostgreSQL: relational state + JSONB artifacts
           └─ File storage: ./data/artifacts mounted volume
@@ -129,12 +131,15 @@ backend/
         simulation.py
         simulation_report.py
         chat_context.py
-    providers/
-      base.py
-      llm_openai_compatible.py
-      search_searxng.py
-      graph_graphiti.py
-      local_stub.py
+    engines/
+      research/
+      graph/
+      persona/
+      simulation/
+      report/
+    adapters/
+      legacy_bettafish_cli.py
+      legacy_mirofish_cli.py
     tests/
       unit/
       contract/
@@ -191,7 +196,7 @@ frontend/
 ```
 
 UI는 3 화면으로 충분하다.
-- Home: topic, locale, single/multiverse, provider profile 선택.
+- Home: topic, locale, single/multiverse 선택. Provider profile은 고급/legacy 설정으로 숨긴다.
 - Run detail: job timeline + artifacts tabs.
 - Chat: simulation report 기반 agent chat.
 
@@ -245,7 +250,7 @@ POST /api/runs
 ```
 
 ### Stage 1: ResearchReport
-초기 구현은 `local_stub`로 deterministic report를 만든다. 단, output schema는 실제 BettaFish 교체를 가정한다.
+초기 구현은 `aquarium_native`로 deterministic native research seed를 만든다. output schema는 legacy BettaFish handoff와도 호환되지만, 기본 제품 경로는 Aquarium 내부 엔진이다.
 
 ```json
 {
@@ -256,7 +261,7 @@ POST /api/runs
   "markdown_path": "data/artifacts/run/01_research_report.md",
   "claims": [{"text": "...", "confidence": 0.6, "citations": []}],
   "data_gaps": [],
-  "quality": {"deterministic": true, "provider": "local_stub"},
+  "quality": {"deterministic": true, "provider": "aquarium_native"},
   "provenance": {"source_product": "aquarium", "compatible_with": "bettafish_handoff_v1"}
 }
 ```
@@ -268,7 +273,7 @@ ResearchReport를 simulation seed로 변환한다.
 - seed language와 UI locale을 명시.
 
 ### Stage 3: Ontology/Persona extraction
-초기 local_stub:
+초기 aquarium_native:
 - ontology: topic, stakeholders, forces, uncertainties, outcomes.
 - personas: 3~5명/조직 agent.
 실제 LLM provider가 붙어도 같은 schema를 반환해야 한다.
@@ -315,10 +320,13 @@ ResearchReport를 simulation seed로 변환한다.
 ## 9. Provider/env 설계
 
 ### Provider profiles
-- `local_stub`
+- `aquarium_native`
   - 기본값.
   - 네트워크/API key 없이 전체 flow 성공.
-  - deterministic snapshot test 가능.
+  - deterministic native snapshot test 가능.
+- `legacy_bettafish_mirofish`
+  - optional migration bridge.
+  - `AQUARIUM_BETTAFISH_COMMAND`/`AQUARIUM_MIROFISH_COMMAND`가 모두 있을 때 sibling-runner real integration canary를 검증.
 - `openai_compatible`
   - LLM 기반 report/extraction/chat.
 - `searxng_openai`
@@ -342,7 +350,7 @@ POSTGRES_PASSWORD=aquarium
 ARTIFACT_ROOT=/app/data/artifacts
 DEFAULT_LOCALE=ko
 SUPPORTED_LOCALES=ko,zh,en
-DEFAULT_PROVIDER_PROFILE=local_stub
+DEFAULT_PROVIDER_PROFILE=aquarium_native
 FAIL_CLOSED=true
 
 JOB_POLL_INTERVAL_SECONDS=1
@@ -382,7 +390,7 @@ Fail-closed checks:
 
 ### Integration tests
 - `docker compose up postgres backend worker` 후 API E2E.
-- `local_stub` profile로 topic 입력부터 chat까지 성공.
+- `aquarium_native` profile로 topic 입력부터 chat까지 성공.
 - worker crash 후 동일 job resume/failed 상태 검증.
 
 ### E2E/UI tests
@@ -399,7 +407,7 @@ lint backend
 lint frontend
 backend unit + contract tests
 frontend unit tests
-compose smoke with local_stub
+compose smoke with aquarium_native
 ```
 
 ## 11. Docs 구조
@@ -461,7 +469,7 @@ aquarium/
 
 1. 저장소 skeleton + Docker Compose + PostgreSQL healthcheck.
 2. Backend `POST /api/runs`, `GET /api/runs/{id}`, worker job loop.
-3. `local_stub` provider로 6개 stage artifact 생성.
+3. `aquarium_native` provider로 6개 stage artifact 생성.
 4. Frontend Home/Run detail/Chat 최소 UI.
 5. Contract tests + compose smoke.
 6. OpenAI-compatible provider adapter 추가.
@@ -473,5 +481,5 @@ aquarium/
 - 하나의 product 이름은 `Aquarium`; BettaFish/MiroFish는 내부 stage/provider compatibility로 흡수한다.
 - 초기 MVP는 Graph DB 없이도 끝까지 돈다.
 - handoff contract를 먼저 고정해 provider 교체 리스크를 낮춘다.
-- deterministic local_stub를 기본값으로 두어 GitHub clone 직후 테스트 가능하게 한다.
+- deterministic `aquarium_native`를 기본값으로 두어 GitHub clone 직후 standalone 실행 가능하게 한다.
 - fail-closed를 기본으로 하여 silent fallback을 금지한다.

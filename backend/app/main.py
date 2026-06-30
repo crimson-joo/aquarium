@@ -75,7 +75,7 @@ def create_app() -> FastAPI:
         universe_count = len(result["simulation"]["universes"])
         answer = (
             f"{msg(locale, 'chat_prefix')}, 이 질문은 {universe_count}개 해류의 {mode} 시뮬레이션과 "
-            f"BettaFish형 조사 보고서를 함께 봐야 합니다. 핵심은 '{result['simulation']['universes'][0]['dominant_signal']}'입니다. "
+            f"Aquarium native 조사 seed를 함께 봐야 합니다. 핵심은 '{result['simulation']['universes'][0]['dominant_signal']}'입니다. "
             f"근거가 부족한 부분은 data_gaps에 보존되어 있습니다."
         )
         return {"run_id": run_id, "question": payload.question, "answer": answer}

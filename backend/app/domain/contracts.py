@@ -43,7 +43,7 @@ class HandoffManifest(BaseModel):
     final_report_path: str
     intermediate_outputs: dict[str, str] = Field(default_factory=dict)
     sources: list[dict[str, str]] = Field(default_factory=list)
-    provider: str = "local_stub"
+    provider: str = "aquarium_native"
     warnings: list[str] = Field(default_factory=list)
     data_gaps: list[str] = Field(default_factory=list)
 

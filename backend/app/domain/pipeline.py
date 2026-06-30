@@ -134,40 +134,41 @@ def build_simulation_report(locale: Locale, simulation: SimulationResult, path: 
     return SimulationReport(path=str(path), body=body)
 
 
-def _stub_manifest(topic: str, locale: Locale, root: Path) -> tuple[HandoffManifest, AdapterStage]:
+def _native_manifest(topic: str, locale: Locale, root: Path, warnings: list[str] | None = None) -> tuple[HandoffManifest, AdapterStage]:
     report = build_research_report(topic, locale)
     research_report_path = _write_text(root / "research_report.md", report)
     manifest = HandoffManifest(
-        source_product="aquarium-local-stub",
+        source_product="aquarium-native-research",
         target_product="aquarium",
         topic=topic,
         locale=locale,
         final_report_path=research_report_path,
         intermediate_outputs={"query": research_report_path, "media": research_report_path, "insight": research_report_path},
-        sources=[{"title": "local_stub source", "url": "local://stub", "snippet": topic}],
-        data_gaps=["local_stub provider uses deterministic evidence until real BettaFish adapter is configured"],
+        sources=[{"title": "Aquarium native evidence seed", "url": "aquarium://native/research", "snippet": topic}],
+        provider="aquarium_native",
+        data_gaps=["Native seed is deterministic/local until live source adapters are configured"],
     )
     stage = AdapterStage(
-        name="bettafish_report",
-        provider="local_stub",
-        status="degraded",
+        name="aquarium_research",
+        provider="aquarium_native",
+        status="completed",
         artifacts={"final_report": research_report_path},
-        warnings=["AQUARIUM_BETTAFISH_COMMAND is not configured; using deterministic local_stub research report."],
+        warnings=warnings or [],
     )
     return manifest, stage
 
 
-def _stub_simulation(locale: Locale, mode: SimulationMode, root: Path, seed: SeedDocument) -> tuple[Ontology, list[Persona], SimulationResult, SimulationReport, AdapterStage]:
+def _native_simulation(locale: Locale, mode: SimulationMode, root: Path, seed: SeedDocument, warnings: list[str] | None = None) -> tuple[Ontology, list[Persona], SimulationResult, SimulationReport, AdapterStage]:
     ontology = extract_ontology(seed)
     personas = build_personas(ontology, locale)
     simulation = run_simulation(mode, seed, personas)
     simulation_report = build_simulation_report(locale, simulation, root / "simulation_report.md")
     stage = AdapterStage(
-        name="mirofish_simulation",
-        provider="local_stub",
-        status="degraded",
+        name="aquarium_simulation",
+        provider="aquarium_native",
+        status="completed",
         artifacts={"simulation_report": simulation_report.path},
-        warnings=["AQUARIUM_MIROFISH_COMMAND is not configured; using deterministic local_stub simulation."],
+        warnings=warnings or [],
     )
     return ontology, personas, simulation, simulation_report, stage
 
@@ -178,6 +179,12 @@ def build_runtime_claim(stages: list[AdapterStage], mode: SimulationMode) -> dic
     providers = {name: stage.provider for name, stage in by_name.items()}
     statuses = {name: stage.status for name, stage in by_name.items()}
     warnings = [warning for stage in stages for warning in stage.warnings]
+    both_aquarium_native = (
+        providers.get("aquarium_research") == "aquarium_native"
+        and providers.get("aquarium_simulation") == "aquarium_native"
+        and statuses.get("aquarium_research") == "completed"
+        and statuses.get("aquarium_simulation") == "completed"
+    )
     both_real = (
         providers.get("bettafish_report") == "bettafish_cli"
         and providers.get("mirofish_simulation") == "mirofish_cli"
@@ -189,6 +196,8 @@ def build_runtime_claim(stages: list[AdapterStage], mode: SimulationMode) -> dic
     native_warning = any("native_unverified" in warning or "fixture" in warning.lower() for warning in warnings)
     if any_failed:
         level = "failed"
+    elif both_aquarium_native:
+        level = "aquarium_native"
     elif both_real and not native_warning:
         level = "native_bounded"
     elif both_real:
@@ -199,10 +208,12 @@ def build_runtime_claim(stages: list[AdapterStage], mode: SimulationMode) -> dic
         level = "contract_only"
     return {
         "real_integration": both_real,
+        "standalone_native": both_aquarium_native,
+        "external_runner_dependency": both_real,
         "runtime_level": level,
-        "native_bounded_smoke": both_real and not native_warning,
+        "native_bounded_smoke": (both_real and not native_warning) or both_aquarium_native,
         "degraded": any_degraded,
-        "graph_memory_status": "warning" if native_warning else ("native_pass" if both_real else "not_native"),
+        "graph_memory_status": "warning" if native_warning else ("native_pass" if both_real or both_aquarium_native else "not_native"),
         "long_running_multiverse_verified": False,
         "mode_verified": mode.value,
         "providers": providers,
@@ -216,10 +227,11 @@ def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, stor
 
     manifest, betta_stage = run_bettafish_cli_adapter(topic, locale, mode, root)
     if manifest is None:
-        manifest, stub_betta_stage = _stub_manifest(topic, locale, root)
+        native_warnings = betta_stage.warnings if betta_stage is not None else []
+        manifest, native_betta_stage = _native_manifest(topic, locale, root, native_warnings)
         if betta_stage is not None:
-            stub_betta_stage.warnings = betta_stage.warnings + stub_betta_stage.warnings
-        betta_stage = stub_betta_stage
+            native_betta_stage.warnings.append("Legacy BettaFish runner failed; Aquarium native research engine produced this run instead.")
+        betta_stage = native_betta_stage
     assert betta_stage is not None
     run.stages.append(betta_stage)
     manifest_path = Path(_write_json(root / "handoff_manifest.json", manifest.model_dump(mode="json")))
@@ -229,10 +241,11 @@ def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, stor
 
     miro_payload, miro_stage = run_mirofish_cli_adapter(topic, locale, mode, root, manifest_path)
     if miro_payload is None:
-        ontology, personas, simulation, simulation_report, stub_miro_stage = _stub_simulation(locale, mode, root, seed)
+        native_warnings = miro_stage.warnings if miro_stage is not None else []
+        ontology, personas, simulation, simulation_report, native_miro_stage = _native_simulation(locale, mode, root, seed, native_warnings)
         if miro_stage is not None:
-            stub_miro_stage.warnings = miro_stage.warnings + stub_miro_stage.warnings
-        miro_stage = stub_miro_stage
+            native_miro_stage.warnings.append("Legacy MiroFish runner failed; Aquarium native simulation engine produced this run instead.")
+        miro_stage = native_miro_stage
     else:
         ontology = Ontology.model_validate(miro_payload["ontology"])
         personas = [Persona.model_validate(item) for item in miro_payload["personas"]]

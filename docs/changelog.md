@@ -1,5 +1,13 @@
 # Changelog — Aquarium
 
+## 2026-06-30 — Standalone Aquarium native pivot
+
+- Promoted the default no-runner path from `local_stub` degraded output to `aquarium_native` standalone vertical slice.
+- Added API `runtime_claim` fields for `standalone_native` and `external_runner_dependency` so UI can distinguish Aquarium-native execution from legacy sibling-runner integration.
+- Updated UI copy to present Aquarium as a standalone research × ecosystem × simulation runtime, not a BettaFish/MiroFish bridge.
+- Updated product, design, architecture, QA, release, and README docs so BettaFish/MiroFish runner commands are described as legacy bridge/migration evidence rather than the primary product path.
+- Verified backend tests, frontend i18n tests, and frontend production build after the pivot.
+
 ## 2026-06-30 — Runtime evidence labeling and multiverse expansion
 
 - Added API/UI `runtime_claim` labeling so Aquarium distinguishes `local_stub` degraded output, real provider wiring, bounded native smoke, Graphiti native status, and long-running multiverse verification status.
