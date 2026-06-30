@@ -756,7 +756,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L1",
       "id": "backend_tests_test_real_integration_canary_py",
-      "community": 20,
+      "community": 19,
       "norm_label": "test_real_integration_canary.py"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L10",
       "id": "tests_test_real_integration_canary_write_executable",
-      "community": 20,
+      "community": 19,
       "norm_label": "_write_executable()"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L16",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_passes_with_fake_contract_runners",
-      "community": 20,
+      "community": 19,
       "norm_label": "test_real_integration_canary_passes_with_fake_contract_runners()"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L93",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_fails_when_runner_provider_is_not_real",
-      "community": 20,
+      "community": 19,
       "norm_label": "test_real_integration_canary_fails_when_runner_provider_is_not_real()"
     },
     {
@@ -792,7 +792,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L139",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_fails_when_any_stage_is_degraded",
-      "community": 20,
+      "community": 19,
       "norm_label": "test_real_integration_canary_fails_when_any_stage_is_degraded()"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L1",
       "id": "docs_architecture_slice_ko_md",
-      "community": 0,
+      "community": 1,
       "norm_label": "architecture-slice-ko.md"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L1",
       "id": "docs_architecture_slice_ko_aquarium_architecture_slice",
-      "community": 0,
+      "community": 1,
       "norm_label": "aquarium architecture slice"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L5",
       "id": "docs_architecture_slice_ko_1",
-      "community": 0,
+      "community": 1,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L7",
       "id": "docs_architecture_slice_ko",
-      "community": 0,
+      "community": 1,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1080,7 +1080,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L21",
       "id": "docs_architecture_slice_ko_21",
-      "community": 0,
+      "community": 1,
       "norm_label": "\u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1089,7 +1089,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L26",
       "id": "docs_architecture_slice_ko_2",
-      "community": 0,
+      "community": 1,
       "norm_label": "2. \u110e\u116c\u1109\u1169 \u1100\u1167\u11ab\u1100\u1169 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -1098,7 +1098,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L28",
       "id": "docs_architecture_slice_ko_codeblock_1",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (browser ui)"
     },
     {
@@ -1107,7 +1107,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L52",
       "id": "docs_architecture_slice_ko_3_docker_compose",
-      "community": 0,
+      "community": 1,
       "norm_label": "3. docker compose \u1109\u1165\u1107\u1175\u1109\u1173"
     },
     {
@@ -1116,7 +1116,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L54",
       "id": "docs_architecture_slice_ko_profile",
-      "community": 0,
+      "community": 1,
       "norm_label": "\u1100\u1175\u1107\u1169\u11ab profile"
     },
     {
@@ -1125,7 +1125,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L70",
       "id": "docs_architecture_slice_ko_optional_profile",
-      "community": 0,
+      "community": 1,
       "norm_label": "optional profile"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L79",
       "id": "docs_architecture_slice_ko_codeblock_2",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L86",
       "id": "docs_architecture_slice_ko_4_backend",
-      "community": 0,
+      "community": 1,
       "norm_label": "4. backend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L88",
       "id": "docs_architecture_slice_ko_codeblock_3",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (backend/)"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L144",
       "id": "docs_architecture_slice_ko_api",
-      "community": 0,
+      "community": 1,
       "norm_label": "api \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L162",
       "id": "docs_architecture_slice_ko_5_frontend",
-      "community": 0,
+      "community": 1,
       "norm_label": "5. frontend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L164",
       "id": "docs_architecture_slice_ko_codeblock_4",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (frontend/)"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L198",
       "id": "docs_architecture_slice_ko_6_storage",
-      "community": 0,
+      "community": 1,
       "norm_label": "6. storage \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L200",
       "id": "docs_architecture_slice_ko_postgresql",
-      "community": 0,
+      "community": 1,
       "norm_label": "postgresql \u1110\u1166\u110b\u1175\u1107\u1173\u11af"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L212",
       "id": "docs_architecture_slice_ko_file_storage",
-      "community": 0,
+      "community": 1,
       "norm_label": "file storage"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L213",
       "id": "docs_architecture_slice_ko_codeblock_5",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (data/)"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L232",
       "id": "docs_architecture_slice_ko_7_job_flow_handoff_contract",
-      "community": 12,
+      "community": 13,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L234",
       "id": "docs_architecture_slice_ko_codeblock_6",
-      "community": 12,
+      "community": 13,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L247",
       "id": "docs_architecture_slice_ko_stage_1_researchreport",
-      "community": 12,
+      "community": 13,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L250",
       "id": "docs_architecture_slice_ko_codeblock_7",
-      "community": 12,
+      "community": 13,
       "norm_label": "code:json ({)"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L264",
       "id": "docs_architecture_slice_ko_stage_2_seeddocument",
-      "community": 12,
+      "community": 13,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L270",
       "id": "docs_architecture_slice_ko_stage_3_ontology_persona_extraction",
-      "community": 12,
+      "community": 13,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L276",
       "id": "docs_architecture_slice_ko_stage_4_simulation",
-      "community": 12,
+      "community": 13,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L281",
       "id": "docs_architecture_slice_ko_stage_5_simulationreport",
-      "community": 12,
+      "community": 13,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L285",
       "id": "docs_architecture_slice_ko_stage_6_agent_chat",
-      "community": 12,
+      "community": 13,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L290",
       "id": "docs_architecture_slice_ko_8_i18n",
-      "community": 0,
+      "community": 1,
       "norm_label": "8. i18n \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L306",
       "id": "docs_architecture_slice_ko_codeblock_8",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:json ({)"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L315",
       "id": "docs_architecture_slice_ko_9_provider_env",
-      "community": 0,
+      "community": 1,
       "norm_label": "9. provider/env \u1109\u1165\u11af\u1100\u1168"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L317",
       "id": "docs_architecture_slice_ko_provider_profiles",
-      "community": 0,
+      "community": 1,
       "norm_label": "provider profiles"
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L329",
       "id": "docs_architecture_slice_ko_env_example",
-      "community": 0,
+      "community": 1,
       "norm_label": "`.env.example`"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L331",
       "id": "docs_architecture_slice_ko_codeblock_9",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:env (app_env=local)"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L369",
       "id": "docs_architecture_slice_ko_10_tests",
-      "community": 0,
+      "community": 1,
       "norm_label": "10. tests \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L371",
       "id": "docs_architecture_slice_ko_unit_tests",
-      "community": 0,
+      "community": 1,
       "norm_label": "unit tests"
     },
     {
@@ -1377,7 +1377,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L377",
       "id": "docs_architecture_slice_ko_contract_tests",
-      "community": 0,
+      "community": 1,
       "norm_label": "contract tests"
     },
     {
@@ -1386,7 +1386,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L383",
       "id": "docs_architecture_slice_ko_integration_tests",
-      "community": 0,
+      "community": 1,
       "norm_label": "integration tests"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L388",
       "id": "docs_architecture_slice_ko_e2e_ui_tests",
-      "community": 0,
+      "community": 1,
       "norm_label": "e2e/ui tests"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L396",
       "id": "docs_architecture_slice_ko_ci",
-      "community": 0,
+      "community": 1,
       "norm_label": "ci \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L397",
       "id": "docs_architecture_slice_ko_codeblock_10",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (lint backend)"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L405",
       "id": "docs_architecture_slice_ko_11_docs",
-      "community": 0,
+      "community": 1,
       "norm_label": "11. docs \u1100\u116e\u110c\u1169"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L407",
       "id": "docs_architecture_slice_ko_codeblock_11",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (docs/)"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L432",
       "id": "docs_architecture_slice_ko_12",
-      "community": 0,
+      "community": 1,
       "norm_label": "12. \u110e\u116e\u110e\u1165\u11ab \u110e\u1169\u1100\u1175 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169"
     },
     {
@@ -1449,7 +1449,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L434",
       "id": "docs_architecture_slice_ko_codeblock_12",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (aquarium/)"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L460",
       "id": "docs_architecture_slice_ko_13_vertical_slice",
-      "community": 0,
+      "community": 1,
       "norm_label": "13. vertical slice \u1100\u116e\u1112\u1167\u11ab \u1109\u116e\u11ab\u1109\u1165"
     },
     {
@@ -1467,7 +1467,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L471",
       "id": "docs_architecture_slice_ko_14",
-      "community": 0,
+      "community": 1,
       "norm_label": "14. \u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L1",
       "id": "docs_contracts_handoff_manifest_v1_md",
-      "community": 19,
+      "community": 20,
       "norm_label": "handoff-manifest-v1.md"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L1",
       "id": "contracts_handoff_manifest_v1_handoff_manifest_v1",
-      "community": 19,
+      "community": 20,
       "norm_label": "handoff manifest v1"
     },
     {
@@ -1584,7 +1584,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L5",
       "id": "contracts_handoff_manifest_v1_schema",
-      "community": 19,
+      "community": 20,
       "norm_label": "schema"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L7",
       "id": "contracts_handoff_manifest_v1_codeblock_1",
-      "community": 19,
+      "community": 20,
       "norm_label": "code:json ({)"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L27",
       "id": "contracts_handoff_manifest_v1_policy",
-      "community": 19,
+      "community": 20,
       "norm_label": "policy"
     },
     {
@@ -1791,7 +1791,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 18,
+      "community": 17,
       "norm_label": "product.md"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "current_product_product_aquarium",
-      "community": 18,
+      "community": 17,
       "norm_label": "product \u2014 aquarium"
     },
     {
@@ -1809,7 +1809,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u1112\u1161\u11ab \u110c\u116e\u11af \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -1818,7 +1818,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_mvp",
-      "community": 18,
+      "community": 17,
       "norm_label": "mvp \u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1827,7 +1827,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L17",
       "id": "current_product_non_goals",
-      "community": 18,
+      "community": 17,
       "norm_label": "non-goals"
     },
     {
@@ -1836,7 +1836,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L25",
       "id": "current_product_25",
-      "community": 18,
+      "community": 17,
       "norm_label": "\u1109\u1165\u11bc\u1100\u1169\u11bc \u1109\u116e\u11ab\u1100\u1161\u11ab"
     },
     {
@@ -1845,7 +1845,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 1,
+      "community": 0,
       "norm_label": "architecture.md"
     },
     {
@@ -1854,7 +1854,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "current_architecture_aquarium_architecture_slice",
-      "community": 1,
+      "community": 0,
       "norm_label": "aquarium architecture slice"
     },
     {
@@ -1863,7 +1863,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L5",
       "id": "current_architecture_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1872,7 +1872,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L7",
       "id": "current_architecture",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1881,7 +1881,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L21",
       "id": "current_architecture_21",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1890,7 +1890,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L26",
       "id": "current_architecture_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "2. \u110e\u116c\u1109\u1169 \u1100\u1167\u11ab\u1100\u1169 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -1899,7 +1899,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L28",
       "id": "current_architecture_codeblock_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (browser ui)"
     },
     {
@@ -1908,7 +1908,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L52",
       "id": "current_architecture_3_docker_compose",
-      "community": 1,
+      "community": 0,
       "norm_label": "3. docker compose \u1109\u1165\u1107\u1175\u1109\u1173"
     },
     {
@@ -1917,7 +1917,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L54",
       "id": "current_architecture_profile",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1100\u1175\u1107\u1169\u11ab profile"
     },
     {
@@ -1926,7 +1926,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L70",
       "id": "current_architecture_optional_profile",
-      "community": 1,
+      "community": 0,
       "norm_label": "optional profile"
     },
     {
@@ -1935,7 +1935,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L79",
       "id": "current_architecture_codeblock_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1944,7 +1944,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L86",
       "id": "current_architecture_4_backend",
-      "community": 1,
+      "community": 0,
       "norm_label": "4. backend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L88",
       "id": "current_architecture_codeblock_3",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (backend/)"
     },
     {
@@ -1962,7 +1962,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L144",
       "id": "current_architecture_api",
-      "community": 1,
+      "community": 0,
       "norm_label": "api \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L162",
       "id": "current_architecture_5_frontend",
-      "community": 1,
+      "community": 0,
       "norm_label": "5. frontend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L164",
       "id": "current_architecture_codeblock_4",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (frontend/)"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L198",
       "id": "current_architecture_6_storage",
-      "community": 1,
+      "community": 0,
       "norm_label": "6. storage \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L200",
       "id": "current_architecture_postgresql",
-      "community": 1,
+      "community": 0,
       "norm_label": "postgresql \u1110\u1166\u110b\u1175\u1107\u1173\u11af"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L212",
       "id": "current_architecture_file_storage",
-      "community": 1,
+      "community": 0,
       "norm_label": "file storage"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L213",
       "id": "current_architecture_codeblock_5",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (data/)"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L232",
       "id": "current_architecture_7_job_flow_handoff_contract",
-      "community": 13,
+      "community": 12,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -2034,7 +2034,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L234",
       "id": "current_architecture_codeblock_6",
-      "community": 13,
+      "community": 12,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L247",
       "id": "current_architecture_stage_1_researchreport",
-      "community": 13,
+      "community": 12,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L250",
       "id": "current_architecture_codeblock_7",
-      "community": 13,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L264",
       "id": "current_architecture_stage_2_seeddocument",
-      "community": 13,
+      "community": 12,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L270",
       "id": "current_architecture_stage_3_ontology_persona_extraction",
-      "community": 13,
+      "community": 12,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L276",
       "id": "current_architecture_stage_4_simulation",
-      "community": 13,
+      "community": 12,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L281",
       "id": "current_architecture_stage_5_simulationreport",
-      "community": 13,
+      "community": 12,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L285",
       "id": "current_architecture_stage_6_agent_chat",
-      "community": 13,
+      "community": 12,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L290",
       "id": "current_architecture_8_i18n",
-      "community": 1,
+      "community": 0,
       "norm_label": "8. i18n \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -2115,7 +2115,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L306",
       "id": "current_architecture_codeblock_8",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:json ({)"
     },
     {
@@ -2124,7 +2124,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L315",
       "id": "current_architecture_9_provider_env",
-      "community": 1,
+      "community": 0,
       "norm_label": "9. provider/env \u1109\u1165\u11af\u1100\u1168"
     },
     {
@@ -2133,7 +2133,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L317",
       "id": "current_architecture_provider_profiles",
-      "community": 1,
+      "community": 0,
       "norm_label": "provider profiles"
     },
     {
@@ -2142,7 +2142,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L329",
       "id": "current_architecture_env_example",
-      "community": 1,
+      "community": 0,
       "norm_label": "`.env.example`"
     },
     {
@@ -2151,7 +2151,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L331",
       "id": "current_architecture_codeblock_9",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:env (app_env=local)"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L369",
       "id": "current_architecture_10_tests",
-      "community": 1,
+      "community": 0,
       "norm_label": "10. tests \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L371",
       "id": "current_architecture_unit_tests",
-      "community": 1,
+      "community": 0,
       "norm_label": "unit tests"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L377",
       "id": "current_architecture_contract_tests",
-      "community": 1,
+      "community": 0,
       "norm_label": "contract tests"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L383",
       "id": "current_architecture_integration_tests",
-      "community": 1,
+      "community": 0,
       "norm_label": "integration tests"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L388",
       "id": "current_architecture_e2e_ui_tests",
-      "community": 1,
+      "community": 0,
       "norm_label": "e2e/ui tests"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L396",
       "id": "current_architecture_ci",
-      "community": 1,
+      "community": 0,
       "norm_label": "ci \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L397",
       "id": "current_architecture_codeblock_10",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (lint backend)"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L405",
       "id": "current_architecture_11_docs",
-      "community": 1,
+      "community": 0,
       "norm_label": "11. docs \u1100\u116e\u110c\u1169"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L407",
       "id": "current_architecture_codeblock_11",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (docs/)"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L432",
       "id": "current_architecture_12",
-      "community": 1,
+      "community": 0,
       "norm_label": "12. \u110e\u116e\u110e\u1165\u11ab \u110e\u1169\u1100\u1175 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L434",
       "id": "current_architecture_codeblock_12",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:text (aquarium/)"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L460",
       "id": "current_architecture_13_vertical_slice",
-      "community": 1,
+      "community": 0,
       "norm_label": "13. vertical slice \u1100\u116e\u1112\u1167\u11ab \u1109\u116e\u11ab\u1109\u1165"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L471",
       "id": "current_architecture_14",
-      "community": 1,
+      "community": 0,
       "norm_label": "14. \u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_research_report_md",
-      "community": 24,
+      "community": 23,
       "norm_label": "research_report.md"
     },
     {
@@ -2736,7 +2736,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_research_report_ai",
-      "community": 24,
+      "community": 23,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: ai \u1100\u1165\u11b7\u1109\u1162\u11a8\u110b\u1166\u11ab\u110c\u1175\u11ab \u1109\u1175\u110c\u1161\u11bc \u1107\u1167\u11ab\u1112\u116a"
     },
     {
@@ -2745,7 +2745,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L3",
       "id": "aq_6ede9411e4ba_research_report",
-      "community": 24,
+      "community": 23,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2754,7 +2754,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L9",
       "id": "aq_6ede9411e4ba_research_report_9",
-      "community": 24,
+      "community": 23,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2763,7 +2763,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_simulation_report_md",
-      "community": 17,
+      "community": 18,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_simulation_report",
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2781,7 +2781,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L5",
       "id": "aq_6ede9411e4ba_simulation_report_5",
-      "community": 17,
+      "community": 18,
       "norm_label": "\u110b\u1161\u11bc\u1109\u1161\u11bc\u1107\u1173\u11af \u1107\u1175\u11ab\u1103\u1169"
     },
     {
@@ -2790,7 +2790,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L8",
       "id": "aq_6ede9411e4ba_simulation_report_universe_1",
-      "community": 17,
+      "community": 18,
       "norm_label": "universe 1"
     },
     {
@@ -2799,7 +2799,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L15",
       "id": "aq_6ede9411e4ba_simulation_report_universe_2",
-      "community": 17,
+      "community": 18,
       "norm_label": "universe 2"
     },
     {
@@ -2808,7 +2808,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L22",
       "id": "aq_6ede9411e4ba_simulation_report_universe_3",
-      "community": 17,
+      "community": 18,
       "norm_label": "universe 3"
     },
     {
@@ -2853,7 +2853,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_simulation_report_md",
-      "community": 23,
+      "community": 24,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2862,7 +2862,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_simulation_report",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2871,7 +2871,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L5",
       "id": "aq_3f8c20f490b8_simulation_report_5",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1103\u1161\u11ab\u110b\u1175\u11af \u1112\u1162\u1105\u1172"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L8",
       "id": "aq_3f8c20f490b8_simulation_report_single_current",
-      "community": 23,
+      "community": 24,
       "norm_label": "single current"
     },
     {
@@ -3278,9 +3278,9 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_src_main_tsx",
-      "target": "src_main_runtimelevel",
-      "confidence_score": 1.0
+      "target": "src_main_runtimelevel"
     },
     {
       "relation": "contains",
@@ -3288,9 +3288,9 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_src_main_tsx",
-      "target": "src_main_graphmemorykey",
-      "confidence_score": 1.0
+      "target": "src_main_graphmemorykey"
     },
     {
       "relation": "contains",
@@ -3298,9 +3298,9 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_src_main_tsx",
-      "target": "src_main_runtimeclaim",
-      "confidence_score": 1.0
+      "target": "src_main_runtimeclaim"
     },
     {
       "relation": "contains",
@@ -3817,9 +3817,9 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_build_runtime_claim",
-      "confidence_score": 1.0
+      "target": "domain_pipeline_build_runtime_claim"
     },
     {
       "relation": "contains",
@@ -4168,9 +4168,9 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L245",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_build_runtime_claim",
-      "confidence_score": 1.0
+      "target": "domain_pipeline_build_runtime_claim"
     },
     {
       "relation": "rationale_for",
@@ -4178,9 +4178,9 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L176",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_pipeline_rationale_176",
-      "target": "domain_pipeline_build_runtime_claim",
-      "confidence_score": 1.0
+      "target": "domain_pipeline_build_runtime_claim"
     },
     {
       "relation": "calls",
@@ -5001,9 +5001,9 @@
       "source_file": "README.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aquarium_readme_aquarium",
-      "target": "aquarium_readme_76",
-      "confidence_score": 1.0
+      "target": "aquarium_readme_76"
     },
     {
       "relation": "contains",
@@ -5011,9 +5011,9 @@
       "source_file": "README.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "aquarium_readme_aquarium",
-      "target": "aquarium_readme_87",
-      "confidence_score": 1.0
+      "target": "aquarium_readme_87"
     },
     {
       "relation": "contains",
@@ -5131,9 +5131,9 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_changelog_changelog_aquarium",
-      "target": "docs_changelog_2026_06_30_runtime_evidence_labeling_and_multiverse_expansion",
-      "confidence_score": 1.0
+      "target": "docs_changelog_2026_06_30_runtime_evidence_labeling_and_multiverse_expansion"
     },
     {
       "relation": "contains",
@@ -5141,9 +5141,9 @@
       "source_file": "docs/changelog.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_changelog_changelog_aquarium",
-      "target": "docs_changelog_2026_06_30_native_mirofish_runtime_canary",
-      "confidence_score": 1.0
+      "target": "docs_changelog_2026_06_30_native_mirofish_runtime_canary"
     },
     {
       "relation": "contains",
@@ -7497,5 +7497,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b2619d2294c093e26d0a842abfcdedd6d77db076"
+  "built_at_commit": "83b81e806ce2d05e114a59768396b1990119cc28"
 }
