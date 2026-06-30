@@ -52,6 +52,7 @@ def main() -> int:
     summary = {
         "status": "pass" if real_integration else "degraded",
         "real_integration": real_integration,
+        "runtime_claim": result.run.runtime_claim,
         "run_id": result.run.run_id,
         "topic": result.run.topic,
         "locale": result.run.locale.value,

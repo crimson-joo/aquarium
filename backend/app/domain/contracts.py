@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from enum import StrEnum
-from typing import Literal
+from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 
@@ -31,6 +31,7 @@ class RunRecord(BaseModel):
     mode: SimulationMode
     status: Literal["pending", "running", "completed", "failed"] = "pending"
     stages: list[AdapterStage] = Field(default_factory=list)
+    runtime_claim: dict[str, Any] = Field(default_factory=dict)
 
 
 class HandoffManifest(BaseModel):

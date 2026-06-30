@@ -1,5 +1,20 @@
 # Changelog — Aquarium
 
+## 2026-06-30 — Runtime evidence labeling and multiverse expansion
+
+- Added API/UI `runtime_claim` labeling so Aquarium distinguishes `local_stub` degraded output, real provider wiring, bounded native smoke, Graphiti native status, and long-running multiverse verification status.
+- Re-verified Aquarium focused backend tests and frontend production build after runtime-label changes.
+- Preserved and fast-forwarded the MiroFish canonical checkout: pre-existing dirty changes were stashed with a patch artifact before syncing `develop` to `origin/develop`.
+- Ran MiroFish live-local multiverse expansion canary: `mv_4ef846551b2d`, 4 universes, 24 configured rounds, graph memory preflight healthy, 3 outcome clusters, 4 sensitivity axes.
+- Caveat: the multiverse expansion canary proves live endpoint preflight + bounded real-backend comparison, not a long durable OASIS action-stream production run.
+
+## 2026-06-30 — Native MiroFish runtime canary
+
+- Ran Aquarium real integration canary with BettaFish `bettafish_cli` and MiroFish `mirofish_cli` providers, without the previous fake bridge.
+- Verified live MiroFish backend + Graphiti graph build + OASIS bounded single simulation + Korean report generation.
+- Evidence: run `aq_25badceb79ca`, graph `local_mirofish_3660f13154484f5b`, simulation `sim_3c7675d86e46`, report `report_d385e3807800`, 16 meaningful actions, CJK leakage 0.
+- Updated QA/release docs to replace the prior fake-bridge caveat with the narrower remaining caveat: long-running multiverse/native production run remains unverified.
+
 ## 2026-06-29 — Real runner release
 
 - Merged Aquarium release PR #1 to `main`.

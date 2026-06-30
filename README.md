@@ -14,6 +14,7 @@
 - BettaFish→MiroFish handoff contract 개념 반영
 - single / multiverse simulation mode 지원
 - 보고서와 simulation artifact를 `data/runs/<run_id>/`에 저장
+- API/UI가 `runtime_claim`으로 real/degraded/native 상태를 분리 표시
 
 ## 빠른 시작
 
@@ -85,4 +86,4 @@ AQUARIUM_MIROFISH_COMMAND="python3 /path/to/mirofish_aquarium_runner.py"
 
 ## 중요한 한계
 
-현재 release는 BettaFish/MiroFish 코드를 통째로 복사한 것이 아니라, 두 프로젝트의 외부 runner contract를 Aquarium에서 호출하는 방식입니다. `local_stub`는 기본 degraded mode이고, 실제 runner canary는 contract wiring과 artifact 보존을 증명합니다. live native Graphiti/OASIS 장시간 실행 증명은 별도 QA 범위입니다.
+현재 release는 BettaFish/MiroFish 코드를 통째로 복사한 것이 아니라, 두 프로젝트의 외부 runner contract를 Aquarium에서 호출하는 방식입니다. `local_stub`는 기본 degraded mode이고, 실제 runner canary는 contract wiring과 artifact 보존을 증명합니다. 2026-06-30 기준 fake bridge 없는 live MiroFish backend + Graphiti + OASIS bounded smoke는 통과했지만, live native Graphiti/OASIS 장시간 multiverse 실행 증명은 별도 QA 범위입니다.
