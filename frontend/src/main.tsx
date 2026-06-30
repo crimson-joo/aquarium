@@ -10,7 +10,7 @@ type Stage = { name: string; provider: string; status: string; warnings?: string
 type ProviderKey = 'aquarium_native' | 'local_stub' | 'bettafish_cli' | 'mirofish_cli';
 type StatusKey = 'completed' | 'degraded' | 'failed';
 type RuntimeLevel = 'aquarium_native' | 'native_bounded' | 'real_provider_warning' | 'degraded_stub' | 'contract_only' | 'failed';
-type GraphMemoryKey = 'native_pass' | 'warning' | 'not_native';
+type GraphMemoryKey = 'native_pass' | 'warning' | 'not_configured' | 'not_native';
 type RuntimeClaim = {
   real_integration: boolean;
   standalone_native: boolean;
@@ -18,17 +18,36 @@ type RuntimeClaim = {
   runtime_level: RuntimeLevel;
   native_bounded_smoke: boolean;
   degraded: boolean;
+  graph_engine_status?: 'aquarium_native' | 'legacy_runner' | 'not_available';
   graph_memory_status: GraphMemoryKey;
   long_running_multiverse_verified: boolean;
   mode_verified: Mode;
 };
-type RunResult = { run_id: string; mode: Mode; status: string; summary?: string[]; stages?: Stage[]; artifacts?: Record<string, string>; runtime_claim?: RuntimeClaim };
+type Entity = { name: string; type: string; rationale: string };
+type Persona = { name: string; role: string; stance: string };
+type Universe = { name: string; variation: string; dominant_signal: string; events: string[] };
+type RunResult = {
+  run_id: string;
+  mode: Mode;
+  status: string;
+  summary?: string[];
+  stages?: Stage[];
+  artifacts?: Record<string, string>;
+  runtime_claim?: RuntimeClaim;
+  seed?: { title: string; key_points: string[] };
+  ecosystem?: { entities: Entity[]; relations: Record<string, string>[]; personas: Persona[] };
+  simulation?: { universes: Universe[] };
+  report?: { preview: string[]; path: string };
+};
+
+type ResultTab = 'seed' | 'ecosystem' | 'currents' | 'report';
 
 function App() {
   const [locale, setLocale] = useState<Locale>('ko');
   const [topic, setTopic] = useState('AI 검색엔진 시장 변화');
   const [mode, setMode] = useState<Mode>('multiverse');
   const [result, setResult] = useState<RunResult | null>(null);
+  const [activeTab, setActiveTab] = useState<ResultTab>('seed');
   const [loading, setLoading] = useState(false);
   const t = messages[locale];
   const steps = useMemo(() => [
@@ -45,9 +64,35 @@ function App() {
         body: JSON.stringify({ topic, locale, mode }),
       });
       setResult(await response.json());
+      setActiveTab('seed');
     } finally {
       setLoading(false);
     }
+  }
+
+  function renderTab() {
+    if (!result) return null;
+    if (activeTab === 'seed') {
+      return <div className="insightGrid">
+        {result.seed?.key_points?.map((point) => <article className="insightCard" key={point}><b>{t.resultTabs.seed}</b><p>{point}</p></article>)}
+      </div>;
+    }
+    if (activeTab === 'ecosystem') {
+      return <div className="insightGrid">
+        <article className="insightCard"><b>{t.resultTabs.ecosystem}</b>{result.ecosystem?.entities?.map((entity) => <p key={entity.name}><strong>{entity.name}</strong> · {entity.type}<br/><small>{entity.rationale}</small></p>)}</article>
+        <article className="insightCard"><b>Personas</b>{result.ecosystem?.personas?.map((persona) => <p key={persona.name}><strong>{persona.name}</strong> · {persona.role}<br/><small>{persona.stance}</small></p>)}</article>
+        <article className="insightCard"><b>Relations</b>{result.ecosystem?.relations?.map((relation, index) => <p key={`${relation.source}-${relation.target}-${index}`}>{relation.source} → {relation.target}<br/><small>{relation.type}</small></p>)}</article>
+      </div>;
+    }
+    if (activeTab === 'currents') {
+      return <div className="insightGrid">
+        {result.simulation?.universes?.map((universe) => <article className="insightCard" key={universe.name}>
+          <b>{universe.name}</b><p className="stageHint">{universe.variation}</p><p>{universe.dominant_signal}</p>
+          <ul>{universe.events.map((event) => <li key={event}>{event}</li>)}</ul>
+        </article>)}
+      </div>;
+    }
+    return <article className="insightCard reportPreview"><b>{t.resultTabs.report}</b>{result.report?.preview?.map((line) => <p key={line}>{line}</p>)}</article>;
   }
 
   return <main className="shell">
@@ -59,7 +104,7 @@ function App() {
     </nav>
     <section className="hero">
       <div>
-        <p className="eyebrow">Standalone research × graph × simulation runtime</p>
+        <p className="eyebrow">Standalone research × ecosystem × simulation runtime</p>
         <h1>{t.heroTitle}</h1>
         <p className="subtitle">{t.heroSubtitle}</p>
         <div className="composer">
@@ -88,10 +133,15 @@ function App() {
             <div className="claimGrid">
               <span>{result.runtime_claim.real_integration ? t.realIntegrationOn : t.realIntegrationOff}</span>
               <span>{result.runtime_claim.standalone_native ? t.standaloneOn : t.standaloneOff}</span>
+              <span>{t.evidenceLabels.graphEngine}: {result.runtime_claim.graph_engine_status === 'aquarium_native' ? t.evidenceLabels.aquariumNative : result.runtime_claim.graph_engine_status}</span>
               <span>{t.graphMemoryLabels[result.runtime_claim.graph_memory_status] ?? result.runtime_claim.graph_memory_status}</span>
               <span>{result.runtime_claim.long_running_multiverse_verified ? t.longRunOn : t.longRunOff}</span>
             </div>
           </div>}
+          <div className="resultTabs">
+            {(['seed', 'ecosystem', 'currents', 'report'] as ResultTab[]).map((tab) => <button className={activeTab === tab ? 'active' : ''} key={tab} onClick={() => setActiveTab(tab)}>{t.resultTabs[tab]}</button>)}
+          </div>
+          {renderTab()}
           <div className="stageGrid">
             {result.stages?.map((stage) => {
               const providerLabel = t.providerLabels[stage.provider as ProviderKey] ?? stage.provider;

@@ -13,7 +13,9 @@ Standalone native 기준:
 
 - 기본 runner 미설정 상태는 `aquarium_native` provider로 완료되어야 한다.
 - API/UI `runtime_claim.runtime_level`은 `aquarium_native`, `standalone_native=true`, `external_runner_dependency=false`를 표시해야 한다.
+- API/UI는 `graph_engine_status=aquarium_native`와 `graph_memory_status=not_configured`를 분리해 표시해야 한다. Aquarium 자체 생태계 지도 PASS를 Graphiti memory PASS로 오해시키면 안 된다.
 - 외부 BettaFish/MiroFish repo 호출 없이 topic → seed → ontology/persona → simulation → report/chat이 완료되어야 한다.
+- API response와 UI는 seed key points, ecosystem entities/relations, personas, universe events, report preview를 탐색 가능한 결과 패널로 제공해야 한다.
 
 Legacy runner 통합 canary 기준:
 
@@ -39,6 +41,7 @@ Release QA 결과:
   - Simulation: `sim_3c7675d86e46`, graph memory update enabled, 16 meaningful actions.
   - Report: `report_d385e3807800`, Korean report generated with CJK leakage 0.
 - API/UI runtime labeling: `runtime_claim` exposes standalone native / external runner dependency / real-degraded-native boundary; focused backend tests 14 passed and frontend build passed after the change.
+- Productization pass 1: native engines split into `research`, `graph`, `persona`, `simulation`, `report` packages; API returns explorable `seed`/`ecosystem`/`simulation`/`report`; UI tabs show 조사 Seed/생태계 지도/해류 관찰/리포트; browser smoke showed Graphiti memory as not configured rather than PASS; console errors 0.
 - MiroFish live-local multiverse canary: `PASS`, `mv_4ef846551b2d`, 4 universes / 24 configured rounds / graph memory preflight healthy / ensemble comparison produced 3 clusters and 4 sensitivity axes.
 
 중요 caveat: Aquarium native canary는 live native Graphiti/OASIS 경로를 통과한 bounded single-run smoke다. MiroFish multiverse 확장은 live endpoint preflight + bounded real-backend comparison PASS로 확인했지만, durable OASIS action stream이 쌓이는 장시간 production run으로 격상하려면 별도 장시간 실행이 필요하다.

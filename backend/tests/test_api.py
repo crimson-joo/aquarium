@@ -20,8 +20,14 @@ def test_create_run_and_chat(tmp_path, monkeypatch):
     assert body["runtime_claim"]["runtime_level"] == "aquarium_native"
     assert body["runtime_claim"]["standalone_native"] is True
     assert body["runtime_claim"]["external_runner_dependency"] is False
+    assert body["runtime_claim"]["graph_engine_status"] == "aquarium_native"
+    assert body["runtime_claim"]["graph_memory_status"] == "not_configured"
     assert body["runtime_claim"]["long_running_multiverse_verified"] is False
     assert [stage["name"] for stage in body["stages"]] == ["aquarium_research", "aquarium_simulation"]
+    assert [entity["name"] for entity in body["ecosystem"]["entities"]]
+    assert [persona["name"] for persona in body["ecosystem"]["personas"]]
+    assert len(body["simulation"]["universes"]) == 3
+    assert body["report"]["preview"]
     assert body["artifacts"]["handoff_manifest"].endswith("handoff_manifest.json")
     run_id = body["run_id"]
 

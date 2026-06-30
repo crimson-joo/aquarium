@@ -9,7 +9,7 @@
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
       "id": "frontend_vite_config_ts",
-      "community": 24,
+      "community": 25,
       "norm_label": "vite.config.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L1",
       "id": "frontend_src_main_tsx",
-      "community": 9,
+      "community": 7,
       "norm_label": "main.tsx"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L7",
       "id": "src_main_locale",
-      "community": 9,
+      "community": 7,
       "norm_label": "locale"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L8",
       "id": "src_main_mode",
-      "community": 9,
+      "community": 7,
       "norm_label": "mode"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L9",
       "id": "src_main_stage",
-      "community": 9,
+      "community": 7,
       "norm_label": "stage"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L10",
       "id": "src_main_providerkey",
-      "community": 9,
+      "community": 7,
       "norm_label": "providerkey"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L11",
       "id": "src_main_statuskey",
-      "community": 9,
+      "community": 7,
       "norm_label": "statuskey"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L12",
       "id": "src_main_runtimelevel",
-      "community": 9,
+      "community": 7,
       "norm_label": "runtimelevel"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L13",
       "id": "src_main_graphmemorykey",
-      "community": 9,
+      "community": 7,
       "norm_label": "graphmemorykey"
     },
     {
@@ -90,25 +90,61 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L14",
       "id": "src_main_runtimeclaim",
-      "community": 9,
+      "community": 7,
       "norm_label": "runtimeclaim"
+    },
+    {
+      "label": "Entity",
+      "file_type": "code",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L26",
+      "id": "src_main_entity",
+      "community": 7,
+      "norm_label": "entity"
+    },
+    {
+      "label": "Persona",
+      "file_type": "code",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L27",
+      "id": "src_main_persona",
+      "community": 7,
+      "norm_label": "persona"
+    },
+    {
+      "label": "Universe",
+      "file_type": "code",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L28",
+      "id": "src_main_universe",
+      "community": 7,
+      "norm_label": "universe"
     },
     {
       "label": "RunResult",
       "file_type": "code",
       "source_file": "frontend/src/main.tsx",
-      "source_location": "L25",
+      "source_location": "L29",
       "id": "src_main_runresult",
-      "community": 9,
+      "community": 7,
       "norm_label": "runresult"
+    },
+    {
+      "label": "ResultTab",
+      "file_type": "code",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L43",
+      "id": "src_main_resulttab",
+      "community": 7,
+      "norm_label": "resulttab"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/main.tsx",
-      "source_location": "L27",
+      "source_location": "L45",
       "id": "src_main_app",
-      "community": 9,
+      "community": 7,
       "norm_label": "app()"
     },
     {
@@ -117,7 +153,7 @@
       "source_file": "frontend/src/i18n.messages.mjs",
       "source_location": "L1",
       "id": "frontend_src_i18n_messages_mjs",
-      "community": 9,
+      "community": 7,
       "norm_label": "i18n.messages.mjs"
     },
     {
@@ -126,7 +162,7 @@
       "source_file": "frontend/src/i18n.messages.mjs",
       "source_location": "L1",
       "id": "src_i18n_messages_messages",
-      "community": 9,
+      "community": 7,
       "norm_label": "messages"
     },
     {
@@ -135,7 +171,7 @@
       "source_file": "frontend/src/i18n.test.mjs",
       "source_location": "L1",
       "id": "frontend_src_i18n_test_mjs",
-      "community": 9,
+      "community": 7,
       "norm_label": "i18n.test.mjs"
     },
     {
@@ -144,7 +180,7 @@
       "source_file": "frontend/src/vite-env.d.ts",
       "source_location": "L1",
       "id": "frontend_src_vite_env_d_ts",
-      "community": 25,
+      "community": 26,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -153,7 +189,7 @@
       "source_file": "backend/app/__init__.py",
       "source_location": "L1",
       "id": "backend_app_init_py",
-      "community": 26,
+      "community": 27,
       "norm_label": "__init__.py"
     },
     {
@@ -162,7 +198,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L1",
       "id": "backend_app_main_py",
-      "community": 7,
+      "community": 9,
       "norm_label": "main.py"
     },
     {
@@ -171,7 +207,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L14",
       "id": "app_main_createrunrequest",
-      "community": 7,
+      "community": 0,
       "norm_label": "createrunrequest"
     },
     {
@@ -189,7 +225,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L20",
       "id": "app_main_chatrequest",
-      "community": 7,
+      "community": 0,
       "norm_label": "chatrequest"
     },
     {
@@ -198,7 +234,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L24",
       "id": "app_main_data_dir",
-      "community": 7,
+      "community": 9,
       "norm_label": "_data_dir()"
     },
     {
@@ -207,16 +243,25 @@
       "source_file": "backend/app/main.py",
       "source_location": "L30",
       "id": "app_main_result_path",
-      "community": 7,
+      "community": 9,
       "norm_label": "_result_path()"
+    },
+    {
+      "label": "_run_response()",
+      "file_type": "code",
+      "source_file": "backend/app/main.py",
+      "source_location": "L34",
+      "id": "app_main_run_response",
+      "community": 9,
+      "norm_label": "_run_response()"
     },
     {
       "label": "create_app()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L34",
+      "source_location": "L63",
       "id": "app_main_create_app",
-      "community": 7,
+      "community": 9,
       "norm_label": "create_app()"
     },
     {
@@ -225,7 +270,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L1",
       "id": "backend_app_core_config_py",
-      "community": 7,
+      "community": 9,
       "norm_label": "config.py"
     },
     {
@@ -234,7 +279,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L7",
       "id": "core_config_settings",
-      "community": 7,
+      "community": 9,
       "norm_label": "settings"
     },
     {
@@ -243,7 +288,7 @@
       "source_file": "",
       "source_location": "",
       "id": "basesettings",
-      "community": 7,
+      "community": 9,
       "norm_label": "basesettings"
     },
     {
@@ -252,7 +297,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L16",
       "id": "core_config_get_settings",
-      "community": 7,
+      "community": 9,
       "norm_label": "get_settings()"
     },
     {
@@ -261,7 +306,7 @@
       "source_file": "backend/app/core/__init__.py",
       "source_location": "L1",
       "id": "backend_app_core_init_py",
-      "community": 27,
+      "community": 28,
       "norm_label": "__init__.py"
     },
     {
@@ -285,10 +330,181 @@
     {
       "label": "__init__.py",
       "file_type": "code",
+      "source_file": "backend/app/engines/__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_init_py",
+      "community": 29,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/research/__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_research_init_py",
+      "community": 30,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "native.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_research_native_py",
+      "community": 0,
+      "norm_label": "native.py"
+    },
+    {
+      "label": "key_points()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L9",
+      "id": "research_native_key_points",
+      "community": 0,
+      "norm_label": "key_points()"
+    },
+    {
+      "label": "build_research_report()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L29",
+      "id": "research_native_build_research_report",
+      "community": 0,
+      "norm_label": "build_research_report()"
+    },
+    {
+      "label": "seed_from_report()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L41",
+      "id": "research_native_seed_from_report",
+      "community": 0,
+      "norm_label": "seed_from_report()"
+    },
+    {
+      "label": "build_native_manifest()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L46",
+      "id": "research_native_build_native_manifest",
+      "community": 0,
+      "norm_label": "build_native_manifest()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/graph/__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_graph_init_py",
+      "community": 31,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "native.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/graph/native.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_graph_native_py",
+      "community": 0,
+      "norm_label": "native.py"
+    },
+    {
+      "label": "extract_ontology()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/graph/native.py",
+      "source_location": "L10",
+      "id": "graph_native_extract_ontology",
+      "community": 0,
+      "norm_label": "extract_ontology()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/simulation/__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_simulation_init_py",
+      "community": 32,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "native.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/simulation/native.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_simulation_native_py",
+      "community": 0,
+      "norm_label": "native.py"
+    },
+    {
+      "label": "run_simulation()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/simulation/native.py",
+      "source_location": "L6",
+      "id": "simulation_native_run_simulation",
+      "community": 0,
+      "norm_label": "run_simulation()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/report/__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_report_init_py",
+      "community": 33,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "native.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/report/native.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_report_native_py",
+      "community": 0,
+      "norm_label": "native.py"
+    },
+    {
+      "label": "build_simulation_report()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/report/native.py",
+      "source_location": "L9",
+      "id": "report_native_build_simulation_report",
+      "community": 0,
+      "norm_label": "build_simulation_report()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/persona/__init__.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_persona_init_py",
+      "community": 34,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "native.py",
+      "file_type": "code",
+      "source_file": "backend/app/engines/persona/native.py",
+      "source_location": "L1",
+      "id": "backend_app_engines_persona_native_py",
+      "community": 0,
+      "norm_label": "native.py"
+    },
+    {
+      "label": "build_personas()",
+      "file_type": "code",
+      "source_file": "backend/app/engines/persona/native.py",
+      "source_location": "L6",
+      "id": "persona_native_build_personas",
+      "community": 0,
+      "norm_label": "build_personas()"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
       "source_file": "backend/app/domain/__init__.py",
       "source_location": "L1",
       "id": "backend_app_domain_init_py",
-      "community": 28,
+      "community": 35,
       "norm_label": "__init__.py"
     },
     {
@@ -304,7 +520,7 @@
       "label": "_run_dir()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L18",
+      "source_location": "L26",
       "id": "domain_pipeline_run_dir",
       "community": 0,
       "norm_label": "_run_dir()"
@@ -313,7 +529,7 @@
       "label": "_write_text()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L24",
+      "source_location": "L32",
       "id": "domain_pipeline_write_text",
       "community": 0,
       "norm_label": "_write_text()"
@@ -322,79 +538,16 @@
       "label": "_write_json()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L30",
+      "source_location": "L38",
       "id": "domain_pipeline_write_json",
       "community": 0,
       "norm_label": "_write_json()"
     },
     {
-      "label": "_key_points()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L34",
-      "id": "domain_pipeline_key_points",
-      "community": 0,
-      "norm_label": "_key_points()"
-    },
-    {
-      "label": "build_research_report()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L54",
-      "id": "domain_pipeline_build_research_report",
-      "community": 0,
-      "norm_label": "build_research_report()"
-    },
-    {
-      "label": "seed_from_report()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L66",
-      "id": "domain_pipeline_seed_from_report",
-      "community": 0,
-      "norm_label": "seed_from_report()"
-    },
-    {
-      "label": "extract_ontology()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L71",
-      "id": "domain_pipeline_extract_ontology",
-      "community": 0,
-      "norm_label": "extract_ontology()"
-    },
-    {
-      "label": "build_personas()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L88",
-      "id": "domain_pipeline_build_personas",
-      "community": 0,
-      "norm_label": "build_personas()"
-    },
-    {
-      "label": "run_simulation()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L98",
-      "id": "domain_pipeline_run_simulation",
-      "community": 0,
-      "norm_label": "run_simulation()"
-    },
-    {
-      "label": "build_simulation_report()",
-      "file_type": "code",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L120",
-      "id": "domain_pipeline_build_simulation_report",
-      "community": 0,
-      "norm_label": "build_simulation_report()"
-    },
-    {
       "label": "_native_manifest()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L137",
+      "source_location": "L42",
       "id": "domain_pipeline_native_manifest",
       "community": 0,
       "norm_label": "_native_manifest()"
@@ -403,7 +556,7 @@
       "label": "_native_simulation()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L161",
+      "source_location": "L56",
       "id": "domain_pipeline_native_simulation",
       "community": 0,
       "norm_label": "_native_simulation()"
@@ -412,7 +565,7 @@
       "label": "build_runtime_claim()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L176",
+      "source_location": "L71",
       "id": "domain_pipeline_build_runtime_claim",
       "community": 0,
       "norm_label": "build_runtime_claim()"
@@ -421,7 +574,7 @@
       "label": "run_aquarium_pipeline()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L224",
+      "source_location": "L122",
       "id": "domain_pipeline_run_aquarium_pipeline",
       "community": 0,
       "norm_label": "run_aquarium_pipeline()"
@@ -430,8 +583,8 @@
       "label": "Summarize what the run can honestly claim at the API/UI boundary.",
       "file_type": "rationale",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L177",
-      "id": "domain_pipeline_rationale_177",
+      "source_location": "L72",
+      "id": "domain_pipeline_rationale_72",
       "community": 0,
       "norm_label": "summarize what the run can honestly claim at the api/ui boundary."
     },
@@ -450,7 +603,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L8",
       "id": "domain_contracts_locale",
-      "community": 7,
+      "community": 0,
       "norm_label": "locale"
     },
     {
@@ -459,7 +612,7 @@
       "source_file": "",
       "source_location": "",
       "id": "strenum",
-      "community": 7,
+      "community": 0,
       "norm_label": "strenum"
     },
     {
@@ -468,7 +621,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L14",
       "id": "domain_contracts_simulationmode",
-      "community": 7,
+      "community": 0,
       "norm_label": "simulationmode"
     },
     {
@@ -576,7 +729,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L1",
       "id": "backend_app_domain_adapters_py",
-      "community": 15,
+      "community": 16,
       "norm_label": "adapters.py"
     },
     {
@@ -585,7 +738,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L35",
       "id": "domain_adapters_allowed_extra_env_names",
-      "community": 15,
+      "community": 16,
       "norm_label": "_allowed_extra_env_names()"
     },
     {
@@ -594,7 +747,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L40",
       "id": "domain_adapters_command_env",
-      "community": 15,
+      "community": 16,
       "norm_label": "_command_env()"
     },
     {
@@ -603,7 +756,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L56",
       "id": "domain_adapters_run_command",
-      "community": 15,
+      "community": 16,
       "norm_label": "_run_command()"
     },
     {
@@ -612,7 +765,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L68",
       "id": "domain_adapters_read_json",
-      "community": 15,
+      "community": 16,
       "norm_label": "_read_json()"
     },
     {
@@ -621,7 +774,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L72",
       "id": "domain_adapters_validate_simulation_report_artifact",
-      "community": 15,
+      "community": 16,
       "norm_label": "_validate_simulation_report_artifact()"
     },
     {
@@ -630,7 +783,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L97",
       "id": "domain_adapters_run_bettafish_cli_adapter",
-      "community": 15,
+      "community": 16,
       "norm_label": "run_bettafish_cli_adapter()"
     },
     {
@@ -639,7 +792,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L124",
       "id": "domain_adapters_run_mirofish_cli_adapter",
-      "community": 15,
+      "community": 16,
       "norm_label": "run_mirofish_cli_adapter()"
     },
     {
@@ -648,7 +801,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L1",
       "id": "backend_tests_test_external_adapters_py",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_external_adapters.py"
     },
     {
@@ -657,7 +810,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L11",
       "id": "tests_test_external_adapters_write_executable",
-      "community": 0,
+      "community": 12,
       "norm_label": "_write_executable()"
     },
     {
@@ -666,7 +819,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L17",
       "id": "tests_test_external_adapters_test_pipeline_uses_configured_bettafish_cli_adapter",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_pipeline_uses_configured_bettafish_cli_adapter()"
     },
     {
@@ -675,7 +828,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L54",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mismatched_bettafish_provider",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_pipeline_rejects_mismatched_bettafish_provider()"
     },
     {
@@ -684,7 +837,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L88",
       "id": "tests_test_external_adapters_test_adapter_env_does_not_leak_unallowlisted_secret",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_adapter_env_does_not_leak_unallowlisted_secret()"
     },
     {
@@ -693,7 +846,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L124",
       "id": "tests_test_external_adapters_test_pipeline_uses_configured_mirofish_cli_adapter",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_pipeline_uses_configured_mirofish_cli_adapter()"
     },
     {
@@ -702,7 +855,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L156",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mirofish_completed_result_with_missing_report_path",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_pipeline_rejects_mirofish_completed_result_with_missing_report_path()"
     },
     {
@@ -711,7 +864,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L186",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file()"
     },
     {
@@ -720,7 +873,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L215",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mirofish_report_path_outside_run_dir",
-      "community": 0,
+      "community": 12,
       "norm_label": "test_pipeline_rejects_mirofish_report_path_outside_run_dir()"
     },
     {
@@ -756,7 +909,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L1",
       "id": "backend_tests_test_real_integration_canary_py",
-      "community": 18,
+      "community": 20,
       "norm_label": "test_real_integration_canary.py"
     },
     {
@@ -765,7 +918,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L10",
       "id": "tests_test_real_integration_canary_write_executable",
-      "community": 18,
+      "community": 20,
       "norm_label": "_write_executable()"
     },
     {
@@ -774,7 +927,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L16",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_passes_with_fake_contract_runners",
-      "community": 18,
+      "community": 20,
       "norm_label": "test_real_integration_canary_passes_with_fake_contract_runners()"
     },
     {
@@ -783,7 +936,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L93",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_fails_when_runner_provider_is_not_real",
-      "community": 18,
+      "community": 20,
       "norm_label": "test_real_integration_canary_fails_when_runner_provider_is_not_real()"
     },
     {
@@ -792,7 +945,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L140",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_fails_when_any_stage_is_degraded",
-      "community": 18,
+      "community": 20,
       "norm_label": "test_real_integration_canary_fails_when_any_stage_is_degraded()"
     },
     {
@@ -801,7 +954,7 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L1",
       "id": "backend_tests_test_api_py",
-      "community": 7,
+      "community": 9,
       "norm_label": "test_api.py"
     },
     {
@@ -810,16 +963,16 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L6",
       "id": "tests_test_api_test_create_run_and_chat",
-      "community": 7,
+      "community": 9,
       "norm_label": "test_create_run_and_chat()"
     },
     {
       "label": "test_rejects_unsupported_locale()",
       "file_type": "code",
       "source_file": "backend/tests/test_api.py",
-      "source_location": "L37",
+      "source_location": "L43",
       "id": "tests_test_api_test_rejects_unsupported_locale",
-      "community": 7,
+      "community": 9,
       "norm_label": "test_rejects_unsupported_locale()"
     },
     {
@@ -945,7 +1098,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_md",
-      "community": 14,
+      "community": 11,
       "norm_label": "changelog.md"
     },
     {
@@ -954,61 +1107,70 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_changelog_aquarium",
-      "community": 14,
+      "community": 11,
       "norm_label": "changelog \u2014 aquarium"
+    },
+    {
+      "label": "2026-06-30 \u2014 Native Productization Pass 1",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "id": "docs_changelog_2026_06_30_native_productization_pass_1",
+      "community": 11,
+      "norm_label": "2026-06-30 \u2014 native productization pass 1"
     },
     {
       "label": "2026-06-30 \u2014 Standalone Aquarium native pivot",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L3",
+      "source_location": "L10",
       "id": "docs_changelog_2026_06_30_standalone_aquarium_native_pivot",
-      "community": 14,
+      "community": 11,
       "norm_label": "2026-06-30 \u2014 standalone aquarium native pivot"
     },
     {
       "label": "2026-06-30 \u2014 Runtime evidence labeling and multiverse expansion",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L11",
+      "source_location": "L18",
       "id": "docs_changelog_2026_06_30_runtime_evidence_labeling_and_multiverse_expansion",
-      "community": 14,
+      "community": 11,
       "norm_label": "2026-06-30 \u2014 runtime evidence labeling and multiverse expansion"
     },
     {
       "label": "2026-06-30 \u2014 Native MiroFish runtime canary",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L19",
+      "source_location": "L26",
       "id": "docs_changelog_2026_06_30_native_mirofish_runtime_canary",
-      "community": 14,
+      "community": 11,
       "norm_label": "2026-06-30 \u2014 native mirofish runtime canary"
     },
     {
       "label": "2026-06-29 \u2014 Real runner release",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L26",
+      "source_location": "L33",
       "id": "docs_changelog_2026_06_29_real_runner_release",
-      "community": 14,
+      "community": 11,
       "norm_label": "2026-06-29 \u2014 real runner release"
     },
     {
       "label": "2026-06-29 \u2014 Real runner canary and state visibility",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L36",
+      "source_location": "L43",
       "id": "docs_changelog_2026_06_29_real_runner_canary_and_state_visibility",
-      "community": 14,
+      "community": 11,
       "norm_label": "2026-06-29 \u2014 real runner canary and state visibility"
     },
     {
       "label": "2026-06-29 \u2014 Initial MVP scaffold",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L46",
+      "source_location": "L53",
       "id": "docs_changelog_2026_06_29_initial_mvp_scaffold",
-      "community": 14,
+      "community": 11,
       "norm_label": "2026-06-29 \u2014 initial mvp scaffold"
     },
     {
@@ -1053,7 +1215,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L1",
       "id": "docs_architecture_slice_ko_md",
-      "community": 1,
+      "community": 2,
       "norm_label": "architecture-slice-ko.md"
     },
     {
@@ -1062,7 +1224,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L1",
       "id": "docs_architecture_slice_ko_aquarium_architecture_slice",
-      "community": 1,
+      "community": 2,
       "norm_label": "aquarium architecture slice"
     },
     {
@@ -1071,7 +1233,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L5",
       "id": "docs_architecture_slice_ko_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1080,7 +1242,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L7",
       "id": "docs_architecture_slice_ko",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1089,7 +1251,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L21",
       "id": "docs_architecture_slice_ko_21",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1098,7 +1260,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L26",
       "id": "docs_architecture_slice_ko_2",
-      "community": 1,
+      "community": 2,
       "norm_label": "2. \u110e\u116c\u1109\u1169 \u1100\u1167\u11ab\u1100\u1169 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -1107,7 +1269,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L28",
       "id": "docs_architecture_slice_ko_codeblock_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (browser ui)"
     },
     {
@@ -1116,7 +1278,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L52",
       "id": "docs_architecture_slice_ko_3_docker_compose",
-      "community": 1,
+      "community": 2,
       "norm_label": "3. docker compose \u1109\u1165\u1107\u1175\u1109\u1173"
     },
     {
@@ -1125,7 +1287,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L54",
       "id": "docs_architecture_slice_ko_profile",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u1100\u1175\u1107\u1169\u11ab profile"
     },
     {
@@ -1134,7 +1296,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L70",
       "id": "docs_architecture_slice_ko_optional_profile",
-      "community": 1,
+      "community": 2,
       "norm_label": "optional profile"
     },
     {
@@ -1143,7 +1305,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L79",
       "id": "docs_architecture_slice_ko_codeblock_2",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1152,7 +1314,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L86",
       "id": "docs_architecture_slice_ko_4_backend",
-      "community": 1,
+      "community": 2,
       "norm_label": "4. backend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1161,7 +1323,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L88",
       "id": "docs_architecture_slice_ko_codeblock_3",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (backend/)"
     },
     {
@@ -1170,7 +1332,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L144",
       "id": "docs_architecture_slice_ko_api",
-      "community": 1,
+      "community": 2,
       "norm_label": "api \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1179,7 +1341,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L162",
       "id": "docs_architecture_slice_ko_5_frontend",
-      "community": 1,
+      "community": 2,
       "norm_label": "5. frontend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1188,7 +1350,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L164",
       "id": "docs_architecture_slice_ko_codeblock_4",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (frontend/)"
     },
     {
@@ -1197,7 +1359,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L198",
       "id": "docs_architecture_slice_ko_6_storage",
-      "community": 1,
+      "community": 2,
       "norm_label": "6. storage \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -1206,7 +1368,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L200",
       "id": "docs_architecture_slice_ko_postgresql",
-      "community": 1,
+      "community": 2,
       "norm_label": "postgresql \u1110\u1166\u110b\u1175\u1107\u1173\u11af"
     },
     {
@@ -1215,7 +1377,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L212",
       "id": "docs_architecture_slice_ko_file_storage",
-      "community": 1,
+      "community": 2,
       "norm_label": "file storage"
     },
     {
@@ -1224,7 +1386,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L213",
       "id": "docs_architecture_slice_ko_codeblock_5",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (data/)"
     },
     {
@@ -1233,7 +1395,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L232",
       "id": "docs_architecture_slice_ko_7_job_flow_handoff_contract",
-      "community": 1,
+      "community": 13,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -1242,7 +1404,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L234",
       "id": "docs_architecture_slice_ko_codeblock_6",
-      "community": 1,
+      "community": 13,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -1251,7 +1413,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L247",
       "id": "docs_architecture_slice_ko_stage_1_researchreport",
-      "community": 1,
+      "community": 13,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -1260,7 +1422,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L250",
       "id": "docs_architecture_slice_ko_codeblock_7",
-      "community": 1,
+      "community": 13,
       "norm_label": "code:json ({)"
     },
     {
@@ -1269,7 +1431,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L264",
       "id": "docs_architecture_slice_ko_stage_2_seeddocument",
-      "community": 1,
+      "community": 13,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -1278,7 +1440,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L270",
       "id": "docs_architecture_slice_ko_stage_3_ontology_persona_extraction",
-      "community": 1,
+      "community": 13,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -1287,7 +1449,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L276",
       "id": "docs_architecture_slice_ko_stage_4_simulation",
-      "community": 1,
+      "community": 13,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -1296,7 +1458,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L281",
       "id": "docs_architecture_slice_ko_stage_5_simulationreport",
-      "community": 1,
+      "community": 13,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -1305,7 +1467,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L285",
       "id": "docs_architecture_slice_ko_stage_6_agent_chat",
-      "community": 1,
+      "community": 13,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -1314,7 +1476,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L290",
       "id": "docs_architecture_slice_ko_8_i18n",
-      "community": 1,
+      "community": 2,
       "norm_label": "8. i18n \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -1323,7 +1485,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L306",
       "id": "docs_architecture_slice_ko_codeblock_8",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:json ({)"
     },
     {
@@ -1332,7 +1494,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L315",
       "id": "docs_architecture_slice_ko_9_provider_env",
-      "community": 1,
+      "community": 2,
       "norm_label": "9. provider/env \u1109\u1165\u11af\u1100\u1168"
     },
     {
@@ -1341,7 +1503,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L317",
       "id": "docs_architecture_slice_ko_provider_profiles",
-      "community": 1,
+      "community": 2,
       "norm_label": "provider profiles"
     },
     {
@@ -1350,7 +1512,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L329",
       "id": "docs_architecture_slice_ko_env_example",
-      "community": 1,
+      "community": 2,
       "norm_label": "`.env.example`"
     },
     {
@@ -1359,7 +1521,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L331",
       "id": "docs_architecture_slice_ko_codeblock_9",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:env (app_env=local)"
     },
     {
@@ -1368,7 +1530,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L369",
       "id": "docs_architecture_slice_ko_10_tests",
-      "community": 16,
+      "community": 2,
       "norm_label": "10. tests \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -1377,7 +1539,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L371",
       "id": "docs_architecture_slice_ko_unit_tests",
-      "community": 16,
+      "community": 2,
       "norm_label": "unit tests"
     },
     {
@@ -1386,7 +1548,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L377",
       "id": "docs_architecture_slice_ko_contract_tests",
-      "community": 16,
+      "community": 2,
       "norm_label": "contract tests"
     },
     {
@@ -1395,7 +1557,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L383",
       "id": "docs_architecture_slice_ko_integration_tests",
-      "community": 16,
+      "community": 2,
       "norm_label": "integration tests"
     },
     {
@@ -1404,7 +1566,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L388",
       "id": "docs_architecture_slice_ko_e2e_ui_tests",
-      "community": 16,
+      "community": 2,
       "norm_label": "e2e/ui tests"
     },
     {
@@ -1413,7 +1575,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L396",
       "id": "docs_architecture_slice_ko_ci",
-      "community": 16,
+      "community": 2,
       "norm_label": "ci \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1422,7 +1584,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L397",
       "id": "docs_architecture_slice_ko_codeblock_10",
-      "community": 16,
+      "community": 2,
       "norm_label": "code:text (lint backend)"
     },
     {
@@ -1431,7 +1593,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L405",
       "id": "docs_architecture_slice_ko_11_docs",
-      "community": 1,
+      "community": 2,
       "norm_label": "11. docs \u1100\u116e\u110c\u1169"
     },
     {
@@ -1440,7 +1602,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L407",
       "id": "docs_architecture_slice_ko_codeblock_11",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (docs/)"
     },
     {
@@ -1449,7 +1611,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L432",
       "id": "docs_architecture_slice_ko_12",
-      "community": 1,
+      "community": 2,
       "norm_label": "12. \u110e\u116e\u110e\u1165\u11ab \u110e\u1169\u1100\u1175 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169"
     },
     {
@@ -1458,7 +1620,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L434",
       "id": "docs_architecture_slice_ko_codeblock_12",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (aquarium/)"
     },
     {
@@ -1467,7 +1629,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L460",
       "id": "docs_architecture_slice_ko_13_vertical_slice",
-      "community": 1,
+      "community": 2,
       "norm_label": "13. vertical slice \u1100\u116e\u1112\u1167\u11ab \u1109\u116e\u11ab\u1109\u1165"
     },
     {
@@ -1476,7 +1638,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L471",
       "id": "docs_architecture_slice_ko_14",
-      "community": 1,
+      "community": 2,
       "norm_label": "14. \u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -1809,7 +1971,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 13,
+      "community": 15,
       "norm_label": "product.md"
     },
     {
@@ -1818,7 +1980,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "current_product_product_aquarium",
-      "community": 13,
+      "community": 15,
       "norm_label": "product \u2014 aquarium"
     },
     {
@@ -1827,7 +1989,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product",
-      "community": 13,
+      "community": 15,
       "norm_label": "\u1112\u1161\u11ab \u110c\u116e\u11af \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -1836,7 +1998,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_mvp",
-      "community": 13,
+      "community": 15,
       "norm_label": "mvp \u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1845,7 +2007,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L17",
       "id": "current_product_non_goals",
-      "community": 13,
+      "community": 15,
       "norm_label": "non-goals"
     },
     {
@@ -1854,7 +2016,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L26",
       "id": "current_product_26",
-      "community": 13,
+      "community": 15,
       "norm_label": "\u1109\u1165\u11bc\u1100\u1169\u11bc \u1109\u116e\u11ab\u1100\u1161\u11ab"
     },
     {
@@ -1863,7 +2025,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L30",
       "id": "current_product_product_positioning",
-      "community": 13,
+      "community": 15,
       "norm_label": "product positioning"
     },
     {
@@ -1872,7 +2034,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 2,
+      "community": 1,
       "norm_label": "architecture.md"
     },
     {
@@ -1881,7 +2043,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "current_architecture_aquarium_architecture_slice",
-      "community": 2,
+      "community": 1,
       "norm_label": "aquarium architecture slice"
     },
     {
@@ -1890,7 +2052,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L5",
       "id": "current_architecture_1",
-      "community": 2,
+      "community": 1,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1899,7 +2061,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L7",
       "id": "current_architecture",
-      "community": 2,
+      "community": 1,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1908,7 +2070,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L21",
       "id": "current_architecture_21",
-      "community": 2,
+      "community": 1,
       "norm_label": "\u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1917,7 +2079,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L27",
       "id": "current_architecture_2",
-      "community": 2,
+      "community": 1,
       "norm_label": "2. \u110e\u116c\u1109\u1169 \u1100\u1167\u11ab\u1100\u1169 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -1926,7 +2088,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L29",
       "id": "current_architecture_codeblock_1",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (browser ui)"
     },
     {
@@ -1935,7 +2097,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L54",
       "id": "current_architecture_3_docker_compose",
-      "community": 2,
+      "community": 1,
       "norm_label": "3. docker compose \u1109\u1165\u1107\u1175\u1109\u1173"
     },
     {
@@ -1944,7 +2106,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L56",
       "id": "current_architecture_profile",
-      "community": 2,
+      "community": 1,
       "norm_label": "\u1100\u1175\u1107\u1169\u11ab profile"
     },
     {
@@ -1953,7 +2115,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L72",
       "id": "current_architecture_optional_profile",
-      "community": 2,
+      "community": 1,
       "norm_label": "optional profile"
     },
     {
@@ -1962,7 +2124,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L81",
       "id": "current_architecture_codeblock_2",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1971,7 +2133,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L88",
       "id": "current_architecture_4_backend",
-      "community": 2,
+      "community": 1,
       "norm_label": "4. backend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1980,7 +2142,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L90",
       "id": "current_architecture_codeblock_3",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (backend/)"
     },
     {
@@ -1989,7 +2151,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L149",
       "id": "current_architecture_api",
-      "community": 2,
+      "community": 1,
       "norm_label": "api \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1998,7 +2160,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L167",
       "id": "current_architecture_5_frontend",
-      "community": 2,
+      "community": 1,
       "norm_label": "5. frontend \u1100\u116e\u110c\u1169"
     },
     {
@@ -2007,7 +2169,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L169",
       "id": "current_architecture_codeblock_4",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (frontend/)"
     },
     {
@@ -2016,7 +2178,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L203",
       "id": "current_architecture_6_storage",
-      "community": 2,
+      "community": 1,
       "norm_label": "6. storage \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -2025,7 +2187,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L205",
       "id": "current_architecture_postgresql",
-      "community": 2,
+      "community": 1,
       "norm_label": "postgresql \u1110\u1166\u110b\u1175\u1107\u1173\u11af"
     },
     {
@@ -2034,7 +2196,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L217",
       "id": "current_architecture_file_storage",
-      "community": 2,
+      "community": 1,
       "norm_label": "file storage"
     },
     {
@@ -2043,7 +2205,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L218",
       "id": "current_architecture_codeblock_5",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (data/)"
     },
     {
@@ -2052,7 +2214,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L237",
       "id": "current_architecture_7_job_flow_handoff_contract",
-      "community": 11,
+      "community": 14,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -2061,7 +2223,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L239",
       "id": "current_architecture_codeblock_6",
-      "community": 11,
+      "community": 14,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -2070,7 +2232,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L252",
       "id": "current_architecture_stage_1_researchreport",
-      "community": 11,
+      "community": 14,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -2079,7 +2241,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L255",
       "id": "current_architecture_codeblock_7",
-      "community": 11,
+      "community": 14,
       "norm_label": "code:json ({)"
     },
     {
@@ -2088,7 +2250,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L269",
       "id": "current_architecture_stage_2_seeddocument",
-      "community": 11,
+      "community": 14,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -2097,7 +2259,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L275",
       "id": "current_architecture_stage_3_ontology_persona_extraction",
-      "community": 11,
+      "community": 14,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -2106,7 +2268,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L281",
       "id": "current_architecture_stage_4_simulation",
-      "community": 11,
+      "community": 14,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -2115,7 +2277,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L286",
       "id": "current_architecture_stage_5_simulationreport",
-      "community": 11,
+      "community": 14,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -2124,7 +2286,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L290",
       "id": "current_architecture_stage_6_agent_chat",
-      "community": 11,
+      "community": 14,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -2133,7 +2295,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L295",
       "id": "current_architecture_8_i18n",
-      "community": 2,
+      "community": 1,
       "norm_label": "8. i18n \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -2142,7 +2304,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L311",
       "id": "current_architecture_codeblock_8",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:json ({)"
     },
     {
@@ -2151,7 +2313,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L320",
       "id": "current_architecture_9_provider_env",
-      "community": 2,
+      "community": 1,
       "norm_label": "9. provider/env \u1109\u1165\u11af\u1100\u1168"
     },
     {
@@ -2160,142 +2322,151 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L322",
       "id": "current_architecture_provider_profiles",
-      "community": 2,
+      "community": 1,
       "norm_label": "provider profiles"
+    },
+    {
+      "label": "Native engine package boundary",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L337",
+      "id": "current_architecture_native_engine_package_boundary",
+      "community": 1,
+      "norm_label": "native engine package boundary"
     },
     {
       "label": "`.env.example`",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L337",
+      "source_location": "L350",
       "id": "current_architecture_env_example",
-      "community": 2,
+      "community": 1,
       "norm_label": "`.env.example`"
     },
     {
       "label": "code:env (APP_ENV=local)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L339",
+      "source_location": "L352",
       "id": "current_architecture_codeblock_9",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:env (app_env=local)"
     },
     {
       "label": "10. Tests \uc804\ub7b5",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L377",
+      "source_location": "L390",
       "id": "current_architecture_10_tests",
-      "community": 2,
+      "community": 1,
       "norm_label": "10. tests \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
       "label": "Unit tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L379",
+      "source_location": "L392",
       "id": "current_architecture_unit_tests",
-      "community": 2,
+      "community": 1,
       "norm_label": "unit tests"
     },
     {
       "label": "Contract tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L385",
+      "source_location": "L398",
       "id": "current_architecture_contract_tests",
-      "community": 2,
+      "community": 1,
       "norm_label": "contract tests"
     },
     {
       "label": "Integration tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L391",
+      "source_location": "L404",
       "id": "current_architecture_integration_tests",
-      "community": 2,
+      "community": 1,
       "norm_label": "integration tests"
     },
     {
       "label": "E2E/UI tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L396",
+      "source_location": "L409",
       "id": "current_architecture_e2e_ui_tests",
-      "community": 2,
+      "community": 1,
       "norm_label": "e2e/ui tests"
     },
     {
       "label": "CI \ucd5c\uc18c \uc138\ud2b8",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L404",
+      "source_location": "L417",
       "id": "current_architecture_ci",
-      "community": 2,
+      "community": 1,
       "norm_label": "ci \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
       "label": "code:text (lint backend)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L405",
+      "source_location": "L418",
       "id": "current_architecture_codeblock_10",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (lint backend)"
     },
     {
       "label": "11. Docs \uad6c\uc870",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L413",
+      "source_location": "L426",
       "id": "current_architecture_11_docs",
-      "community": 2,
+      "community": 1,
       "norm_label": "11. docs \u1100\u116e\u110c\u1169"
     },
     {
       "label": "code:text (docs/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L415",
+      "source_location": "L428",
       "id": "current_architecture_codeblock_11",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (docs/)"
     },
     {
       "label": "12. \ucd94\ucc9c \ucd08\uae30 \ud30c\uc77c \uad6c\uc870",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L440",
+      "source_location": "L453",
       "id": "current_architecture_12",
-      "community": 2,
+      "community": 1,
       "norm_label": "12. \u110e\u116e\u110e\u1165\u11ab \u110e\u1169\u1100\u1175 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169"
     },
     {
       "label": "code:text (aquarium/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L442",
+      "source_location": "L455",
       "id": "current_architecture_codeblock_12",
-      "community": 2,
+      "community": 1,
       "norm_label": "code:text (aquarium/)"
     },
     {
       "label": "13. Vertical slice \uad6c\ud604 \uc21c\uc11c",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L468",
+      "source_location": "L481",
       "id": "current_architecture_13_vertical_slice",
-      "community": 2,
+      "community": 1,
       "norm_label": "13. vertical slice \u1100\u116e\u1112\u1167\u11ab \u1109\u116e\u11ab\u1109\u1165"
     },
     {
       "label": "14. \ud575\uc2ec \uacb0\uc815",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L479",
+      "source_location": "L492",
       "id": "current_architecture_14",
-      "community": 2,
+      "community": 1,
       "norm_label": "14. \u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -2304,7 +2475,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "docs_current_qa_md",
-      "community": 12,
+      "community": 17,
       "norm_label": "qa.md"
     },
     {
@@ -2313,7 +2484,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "current_qa_qa_aquarium",
-      "community": 12,
+      "community": 17,
       "norm_label": "qa \u2014 aquarium"
     },
     {
@@ -2322,52 +2493,52 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "id": "current_qa",
-      "community": 12,
+      "community": 17,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1100\u1165\u11b7\u110c\u1173\u11bc \u1109\u1161\u11bc\u1110\u1162"
     },
     {
       "label": "Acceptance criteria",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L46",
+      "source_location": "L49",
       "id": "current_qa_acceptance_criteria",
-      "community": 12,
+      "community": 17,
       "norm_label": "acceptance criteria"
     },
     {
       "label": "Product flow",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L48",
+      "source_location": "L51",
       "id": "current_qa_product_flow",
-      "community": 12,
+      "community": 17,
       "norm_label": "product flow"
     },
     {
       "label": "i18n",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L54",
+      "source_location": "L57",
       "id": "current_qa_i18n",
-      "community": 12,
+      "community": 17,
       "norm_label": "i18n"
     },
     {
       "label": "Fail-closed",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L60",
+      "source_location": "L63",
       "id": "current_qa_fail_closed",
-      "community": 12,
+      "community": 17,
       "norm_label": "fail-closed"
     },
     {
       "label": "Docker",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L66",
+      "source_location": "L69",
       "id": "current_qa_docker",
-      "community": 12,
+      "community": 17,
       "norm_label": "docker"
     },
     {
@@ -2772,7 +2943,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_research_report_md",
-      "community": 22,
+      "community": 24,
       "norm_label": "research_report.md"
     },
     {
@@ -2781,7 +2952,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_research_report_ai",
-      "community": 22,
+      "community": 24,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: ai \u1100\u1165\u11b7\u1109\u1162\u11a8\u110b\u1166\u11ab\u110c\u1175\u11ab \u1109\u1175\u110c\u1161\u11bc \u1107\u1167\u11ab\u1112\u116a"
     },
     {
@@ -2790,7 +2961,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L3",
       "id": "aq_6ede9411e4ba_research_report",
-      "community": 22,
+      "community": 24,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2799,7 +2970,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L9",
       "id": "aq_6ede9411e4ba_research_report_9",
-      "community": 22,
+      "community": 24,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2808,7 +2979,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_simulation_report_md",
-      "community": 17,
+      "community": 18,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2817,7 +2988,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_simulation_report",
-      "community": 17,
+      "community": 18,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2826,7 +2997,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L5",
       "id": "aq_6ede9411e4ba_simulation_report_5",
-      "community": 17,
+      "community": 18,
       "norm_label": "\u110b\u1161\u11bc\u1109\u1161\u11bc\u1107\u1173\u11af \u1107\u1175\u11ab\u1103\u1169"
     },
     {
@@ -2835,7 +3006,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L8",
       "id": "aq_6ede9411e4ba_simulation_report_universe_1",
-      "community": 17,
+      "community": 18,
       "norm_label": "universe 1"
     },
     {
@@ -2844,7 +3015,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L15",
       "id": "aq_6ede9411e4ba_simulation_report_universe_2",
-      "community": 17,
+      "community": 18,
       "norm_label": "universe 2"
     },
     {
@@ -2853,7 +3024,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L22",
       "id": "aq_6ede9411e4ba_simulation_report_universe_3",
-      "community": 17,
+      "community": 18,
       "norm_label": "universe 3"
     },
     {
@@ -2862,7 +3033,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_research_report_md",
-      "community": 21,
+      "community": 22,
       "norm_label": "research_report.md"
     },
     {
@@ -2871,7 +3042,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_research_report",
-      "community": 21,
+      "community": 22,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7 \u1103\u1169\u110f\u1165 \u1109\u1173\u1106\u1169\u110f\u1173"
     },
     {
@@ -2880,7 +3051,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L3",
       "id": "aq_3f8c20f490b8_research_report_3",
-      "community": 21,
+      "community": 22,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2889,7 +3060,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L9",
       "id": "aq_3f8c20f490b8_research_report_9",
-      "community": 21,
+      "community": 22,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2898,7 +3069,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_simulation_report_md",
-      "community": 20,
+      "community": 21,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2907,7 +3078,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_simulation_report",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2916,7 +3087,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L5",
       "id": "aq_3f8c20f490b8_simulation_report_5",
-      "community": 20,
+      "community": 21,
       "norm_label": "\u1103\u1161\u11ab\u110b\u1175\u11af \u1112\u1162\u1105\u1172"
     },
     {
@@ -2925,8 +3096,80 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L8",
       "id": "aq_3f8c20f490b8_simulation_report_single_current",
-      "community": 20,
+      "community": 21,
       "norm_label": "single current"
+    },
+    {
+      "label": "_key_points()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L34",
+      "community": 0,
+      "norm_label": "_key_points()",
+      "id": "domain_pipeline_key_points"
+    },
+    {
+      "label": "build_research_report()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L54",
+      "community": 0,
+      "norm_label": "build_research_report()",
+      "id": "domain_pipeline_build_research_report"
+    },
+    {
+      "label": "seed_from_report()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L66",
+      "community": 0,
+      "norm_label": "seed_from_report()",
+      "id": "domain_pipeline_seed_from_report"
+    },
+    {
+      "label": "extract_ontology()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L71",
+      "community": 0,
+      "norm_label": "extract_ontology()",
+      "id": "domain_pipeline_extract_ontology"
+    },
+    {
+      "label": "build_personas()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L88",
+      "community": 0,
+      "norm_label": "build_personas()",
+      "id": "domain_pipeline_build_personas"
+    },
+    {
+      "label": "run_simulation()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L98",
+      "community": 0,
+      "norm_label": "run_simulation()",
+      "id": "domain_pipeline_run_simulation"
+    },
+    {
+      "label": "build_simulation_report()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L120",
+      "community": 0,
+      "norm_label": "build_simulation_report()",
+      "id": "domain_pipeline_build_simulation_report"
+    },
+    {
+      "label": "Summarize what the run can honestly claim at the API/UI boundary.",
+      "file_type": "rationale",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L177",
+      "community": 0,
+      "norm_label": "summarize what the run can honestly claim at the api/ui boundary.",
+      "id": "domain_pipeline_rationale_177"
     },
     {
       "label": "Aquarium \uc2e4\ud589\uacc4\ud68d \u2014 stub MVP\uc5d0\uc11c \uc2e4\uc81c BettaFish\u2192MiroFish \ud1b5\ud569 \uc81c\ud488\uae4c\uc9c0",
@@ -3032,7 +3275,7 @@
       "file_type": "document",
       "source_file": "docs/current/product.md",
       "source_location": "L25",
-      "community": 13,
+      "community": 15,
       "norm_label": "\u1109\u1165\u11bc\u1100\u1169\u11bc \u1109\u116e\u11ab\u1100\u1161\u11ab",
       "id": "current_product_25"
     },
@@ -3459,11 +3702,51 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/main.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "frontend_src_main_tsx",
+      "target": "src_main_entity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "frontend_src_main_tsx",
+      "target": "src_main_persona",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "frontend_src_main_tsx",
+      "target": "src_main_universe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_main_tsx",
       "target": "src_main_runresult"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/main.tsx",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "frontend_src_main_tsx",
+      "target": "src_main_resulttab",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3546,6 +3829,16 @@
       "confidence_score": 1.0,
       "source": "backend_app_main_py",
       "target": "app_main_result_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "backend_app_main_py",
+      "target": "app_main_run_response",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3741,6 +4034,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "app_main_run_response",
+      "target": "app_main_data_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/app/main.py",
@@ -3827,6 +4131,28 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "research_native_build_research_report",
+      "target": "core_i18n_msg"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/report/native.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "report_native_build_simulation_report",
+      "target": "core_i18n_msg"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L55",
       "weight": 1.0,
@@ -3843,6 +4169,251 @@
       "weight": 1.0,
       "source": "domain_pipeline_build_simulation_report",
       "target": "core_i18n_msg"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "backend_app_engines_research_native_py",
+      "target": "research_native_key_points",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "backend_app_engines_research_native_py",
+      "target": "research_native_build_research_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "backend_app_engines_research_native_py",
+      "target": "research_native_seed_from_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "backend_app_engines_research_native_py",
+      "target": "research_native_build_native_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "research_native_build_research_report",
+      "target": "research_native_key_points",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_manifest",
+      "target": "research_native_build_research_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "research_native_seed_from_report",
+      "target": "domain_contracts_seeddocument"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "research_native_seed_from_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/research/native.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "research_native_build_native_manifest",
+      "target": "domain_contracts_handoffmanifest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_manifest",
+      "target": "research_native_build_native_manifest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/graph/native.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "backend_app_engines_graph_native_py",
+      "target": "graph_native_extract_ontology",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/graph/native.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "graph_native_extract_ontology",
+      "target": "domain_contracts_ontologyentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/graph/native.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "graph_native_extract_ontology",
+      "target": "domain_contracts_ontology"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "graph_native_extract_ontology"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/simulation/native.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_engines_simulation_native_py",
+      "target": "simulation_native_run_simulation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/simulation/native.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "simulation_native_run_simulation",
+      "target": "domain_contracts_universeresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/simulation/native.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "simulation_native_run_simulation",
+      "target": "domain_contracts_simulationresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "simulation_native_run_simulation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/report/native.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "backend_app_engines_report_native_py",
+      "target": "report_native_build_simulation_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/engines/report/native.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "report_native_build_simulation_report",
+      "target": "domain_contracts_simulationreport"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "report_native_build_simulation_report"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/engines/persona/native.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "backend_app_engines_persona_native_py",
+      "target": "persona_native_build_personas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "persona_native_build_personas"
     },
     {
       "relation": "contains",
@@ -3873,6 +4444,46 @@
       "confidence_score": 1.0,
       "source": "backend_app_domain_pipeline_py",
       "target": "domain_pipeline_write_json"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_domain_pipeline_py",
+      "target": "domain_pipeline_native_manifest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_domain_pipeline_py",
+      "target": "domain_pipeline_native_simulation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_domain_pipeline_py",
+      "target": "domain_pipeline_build_runtime_claim"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_domain_pipeline_py",
+      "target": "domain_pipeline_run_aquarium_pipeline"
     },
     {
       "relation": "contains",
@@ -3952,46 +4563,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_native_manifest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L161",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_native_simulation"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L175",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_build_runtime_claim"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L136",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_run_aquarium_pipeline"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L137",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "backend_app_domain_pipeline_py",
       "target": "domain_pipeline_stub_manifest"
     },
     {
@@ -4031,10 +4602,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L132",
+      "source_location": "L139",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "domain_pipeline_build_simulation_report",
+      "source": "domain_pipeline_native_manifest",
       "target": "domain_pipeline_write_text"
     },
     {
@@ -4042,10 +4613,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L139",
+      "source_location": "L132",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "domain_pipeline_native_manifest",
+      "source": "domain_pipeline_build_simulation_report",
       "target": "domain_pipeline_write_text"
     },
     {
@@ -4086,270 +4657,6 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L54",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_build_research_report",
-      "target": "domain_pipeline_key_points"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L138",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_native_manifest",
-      "target": "domain_pipeline_build_research_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L138",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_manifest",
-      "target": "domain_pipeline_build_research_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L139",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_build_research_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L150",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_seed_from_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L67",
-      "weight": 1.0,
-      "source": "domain_pipeline_seed_from_report",
-      "target": "domain_contracts_seeddocument"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L162",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_native_simulation",
-      "target": "domain_pipeline_extract_ontology"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L79",
-      "weight": 1.0,
-      "source": "domain_pipeline_extract_ontology",
-      "target": "domain_contracts_ontologyentity"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L84",
-      "weight": 1.0,
-      "source": "domain_pipeline_extract_ontology",
-      "target": "domain_contracts_ontology"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L161",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
-      "target": "domain_pipeline_extract_ontology"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L151",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_extract_ontology"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L163",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_native_simulation",
-      "target": "domain_pipeline_build_personas"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L94",
-      "weight": 1.0,
-      "source": "domain_pipeline_build_personas",
-      "target": "domain_contracts_persona"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L162",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
-      "target": "domain_pipeline_build_personas"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L152",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_build_personas"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L164",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_native_simulation",
-      "target": "domain_pipeline_run_simulation"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L99",
-      "weight": 1.0,
-      "source": "domain_pipeline_run_simulation",
-      "target": "domain_contracts_universeresult"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L116",
-      "weight": 1.0,
-      "source": "domain_pipeline_run_simulation",
-      "target": "domain_contracts_simulationresult"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L163",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
-      "target": "domain_pipeline_run_simulation"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L153",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_run_simulation"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L165",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_native_simulation",
-      "target": "domain_pipeline_build_simulation_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L133",
-      "weight": 1.0,
-      "source": "domain_pipeline_build_simulation_report",
-      "target": "domain_contracts_simulationreport"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L164",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
-      "target": "domain_pipeline_build_simulation_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L154",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_build_simulation_report"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L231",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4362,10 +4669,21 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L140",
+      "source_location": "L151",
       "weight": 1.0,
       "source": "domain_pipeline_native_manifest",
-      "target": "domain_contracts_handoffmanifest"
+      "target": "domain_contracts_adapterstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_native_manifest",
+      "target": "domain_pipeline_build_research_report"
     },
     {
       "relation": "calls",
@@ -4373,10 +4691,10 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L151",
+      "source_location": "L140",
       "weight": 1.0,
       "source": "domain_pipeline_native_manifest",
-      "target": "domain_contracts_adapterstage"
+      "target": "domain_contracts_handoffmanifest"
     },
     {
       "relation": "calls",
@@ -4405,11 +4723,65 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "domain_pipeline_extract_ontology"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "domain_pipeline_build_personas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "domain_pipeline_run_simulation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "domain_pipeline_build_simulation_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L245",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "domain_pipeline_run_aquarium_pipeline",
       "target": "domain_pipeline_build_runtime_claim"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "domain_pipeline_rationale_72",
+      "target": "domain_pipeline_build_runtime_claim",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4573,6 +4945,72 @@
       "weight": 1.0,
       "source": "tests_test_pipeline_contract_test_pipeline_supports_single_mode_and_english_locale",
       "target": "domain_pipeline_run_aquarium_pipeline"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_build_research_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_seed_from_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_extract_ontology"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_build_personas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_run_simulation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_build_simulation_report"
     },
     {
       "relation": "calls",
@@ -4811,6 +5249,83 @@
       "weight": 1.0,
       "source": "domain_pipeline_stub_manifest",
       "target": "domain_contracts_handoffmanifest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "domain_pipeline_seed_from_report",
+      "target": "domain_contracts_seeddocument"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "domain_pipeline_extract_ontology",
+      "target": "domain_contracts_ontologyentity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "domain_pipeline_extract_ontology",
+      "target": "domain_contracts_ontology"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "domain_pipeline_build_personas",
+      "target": "domain_contracts_persona"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "domain_pipeline_run_simulation",
+      "target": "domain_contracts_universeresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "domain_pipeline_run_simulation",
+      "target": "domain_contracts_simulationresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "domain_pipeline_build_simulation_report",
+      "target": "domain_contracts_simulationreport"
     },
     {
       "relation": "contains",
@@ -5535,6 +6050,16 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "weight": 1.0,
+      "source": "docs_changelog_changelog_aquarium",
+      "target": "docs_changelog_2026_06_30_native_productization_pass_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_changelog_changelog_aquarium",
       "target": "docs_changelog_2026_06_30_standalone_aquarium_native_pivot"
@@ -6225,9 +6750,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_current_execution_plan_md",
-      "target": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge"
     },
     {
       "relation": "contains",
@@ -6245,9 +6770,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
-      "target": "current_execution_plan",
-      "confidence_score": 1.0
+      "target": "current_execution_plan"
     },
     {
       "relation": "contains",
@@ -6255,9 +6780,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
-      "target": "current_execution_plan_7",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_7"
     },
     {
       "relation": "contains",
@@ -6265,9 +6790,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
-      "target": "current_execution_plan_15",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_15"
     },
     {
       "relation": "contains",
@@ -6275,9 +6800,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
-      "target": "current_execution_plan_adapter_command_contract",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_adapter_command_contract"
     },
     {
       "relation": "contains",
@@ -6285,9 +6810,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
-      "target": "current_execution_plan_142",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_142"
     },
     {
       "relation": "contains",
@@ -6315,9 +6840,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_15",
-      "target": "current_execution_plan_phase_1_standalone_native_contract",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_phase_1_standalone_native_contract"
     },
     {
       "relation": "contains",
@@ -6325,9 +6850,9 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_execution_plan_15",
-      "target": "current_execution_plan_phase_1b_legacy_adapter_contract",
-      "confidence_score": 1.0
+      "target": "current_execution_plan_phase_1b_legacy_adapter_contract"
     },
     {
       "relation": "contains",
@@ -6958,6 +7483,16 @@
       "confidence_score": 1.0,
       "source": "current_architecture_9_provider_env",
       "target": "current_architecture_provider_profiles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L337",
+      "weight": 1.0,
+      "source": "current_architecture_9_provider_env",
+      "target": "current_architecture_native_engine_package_boundary",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7720,6 +8255,72 @@
       "target": "aq_3f8c20f490b8_simulation_report_single_current"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_build_research_report",
+      "target": "domain_pipeline_key_points"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_manifest",
+      "target": "domain_pipeline_build_research_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_extract_ontology"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_build_personas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_run_simulation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_build_simulation_report"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/execution-plan.md",
@@ -8041,5 +8642,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c56ddd0eafc1e38d1e128dc93c1502f1e6880607"
+  "built_at_commit": "e261f265ef7c4e453eaf5e8f6da6f90148478e97"
 }

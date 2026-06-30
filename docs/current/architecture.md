@@ -334,6 +334,19 @@ ResearchReport를 simulation seed로 변환한다.
 - `graphiti_openai`
   - graph memory 연동 실험 profile.
 
+### Native engine package boundary
+
+The default standalone path is split into explicit engine packages instead of hiding the whole product inside one pipeline module:
+
+- `backend/app/engines/research/native.py`: deterministic/local research seed and handoff manifest.
+- `backend/app/engines/graph/native.py`: Aquarium-native ecosystem/ontology extraction.
+- `backend/app/engines/persona/native.py`: persona population from the native ecosystem map.
+- `backend/app/engines/simulation/native.py`: single/multiverse current generation.
+- `backend/app/engines/report/native.py`: observation report rendering.
+- `backend/app/domain/pipeline.py`: orchestration, artifact persistence, legacy bridge fallback, and runtime evidence claim construction.
+
+`graph_engine_status=aquarium_native` means the Aquarium-native ecosystem map ran. It does **not** mean Graphiti memory was used. Graphiti/Neo4j memory remains a separate optional layer and must be reported as `graph_memory_status=not_configured` until a real memory provider is wired and verified.
+
 ### `.env.example`
 
 ```env
