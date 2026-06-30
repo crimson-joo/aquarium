@@ -78,10 +78,11 @@ manifest = {
 
     result = run_aquarium_pipeline("provider mismatch", Locale.KO, SimulationMode.SINGLE, tmp_path)
 
-    assert result.manifest.provider == "local_stub"
-    assert result.run.stages[0].provider == "local_stub"
-    assert result.run.stages[0].status == "degraded"
+    assert result.manifest.provider == "aquarium_native"
+    assert result.run.stages[0].provider == "aquarium_native"
+    assert result.run.stages[0].status == "completed"
     assert any("provider" in warning for warning in result.run.stages[0].warnings)
+    assert any("Aquarium native research" in warning for warning in result.run.stages[0].warnings)
 
 
 def test_adapter_env_does_not_leak_unallowlisted_secret(tmp_path: Path, monkeypatch):
@@ -175,9 +176,10 @@ payload = {
 
     result = run_aquarium_pipeline("missing report guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
 
-    assert result.run.stages[-1].provider == "local_stub"
-    assert result.run.stages[-1].status == "degraded"
+    assert result.run.stages[-1].provider == "aquarium_native"
+    assert result.run.stages[-1].status == "completed"
     assert any("report path is not readable" in warning for warning in result.run.stages[-1].warnings)
+    assert any("Aquarium native simulation" in warning for warning in result.run.stages[-1].warnings)
     assert not result.simulation_report.path.endswith("missing_real_mirofish_report.md")
 
 
@@ -205,8 +207,8 @@ payload = {
 
     result = run_aquarium_pipeline("mismatched report guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
 
-    assert result.run.stages[-1].provider == "local_stub"
-    assert result.run.stages[-1].status == "degraded"
+    assert result.run.stages[-1].provider == "aquarium_native"
+    assert result.run.stages[-1].status == "completed"
     assert any("report body does not match" in warning for warning in result.run.stages[-1].warnings)
 
 
@@ -238,6 +240,6 @@ payload = {{
 
     result = run_aquarium_pipeline("outside report guard", Locale.KO, SimulationMode.SINGLE, tmp_path)
 
-    assert result.run.stages[-1].provider == "local_stub"
-    assert result.run.stages[-1].status == "degraded"
+    assert result.run.stages[-1].provider == "aquarium_native"
+    assert result.run.stages[-1].status == "completed"
     assert any("outside run directory" in warning for warning in result.run.stages[-1].warnings)

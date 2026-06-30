@@ -7,12 +7,14 @@ import { messages } from './i18n.messages.mjs';
 type Locale = 'ko' | 'zh' | 'en';
 type Mode = 'single' | 'multiverse';
 type Stage = { name: string; provider: string; status: string; warnings?: string[] };
-type ProviderKey = 'local_stub' | 'bettafish_cli' | 'mirofish_cli';
+type ProviderKey = 'aquarium_native' | 'local_stub' | 'bettafish_cli' | 'mirofish_cli';
 type StatusKey = 'completed' | 'degraded' | 'failed';
-type RuntimeLevel = 'native_bounded' | 'real_provider_warning' | 'degraded_stub' | 'contract_only' | 'failed';
+type RuntimeLevel = 'aquarium_native' | 'native_bounded' | 'real_provider_warning' | 'degraded_stub' | 'contract_only' | 'failed';
 type GraphMemoryKey = 'native_pass' | 'warning' | 'not_native';
 type RuntimeClaim = {
   real_integration: boolean;
+  standalone_native: boolean;
+  external_runner_dependency: boolean;
   runtime_level: RuntimeLevel;
   native_bounded_smoke: boolean;
   degraded: boolean;
@@ -57,7 +59,7 @@ function App() {
     </nav>
     <section className="hero">
       <div>
-        <p className="eyebrow">BettaFish report × MiroFish simulation</p>
+        <p className="eyebrow">Standalone research × graph × simulation runtime</p>
         <h1>{t.heroTitle}</h1>
         <p className="subtitle">{t.heroSubtitle}</p>
         <div className="composer">
@@ -85,6 +87,7 @@ function App() {
             <p>{t.runtimeLevels[result.runtime_claim.runtime_level] ?? result.runtime_claim.runtime_level}</p>
             <div className="claimGrid">
               <span>{result.runtime_claim.real_integration ? t.realIntegrationOn : t.realIntegrationOff}</span>
+              <span>{result.runtime_claim.standalone_native ? t.standaloneOn : t.standaloneOff}</span>
               <span>{t.graphMemoryLabels[result.runtime_claim.graph_memory_status] ?? result.runtime_claim.graph_memory_status}</span>
               <span>{result.runtime_claim.long_running_multiverse_verified ? t.longRunOn : t.longRunOff}</span>
             </div>

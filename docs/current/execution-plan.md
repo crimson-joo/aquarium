@@ -1,20 +1,28 @@
-# Aquarium 실행계획 — stub MVP에서 실제 BettaFish→MiroFish 통합 제품까지
+# Aquarium 실행계획 — standalone native runtime에서 legacy bridge까지
 
 ## 목표
 
-아쿠아리움은 사용자가 주제를 입력하면 BettaFish-localized가 로컬 조사 보고서를 만들고, 그 보고서가 MiroFish-localized의 seed가 되어 분류 구조(Ontology), 페르소나, single/multiverse 시뮬레이션, 최종 리포트와 보고서 AI(Report Agent) 대화까지 이어지는 로컬 우선 시뮬레이터다.
+아쿠아리움은 사용자가 주제를 입력하면 Aquarium 자체 엔진이 native research seed를 만들고, 그 seed가 분류 구조(Ontology), 페르소나, single/multiverse 시뮬레이션, 최종 리포트와 보고서 AI(Report Agent) 대화까지 이어지는 standalone local runtime이다. BettaFish/MiroFish runner는 legacy bridge로만 유지한다.
 
 ## 현재 완료 상태
 
 - 신규 repo, Docker Compose, backend/frontend, docs/current, CI, Graphify가 준비되어 있다.
-- 기본 vertical slice는 `local_stub` degraded mode로 clone 직후 동작한다.
-- 실제 엔진 연결을 위한 CLI adapter contract가 추가되었고, BettaFish-localized/MiroFish-localized runner 지원이 각 repo `main`에 반영되었다.
-- API/UI는 각 단계가 `local_stub`, `bettafish_cli`, `mirofish_cli` 중 무엇으로 실행됐는지 표시한다.
-- real integration PASS는 두 외부 runner가 모두 completed 상태로 계약 산출물을 생성할 때만 인정한다.
+- 기본 vertical slice는 `aquarium_native` standalone mode로 clone 직후 동작한다.
+- legacy CLI adapter contract가 추가되었고, BettaFish-localized/MiroFish-localized runner 지원이 각 repo `main`에 반영되었다.
+- API/UI는 각 단계가 `aquarium_native`, `bettafish_cli`, `mirofish_cli` 중 무엇으로 실행됐는지 표시한다.
+- standalone PASS는 `aquarium_native` 두 단계가 completed일 때 인정하고, sibling-runner real integration PASS는 두 외부 runner가 모두 completed 상태로 계약 산출물을 생성할 때만 인정한다.
 
 ## 실행 단계
 
-### Phase 1 — Adapter contract 고정
+### Phase 1 — Standalone native contract 고정
+
+완료 기준:
+
+- runner command가 없어도 Aquarium 자체 research/simulation engine으로 전체 flow가 완료된다.
+- API/UI는 `standalone_native=true`, `external_runner_dependency=false`, `runtime_level=aquarium_native`를 표시한다.
+- 결과 artifact는 Aquarium run directory 안에 저장된다.
+
+### Phase 1b — Legacy adapter contract 고정
 
 완료 기준:
 
@@ -24,7 +32,7 @@
 - `AQUARIUM_MIROFISH_COMMAND`가 설정되면 Aquarium이 외부 MiroFish runner를 호출한다.
 - MiroFish runner는 run directory에 `mirofish_result.json`을 쓴다.
 - Aquarium은 ontology/persona/simulation/report를 외부 결과로 대체한다.
-- 미설정 상태에서는 `local_stub`로 degraded 상태를 명확히 표시한다.
+- 미설정 상태에서는 legacy canary 관점에서만 `real_integration=false`를 반환하고, 제품 기본 실행은 `aquarium_native`로 완료한다.
 
 ### Phase 2 — BettaFish 실제 report 연결
 

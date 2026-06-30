@@ -1,7 +1,7 @@
 export const messages = {
   ko: {
     heroTitle: '가능한 미래를 하나의 수조에서 관찰하세요',
-    heroSubtitle: '주제를 넣으면 조사 보고서가 seed가 되고, 아쿠아리움이 단일/멀티버스 해류를 시뮬레이션합니다.',
+    heroSubtitle: '주제를 넣으면 Aquarium 자체 엔진이 조사 seed, 생태계 지도, 단일/멀티버스 해류, 관찰 리포트를 만듭니다.',
     startCta: '수조 준비하기',
     statusTitle: '흐름 상태',
     emptyStatus: '주제를 입력하고 수조를 준비하면 보고서 seed부터 시뮬레이션 리포트까지 한 번에 생성됩니다.',
@@ -10,10 +10,13 @@ export const messages = {
     artifactsTitle: '산출물',
     runtimeTitle: '실행 근거',
     realIntegrationOn: '실제 연동(real) 켜짐',
-    realIntegrationOff: '대체/데모(degraded)',
+    realIntegrationOff: '외부 runner 연동 없음',
+    standaloneOn: 'Aquarium 독립 실행(Native)',
+    standaloneOff: '외부 runner 의존 실행',
     longRunOn: '장시간 멀티버스 검증됨',
     longRunOff: '장시간 멀티버스는 아직 미검증',
     runtimeLevels: {
+      aquarium_native: 'Aquarium 자체 엔진으로 조사→생태계→시뮬레이션→리포트를 생성했습니다. 외부 BettaFish/MiroFish repo 호출이 아닙니다.',
       native_bounded: 'Graphiti 직접 처리(Native) + OASIS bounded smoke 통과 — production 장시간 실행은 별도 검증 필요',
       real_provider_warning: '실제 provider 계약은 통과했지만 native 근거에 경고가 있습니다.',
       degraded_stub: 'local_stub 대체 처리입니다. 결과 확인용이며 native 성공으로 보지 않습니다.',
@@ -26,6 +29,7 @@ export const messages = {
       not_native: 'Graphiti 직접 처리(Native): 아님',
     },
     providerLabels: {
+      aquarium_native: 'Aquarium 자체 엔진(Native)',
       local_stub: '데모 대체 처리(local_stub)',
       bettafish_cli: '실제 조사 보고서(BettaFish)',
       mirofish_cli: '실제 시뮬레이션(MiroFish)',
@@ -39,7 +43,7 @@ export const messages = {
   },
   zh: {
     heroTitle: '在一个水族箱中观察多种未来',
-    heroSubtitle: '输入主题后，研究报告会成为种子，Aquarium 将模拟单一或多宇宙水流。',
+    heroSubtitle: '输入主题后，Aquarium 自身引擎会生成研究种子、生态地图、单一/多宇宙水流和观察报告。',
     startCta: '准备水族箱',
     statusTitle: '流程状态',
     emptyStatus: '输入主题并准备水族箱后，报告种子到模拟报告会一次生成。',
@@ -48,10 +52,13 @@ export const messages = {
     artifactsTitle: '产物',
     runtimeTitle: '运行证据',
     realIntegrationOn: '真实集成(real) 已启用',
-    realIntegrationOff: '降级/演示(degraded)',
+    realIntegrationOff: '未使用外部 runner 集成',
+    standaloneOn: 'Aquarium 独立运行(Native)',
+    standaloneOff: '依赖外部 runner 运行',
     longRunOn: '长时间多宇宙已验证',
     longRunOff: '长时间多宇宙尚未验证',
     runtimeLevels: {
+      aquarium_native: '由 Aquarium 自身引擎生成研究→生态→模拟→报告，不是调用外部 BettaFish/MiroFish 仓库。',
       native_bounded: 'Graphiti Native + OASIS bounded smoke 通过；生产级长跑仍需单独验证。',
       real_provider_warning: '真实 provider 契约通过，但 native 证据存在警告。',
       degraded_stub: 'local_stub 降级处理，仅用于查看结果，不代表 native 成功。',
@@ -64,6 +71,7 @@ export const messages = {
       not_native: 'Graphiti Native: 否',
     },
     providerLabels: {
+      aquarium_native: 'Aquarium 自身引擎(Native)',
       local_stub: '本地演示替代(local_stub)',
       bettafish_cli: '真实研究报告(BettaFish)',
       mirofish_cli: '真实模拟(MiroFish)',
@@ -77,7 +85,7 @@ export const messages = {
   },
   en: {
     heroTitle: 'Observe possible futures in one aquarium',
-    heroSubtitle: 'Turn a topic into a research report seed, then simulate single or multiverse currents.',
+    heroSubtitle: 'Turn a topic into a native Aquarium research seed, ecosystem map, single/multiverse currents, and observation report.',
     startCta: 'Prepare aquarium',
     statusTitle: 'Flow status',
     emptyStatus: 'Enter a topic and prepare the aquarium to generate a report seed through simulation report in one pass.',
@@ -86,10 +94,13 @@ export const messages = {
     artifactsTitle: 'Artifacts',
     runtimeTitle: 'Runtime evidence',
     realIntegrationOn: 'Real integration enabled',
-    realIntegrationOff: 'Degraded/demo mode',
+    realIntegrationOff: 'No external runner integration',
+    standaloneOn: 'Aquarium standalone native',
+    standaloneOff: 'External-runner dependent',
     longRunOn: 'Long-running multiverse verified',
     longRunOff: 'Long-running multiverse not verified yet',
     runtimeLevels: {
+      aquarium_native: 'Aquarium generated research → ecosystem → simulation → report with its own native engines, not by calling external BettaFish/MiroFish repos.',
       native_bounded: 'Graphiti Native + OASIS bounded smoke passed; production long-run still requires separate verification.',
       real_provider_warning: 'Real provider contract passed, but native evidence has warnings.',
       degraded_stub: 'local_stub degraded mode; useful output but not a native success claim.',
@@ -102,6 +113,7 @@ export const messages = {
       not_native: 'Graphiti Native: no',
     },
     providerLabels: {
+      aquarium_native: 'Aquarium native engine',
       local_stub: 'Local demo stub(local_stub)',
       bettafish_cli: 'Real research report(BettaFish)',
       mirofish_cli: 'Real simulation(MiroFish)',

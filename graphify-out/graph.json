@@ -9,7 +9,7 @@
       "source_file": "frontend/vite.config.ts",
       "source_location": "L1",
       "id": "frontend_vite_config_ts",
-      "community": 26,
+      "community": 24,
       "norm_label": "vite.config.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L1",
       "id": "frontend_src_main_tsx",
-      "community": 7,
+      "community": 9,
       "norm_label": "main.tsx"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L7",
       "id": "src_main_locale",
-      "community": 7,
+      "community": 9,
       "norm_label": "locale"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L8",
       "id": "src_main_mode",
-      "community": 7,
+      "community": 9,
       "norm_label": "mode"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L9",
       "id": "src_main_stage",
-      "community": 7,
+      "community": 9,
       "norm_label": "stage"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L10",
       "id": "src_main_providerkey",
-      "community": 7,
+      "community": 9,
       "norm_label": "providerkey"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L11",
       "id": "src_main_statuskey",
-      "community": 7,
+      "community": 9,
       "norm_label": "statuskey"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L12",
       "id": "src_main_runtimelevel",
-      "community": 7,
+      "community": 9,
       "norm_label": "runtimelevel"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L13",
       "id": "src_main_graphmemorykey",
-      "community": 7,
+      "community": 9,
       "norm_label": "graphmemorykey"
     },
     {
@@ -90,25 +90,25 @@
       "source_file": "frontend/src/main.tsx",
       "source_location": "L14",
       "id": "src_main_runtimeclaim",
-      "community": 7,
+      "community": 9,
       "norm_label": "runtimeclaim"
     },
     {
       "label": "RunResult",
       "file_type": "code",
       "source_file": "frontend/src/main.tsx",
-      "source_location": "L23",
+      "source_location": "L25",
       "id": "src_main_runresult",
-      "community": 7,
+      "community": 9,
       "norm_label": "runresult"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/main.tsx",
-      "source_location": "L25",
+      "source_location": "L27",
       "id": "src_main_app",
-      "community": 7,
+      "community": 9,
       "norm_label": "app()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "frontend/src/i18n.messages.mjs",
       "source_location": "L1",
       "id": "frontend_src_i18n_messages_mjs",
-      "community": 7,
+      "community": 9,
       "norm_label": "i18n.messages.mjs"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "frontend/src/i18n.messages.mjs",
       "source_location": "L1",
       "id": "src_i18n_messages_messages",
-      "community": 7,
+      "community": 9,
       "norm_label": "messages"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "frontend/src/i18n.test.mjs",
       "source_location": "L1",
       "id": "frontend_src_i18n_test_mjs",
-      "community": 7,
+      "community": 9,
       "norm_label": "i18n.test.mjs"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "frontend/src/vite-env.d.ts",
       "source_location": "L1",
       "id": "frontend_src_vite_env_d_ts",
-      "community": 27,
+      "community": 25,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "backend/app/__init__.py",
       "source_location": "L1",
       "id": "backend_app_init_py",
-      "community": 28,
+      "community": 26,
       "norm_label": "__init__.py"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L1",
       "id": "backend_app_main_py",
-      "community": 10,
+      "community": 7,
       "norm_label": "main.py"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L14",
       "id": "app_main_createrunrequest",
-      "community": 2,
+      "community": 7,
       "norm_label": "createrunrequest"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "",
       "source_location": "",
       "id": "basemodel",
-      "community": 2,
+      "community": 0,
       "norm_label": "basemodel"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L20",
       "id": "app_main_chatrequest",
-      "community": 2,
+      "community": 7,
       "norm_label": "chatrequest"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L24",
       "id": "app_main_data_dir",
-      "community": 10,
+      "community": 7,
       "norm_label": "_data_dir()"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L30",
       "id": "app_main_result_path",
-      "community": 10,
+      "community": 7,
       "norm_label": "_result_path()"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "backend/app/main.py",
       "source_location": "L34",
       "id": "app_main_create_app",
-      "community": 10,
+      "community": 7,
       "norm_label": "create_app()"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L1",
       "id": "backend_app_core_config_py",
-      "community": 10,
+      "community": 7,
       "norm_label": "config.py"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L7",
       "id": "core_config_settings",
-      "community": 10,
+      "community": 7,
       "norm_label": "settings"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "",
       "source_location": "",
       "id": "basesettings",
-      "community": 10,
+      "community": 7,
       "norm_label": "basesettings"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "backend/app/core/config.py",
       "source_location": "L16",
       "id": "core_config_get_settings",
-      "community": 10,
+      "community": 7,
       "norm_label": "get_settings()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "backend/app/core/__init__.py",
       "source_location": "L1",
       "id": "backend_app_core_init_py",
-      "community": 29,
+      "community": 27,
       "norm_label": "__init__.py"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "backend/app/core/i18n.py",
       "source_location": "L1",
       "id": "backend_app_core_i18n_py",
-      "community": 2,
+      "community": 0,
       "norm_label": "i18n.py"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "backend/app/core/i18n.py",
       "source_location": "L37",
       "id": "core_i18n_msg",
-      "community": 2,
+      "community": 0,
       "norm_label": "msg()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "backend/app/domain/__init__.py",
       "source_location": "L1",
       "id": "backend_app_domain_init_py",
-      "community": 30,
+      "community": 28,
       "norm_label": "__init__.py"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L1",
       "id": "backend_app_domain_pipeline_py",
-      "community": 2,
+      "community": 0,
       "norm_label": "pipeline.py"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L18",
       "id": "domain_pipeline_run_dir",
-      "community": 2,
+      "community": 0,
       "norm_label": "_run_dir()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L24",
       "id": "domain_pipeline_write_text",
-      "community": 2,
+      "community": 0,
       "norm_label": "_write_text()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L30",
       "id": "domain_pipeline_write_json",
-      "community": 2,
+      "community": 0,
       "norm_label": "_write_json()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L34",
       "id": "domain_pipeline_key_points",
-      "community": 2,
+      "community": 0,
       "norm_label": "_key_points()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L54",
       "id": "domain_pipeline_build_research_report",
-      "community": 2,
+      "community": 0,
       "norm_label": "build_research_report()"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L66",
       "id": "domain_pipeline_seed_from_report",
-      "community": 2,
+      "community": 0,
       "norm_label": "seed_from_report()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L71",
       "id": "domain_pipeline_extract_ontology",
-      "community": 2,
+      "community": 0,
       "norm_label": "extract_ontology()"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L88",
       "id": "domain_pipeline_build_personas",
-      "community": 2,
+      "community": 0,
       "norm_label": "build_personas()"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L98",
       "id": "domain_pipeline_run_simulation",
-      "community": 2,
+      "community": 0,
       "norm_label": "run_simulation()"
     },
     {
@@ -387,52 +387,52 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L120",
       "id": "domain_pipeline_build_simulation_report",
-      "community": 2,
+      "community": 0,
       "norm_label": "build_simulation_report()"
     },
     {
-      "label": "_stub_manifest()",
+      "label": "_native_manifest()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L137",
-      "id": "domain_pipeline_stub_manifest",
-      "community": 2,
-      "norm_label": "_stub_manifest()"
+      "id": "domain_pipeline_native_manifest",
+      "community": 0,
+      "norm_label": "_native_manifest()"
     },
     {
-      "label": "_stub_simulation()",
+      "label": "_native_simulation()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L160",
-      "id": "domain_pipeline_stub_simulation",
-      "community": 2,
-      "norm_label": "_stub_simulation()"
+      "source_location": "L161",
+      "id": "domain_pipeline_native_simulation",
+      "community": 0,
+      "norm_label": "_native_simulation()"
     },
     {
       "label": "build_runtime_claim()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L175",
+      "source_location": "L176",
       "id": "domain_pipeline_build_runtime_claim",
-      "community": 2,
+      "community": 0,
       "norm_label": "build_runtime_claim()"
     },
     {
       "label": "run_aquarium_pipeline()",
       "file_type": "code",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L213",
+      "source_location": "L224",
       "id": "domain_pipeline_run_aquarium_pipeline",
-      "community": 2,
+      "community": 0,
       "norm_label": "run_aquarium_pipeline()"
     },
     {
       "label": "Summarize what the run can honestly claim at the API/UI boundary.",
       "file_type": "rationale",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L176",
-      "id": "domain_pipeline_rationale_176",
-      "community": 2,
+      "source_location": "L177",
+      "id": "domain_pipeline_rationale_177",
+      "community": 0,
       "norm_label": "summarize what the run can honestly claim at the api/ui boundary."
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L1",
       "id": "backend_app_domain_contracts_py",
-      "community": 2,
+      "community": 0,
       "norm_label": "contracts.py"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L8",
       "id": "domain_contracts_locale",
-      "community": 2,
+      "community": 7,
       "norm_label": "locale"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "",
       "source_location": "",
       "id": "strenum",
-      "community": 2,
+      "community": 7,
       "norm_label": "strenum"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L14",
       "id": "domain_contracts_simulationmode",
-      "community": 2,
+      "community": 7,
       "norm_label": "simulationmode"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L19",
       "id": "domain_contracts_adapterstage",
-      "community": 13,
+      "community": 0,
       "norm_label": "adapterstage"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L27",
       "id": "domain_contracts_runrecord",
-      "community": 2,
+      "community": 0,
       "norm_label": "runrecord"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L37",
       "id": "domain_contracts_handoffmanifest",
-      "community": 2,
+      "community": 0,
       "norm_label": "handoffmanifest"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L51",
       "id": "domain_contracts_seeddocument",
-      "community": 2,
+      "community": 0,
       "norm_label": "seeddocument"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L58",
       "id": "domain_contracts_ontologyentity",
-      "community": 2,
+      "community": 0,
       "norm_label": "ontologyentity"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L64",
       "id": "domain_contracts_ontology",
-      "community": 2,
+      "community": 0,
       "norm_label": "ontology"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L69",
       "id": "domain_contracts_persona",
-      "community": 2,
+      "community": 0,
       "norm_label": "persona"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L75",
       "id": "domain_contracts_universeresult",
-      "community": 2,
+      "community": 0,
       "norm_label": "universeresult"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L82",
       "id": "domain_contracts_simulationresult",
-      "community": 2,
+      "community": 0,
       "norm_label": "simulationresult"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L87",
       "id": "domain_contracts_simulationreport",
-      "community": 2,
+      "community": 0,
       "norm_label": "simulationreport"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "backend/app/domain/contracts.py",
       "source_location": "L92",
       "id": "domain_contracts_pipelineresult",
-      "community": 2,
+      "community": 0,
       "norm_label": "pipelineresult"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L1",
       "id": "backend_app_domain_adapters_py",
-      "community": 13,
+      "community": 15,
       "norm_label": "adapters.py"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L35",
       "id": "domain_adapters_allowed_extra_env_names",
-      "community": 13,
+      "community": 15,
       "norm_label": "_allowed_extra_env_names()"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L40",
       "id": "domain_adapters_command_env",
-      "community": 13,
+      "community": 15,
       "norm_label": "_command_env()"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L56",
       "id": "domain_adapters_run_command",
-      "community": 13,
+      "community": 15,
       "norm_label": "_run_command()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L68",
       "id": "domain_adapters_read_json",
-      "community": 13,
+      "community": 15,
       "norm_label": "_read_json()"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L72",
       "id": "domain_adapters_validate_simulation_report_artifact",
-      "community": 13,
+      "community": 15,
       "norm_label": "_validate_simulation_report_artifact()"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L97",
       "id": "domain_adapters_run_bettafish_cli_adapter",
-      "community": 13,
+      "community": 15,
       "norm_label": "run_bettafish_cli_adapter()"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "backend/app/domain/adapters.py",
       "source_location": "L124",
       "id": "domain_adapters_run_mirofish_cli_adapter",
-      "community": 13,
+      "community": 15,
       "norm_label": "run_mirofish_cli_adapter()"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L1",
       "id": "backend_tests_test_external_adapters_py",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_external_adapters.py"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L11",
       "id": "tests_test_external_adapters_write_executable",
-      "community": 14,
+      "community": 0,
       "norm_label": "_write_executable()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L17",
       "id": "tests_test_external_adapters_test_pipeline_uses_configured_bettafish_cli_adapter",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_pipeline_uses_configured_bettafish_cli_adapter()"
     },
     {
@@ -675,52 +675,52 @@
       "source_file": "backend/tests/test_external_adapters.py",
       "source_location": "L54",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mismatched_bettafish_provider",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_pipeline_rejects_mismatched_bettafish_provider()"
     },
     {
       "label": "test_adapter_env_does_not_leak_unallowlisted_secret()",
       "file_type": "code",
       "source_file": "backend/tests/test_external_adapters.py",
-      "source_location": "L87",
+      "source_location": "L88",
       "id": "tests_test_external_adapters_test_adapter_env_does_not_leak_unallowlisted_secret",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_adapter_env_does_not_leak_unallowlisted_secret()"
     },
     {
       "label": "test_pipeline_uses_configured_mirofish_cli_adapter()",
       "file_type": "code",
       "source_file": "backend/tests/test_external_adapters.py",
-      "source_location": "L123",
+      "source_location": "L124",
       "id": "tests_test_external_adapters_test_pipeline_uses_configured_mirofish_cli_adapter",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_pipeline_uses_configured_mirofish_cli_adapter()"
     },
     {
       "label": "test_pipeline_rejects_mirofish_completed_result_with_missing_report_path()",
       "file_type": "code",
       "source_file": "backend/tests/test_external_adapters.py",
-      "source_location": "L155",
+      "source_location": "L156",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mirofish_completed_result_with_missing_report_path",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_pipeline_rejects_mirofish_completed_result_with_missing_report_path()"
     },
     {
       "label": "test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file()",
       "file_type": "code",
       "source_file": "backend/tests/test_external_adapters.py",
-      "source_location": "L184",
+      "source_location": "L186",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_pipeline_rejects_mirofish_completed_result_with_body_that_does_not_match_report_file()"
     },
     {
       "label": "test_pipeline_rejects_mirofish_report_path_outside_run_dir()",
       "file_type": "code",
       "source_file": "backend/tests/test_external_adapters.py",
-      "source_location": "L213",
+      "source_location": "L215",
       "id": "tests_test_external_adapters_test_pipeline_rejects_mirofish_report_path_outside_run_dir",
-      "community": 14,
+      "community": 0,
       "norm_label": "test_pipeline_rejects_mirofish_report_path_outside_run_dir()"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "backend/tests/test_pipeline_contract.py",
       "source_location": "L1",
       "id": "backend_tests_test_pipeline_contract_py",
-      "community": 2,
+      "community": 0,
       "norm_label": "test_pipeline_contract.py"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "backend/tests/test_pipeline_contract.py",
       "source_location": "L7",
       "id": "tests_test_pipeline_contract_test_pipeline_creates_research_to_simulation_artifacts",
-      "community": 2,
+      "community": 0,
       "norm_label": "test_pipeline_creates_research_to_simulation_artifacts()"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "backend/tests/test_pipeline_contract.py",
       "source_location": "L31",
       "id": "tests_test_pipeline_contract_test_pipeline_supports_single_mode_and_english_locale",
-      "community": 2,
+      "community": 0,
       "norm_label": "test_pipeline_supports_single_mode_and_english_locale()"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L1",
       "id": "backend_tests_test_real_integration_canary_py",
-      "community": 20,
+      "community": 18,
       "norm_label": "test_real_integration_canary.py"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L10",
       "id": "tests_test_real_integration_canary_write_executable",
-      "community": 20,
+      "community": 18,
       "norm_label": "_write_executable()"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L16",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_passes_with_fake_contract_runners",
-      "community": 20,
+      "community": 18,
       "norm_label": "test_real_integration_canary_passes_with_fake_contract_runners()"
     },
     {
@@ -783,16 +783,16 @@
       "source_file": "backend/tests/test_real_integration_canary.py",
       "source_location": "L93",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_fails_when_runner_provider_is_not_real",
-      "community": 20,
+      "community": 18,
       "norm_label": "test_real_integration_canary_fails_when_runner_provider_is_not_real()"
     },
     {
       "label": "test_real_integration_canary_fails_when_any_stage_is_degraded()",
       "file_type": "code",
       "source_file": "backend/tests/test_real_integration_canary.py",
-      "source_location": "L139",
+      "source_location": "L140",
       "id": "tests_test_real_integration_canary_test_real_integration_canary_fails_when_any_stage_is_degraded",
-      "community": 20,
+      "community": 18,
       "norm_label": "test_real_integration_canary_fails_when_any_stage_is_degraded()"
     },
     {
@@ -801,7 +801,7 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L1",
       "id": "backend_tests_test_api_py",
-      "community": 10,
+      "community": 7,
       "norm_label": "test_api.py"
     },
     {
@@ -810,16 +810,16 @@
       "source_file": "backend/tests/test_api.py",
       "source_location": "L6",
       "id": "tests_test_api_test_create_run_and_chat",
-      "community": 10,
+      "community": 7,
       "norm_label": "test_create_run_and_chat()"
     },
     {
       "label": "test_rejects_unsupported_locale()",
       "file_type": "code",
       "source_file": "backend/tests/test_api.py",
-      "source_location": "L36",
+      "source_location": "L37",
       "id": "tests_test_api_test_rejects_unsupported_locale",
-      "community": 10,
+      "community": 7,
       "norm_label": "test_rejects_unsupported_locale()"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 6,
+      "community": 4,
       "norm_label": "readme.md"
     },
     {
@@ -837,106 +837,106 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "aquarium_readme_aquarium",
-      "community": 5,
+      "community": 6,
       "norm_label": "aquarium / \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7"
     },
     {
-      "label": "\ud604\uc7ac MVP \uc0c1\ud0dc",
+      "label": "\ud604\uc7ac \uc0c1\ud0dc",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
-      "id": "aquarium_readme_mvp",
-      "community": 5,
-      "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162"
+      "id": "aquarium_readme",
+      "community": 6,
+      "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
       "label": "\ube60\ub978 \uc2dc\uc791",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L19",
-      "id": "aquarium_readme",
-      "community": 5,
+      "source_location": "L18",
+      "id": "aquarium_readme_18",
+      "community": 6,
       "norm_label": "\u1108\u1161\u1105\u1173\u11ab \u1109\u1175\u110c\u1161\u11a8"
     },
     {
       "label": "code:bash (cp .env.example .env)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L21",
+      "source_location": "L20",
       "id": "aquarium_readme_codeblock_1",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
       "label": "code:bash (cd backend)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L33",
+      "source_location": "L32",
       "id": "aquarium_readme_codeblock_2",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:bash (cd backend)"
     },
     {
-      "label": "\uc2e4\uc81c adapter \uc5f0\uacb0",
+      "label": "\uae30\ubcf8 \uc2e4\ud589: Aquarium standalone native",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L44",
-      "id": "aquarium_readme_adapter",
-      "community": 5,
-      "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af"
+      "source_location": "L43",
+      "id": "aquarium_readme_aquarium_standalone_native",
+      "community": 6,
+      "norm_label": "\u1100\u1175\u1107\u1169\u11ab \u1109\u1175\u11af\u1112\u1162\u11bc: aquarium standalone native"
+    },
+    {
+      "label": "code:text (\uc8fc\uc81c \uc785\ub825)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "id": "aquarium_readme_codeblock_3",
+      "community": 6,
+      "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)"
+    },
+    {
+      "label": "Legacy bridge / \uc2e4\uc81c adapter \uc5f0\uacb0",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "id": "aquarium_readme_legacy_bridge_adapter",
+      "community": 6,
+      "norm_label": "legacy bridge / \u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af"
     },
     {
       "label": "code:bash (AQUARIUM_BETTAFISH_COMMAND=\"python3 /path/to/bettafish_aquar)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L48",
-      "id": "aquarium_readme_codeblock_3",
-      "community": 5,
+      "source_location": "L62",
+      "id": "aquarium_readme_codeblock_4",
+      "community": 6,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /path/to/bettafish_aquar)"
     },
     {
       "label": "code:bash (./scripts/run_real_integration_canary.sh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L57",
-      "id": "aquarium_readme_codeblock_4",
-      "community": 5,
-      "norm_label": "code:bash (./scripts/run_real_integration_canary.sh)"
-    },
-    {
-      "label": "MVP Flow",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L63",
-      "id": "aquarium_readme_mvp_flow",
-      "community": 5,
-      "norm_label": "mvp flow"
-    },
-    {
-      "label": "code:text (\uc8fc\uc81c \uc785\ub825)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L65",
+      "source_location": "L71",
       "id": "aquarium_readme_codeblock_5",
-      "community": 5,
-      "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)"
+      "community": 6,
+      "norm_label": "code:bash (./scripts/run_real_integration_canary.sh)"
     },
     {
       "label": "\ud504\ub85c\uc81d\ud2b8 \ubb38\uc11c",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L76",
-      "id": "aquarium_readme_76",
-      "community": 5,
+      "source_location": "L77",
+      "id": "aquarium_readme_77",
+      "community": 6,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165"
     },
     {
       "label": "\uc911\uc694\ud55c \ud55c\uacc4",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L87",
-      "id": "aquarium_readme_87",
-      "community": 5,
+      "source_location": "L88",
+      "id": "aquarium_readme_88",
+      "community": 6,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_md",
-      "community": 17,
+      "community": 14,
       "norm_label": "changelog.md"
     },
     {
@@ -954,52 +954,61 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_changelog_aquarium",
-      "community": 17,
+      "community": 14,
       "norm_label": "changelog \u2014 aquarium"
+    },
+    {
+      "label": "2026-06-30 \u2014 Standalone Aquarium native pivot",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "id": "docs_changelog_2026_06_30_standalone_aquarium_native_pivot",
+      "community": 14,
+      "norm_label": "2026-06-30 \u2014 standalone aquarium native pivot"
     },
     {
       "label": "2026-06-30 \u2014 Runtime evidence labeling and multiverse expansion",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L3",
+      "source_location": "L11",
       "id": "docs_changelog_2026_06_30_runtime_evidence_labeling_and_multiverse_expansion",
-      "community": 17,
+      "community": 14,
       "norm_label": "2026-06-30 \u2014 runtime evidence labeling and multiverse expansion"
     },
     {
       "label": "2026-06-30 \u2014 Native MiroFish runtime canary",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L11",
+      "source_location": "L19",
       "id": "docs_changelog_2026_06_30_native_mirofish_runtime_canary",
-      "community": 17,
+      "community": 14,
       "norm_label": "2026-06-30 \u2014 native mirofish runtime canary"
     },
     {
       "label": "2026-06-29 \u2014 Real runner release",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L18",
+      "source_location": "L26",
       "id": "docs_changelog_2026_06_29_real_runner_release",
-      "community": 17,
+      "community": 14,
       "norm_label": "2026-06-29 \u2014 real runner release"
     },
     {
       "label": "2026-06-29 \u2014 Real runner canary and state visibility",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L28",
+      "source_location": "L36",
       "id": "docs_changelog_2026_06_29_real_runner_canary_and_state_visibility",
-      "community": 17,
+      "community": 14,
       "norm_label": "2026-06-29 \u2014 real runner canary and state visibility"
     },
     {
       "label": "2026-06-29 \u2014 Initial MVP scaffold",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L38",
+      "source_location": "L46",
       "id": "docs_changelog_2026_06_29_initial_mvp_scaffold",
-      "community": 17,
+      "community": 14,
       "norm_label": "2026-06-29 \u2014 initial mvp scaffold"
     },
     {
@@ -1008,7 +1017,7 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "id": "docs_readme_md",
-      "community": 22,
+      "community": 23,
       "norm_label": "readme.md"
     },
     {
@@ -1017,7 +1026,7 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "id": "docs_readme_aquarium_docs",
-      "community": 22,
+      "community": 23,
       "norm_label": "aquarium docs"
     },
     {
@@ -1026,7 +1035,7 @@
       "source_file": "docs/README.md",
       "source_location": "L5",
       "id": "docs_readme_canonical_current_docs",
-      "community": 22,
+      "community": 23,
       "norm_label": "canonical current docs"
     },
     {
@@ -1035,7 +1044,7 @@
       "source_file": "docs/README.md",
       "source_location": "L14",
       "id": "docs_readme_setup_docs",
-      "community": 22,
+      "community": 23,
       "norm_label": "setup docs"
     },
     {
@@ -1044,7 +1053,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L1",
       "id": "docs_architecture_slice_ko_md",
-      "community": 0,
+      "community": 1,
       "norm_label": "architecture-slice-ko.md"
     },
     {
@@ -1053,7 +1062,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L1",
       "id": "docs_architecture_slice_ko_aquarium_architecture_slice",
-      "community": 0,
+      "community": 1,
       "norm_label": "aquarium architecture slice"
     },
     {
@@ -1062,7 +1071,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L5",
       "id": "docs_architecture_slice_ko_1",
-      "community": 0,
+      "community": 1,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1071,7 +1080,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L7",
       "id": "docs_architecture_slice_ko",
-      "community": 0,
+      "community": 1,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1080,7 +1089,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L21",
       "id": "docs_architecture_slice_ko_21",
-      "community": 0,
+      "community": 1,
       "norm_label": "\u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1089,7 +1098,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L26",
       "id": "docs_architecture_slice_ko_2",
-      "community": 0,
+      "community": 1,
       "norm_label": "2. \u110e\u116c\u1109\u1169 \u1100\u1167\u11ab\u1100\u1169 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -1098,7 +1107,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L28",
       "id": "docs_architecture_slice_ko_codeblock_1",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (browser ui)"
     },
     {
@@ -1107,7 +1116,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L52",
       "id": "docs_architecture_slice_ko_3_docker_compose",
-      "community": 0,
+      "community": 1,
       "norm_label": "3. docker compose \u1109\u1165\u1107\u1175\u1109\u1173"
     },
     {
@@ -1116,7 +1125,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L54",
       "id": "docs_architecture_slice_ko_profile",
-      "community": 0,
+      "community": 1,
       "norm_label": "\u1100\u1175\u1107\u1169\u11ab profile"
     },
     {
@@ -1125,7 +1134,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L70",
       "id": "docs_architecture_slice_ko_optional_profile",
-      "community": 0,
+      "community": 1,
       "norm_label": "optional profile"
     },
     {
@@ -1134,7 +1143,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L79",
       "id": "docs_architecture_slice_ko_codeblock_2",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1143,7 +1152,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L86",
       "id": "docs_architecture_slice_ko_4_backend",
-      "community": 0,
+      "community": 1,
       "norm_label": "4. backend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1152,7 +1161,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L88",
       "id": "docs_architecture_slice_ko_codeblock_3",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (backend/)"
     },
     {
@@ -1161,7 +1170,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L144",
       "id": "docs_architecture_slice_ko_api",
-      "community": 0,
+      "community": 1,
       "norm_label": "api \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1170,7 +1179,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L162",
       "id": "docs_architecture_slice_ko_5_frontend",
-      "community": 0,
+      "community": 1,
       "norm_label": "5. frontend \u1100\u116e\u110c\u1169"
     },
     {
@@ -1179,7 +1188,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L164",
       "id": "docs_architecture_slice_ko_codeblock_4",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (frontend/)"
     },
     {
@@ -1188,7 +1197,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L198",
       "id": "docs_architecture_slice_ko_6_storage",
-      "community": 0,
+      "community": 1,
       "norm_label": "6. storage \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -1197,7 +1206,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L200",
       "id": "docs_architecture_slice_ko_postgresql",
-      "community": 0,
+      "community": 1,
       "norm_label": "postgresql \u1110\u1166\u110b\u1175\u1107\u1173\u11af"
     },
     {
@@ -1206,7 +1215,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L212",
       "id": "docs_architecture_slice_ko_file_storage",
-      "community": 0,
+      "community": 1,
       "norm_label": "file storage"
     },
     {
@@ -1215,7 +1224,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L213",
       "id": "docs_architecture_slice_ko_codeblock_5",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (data/)"
     },
     {
@@ -1224,7 +1233,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L232",
       "id": "docs_architecture_slice_ko_7_job_flow_handoff_contract",
-      "community": 15,
+      "community": 1,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
@@ -1233,7 +1242,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L234",
       "id": "docs_architecture_slice_ko_codeblock_6",
-      "community": 15,
+      "community": 1,
       "norm_label": "code:text (post /api/runs)"
     },
     {
@@ -1242,7 +1251,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L247",
       "id": "docs_architecture_slice_ko_stage_1_researchreport",
-      "community": 15,
+      "community": 1,
       "norm_label": "stage 1: researchreport"
     },
     {
@@ -1251,7 +1260,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L250",
       "id": "docs_architecture_slice_ko_codeblock_7",
-      "community": 15,
+      "community": 1,
       "norm_label": "code:json ({)"
     },
     {
@@ -1260,7 +1269,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L264",
       "id": "docs_architecture_slice_ko_stage_2_seeddocument",
-      "community": 15,
+      "community": 1,
       "norm_label": "stage 2: seeddocument"
     },
     {
@@ -1269,7 +1278,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L270",
       "id": "docs_architecture_slice_ko_stage_3_ontology_persona_extraction",
-      "community": 15,
+      "community": 1,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
@@ -1278,7 +1287,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L276",
       "id": "docs_architecture_slice_ko_stage_4_simulation",
-      "community": 15,
+      "community": 1,
       "norm_label": "stage 4: simulation"
     },
     {
@@ -1287,7 +1296,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L281",
       "id": "docs_architecture_slice_ko_stage_5_simulationreport",
-      "community": 15,
+      "community": 1,
       "norm_label": "stage 5: simulationreport"
     },
     {
@@ -1296,7 +1305,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L285",
       "id": "docs_architecture_slice_ko_stage_6_agent_chat",
-      "community": 15,
+      "community": 1,
       "norm_label": "stage 6: agent chat"
     },
     {
@@ -1305,7 +1314,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L290",
       "id": "docs_architecture_slice_ko_8_i18n",
-      "community": 0,
+      "community": 1,
       "norm_label": "8. i18n \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -1314,7 +1323,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L306",
       "id": "docs_architecture_slice_ko_codeblock_8",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:json ({)"
     },
     {
@@ -1323,7 +1332,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L315",
       "id": "docs_architecture_slice_ko_9_provider_env",
-      "community": 0,
+      "community": 1,
       "norm_label": "9. provider/env \u1109\u1165\u11af\u1100\u1168"
     },
     {
@@ -1332,7 +1341,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L317",
       "id": "docs_architecture_slice_ko_provider_profiles",
-      "community": 0,
+      "community": 1,
       "norm_label": "provider profiles"
     },
     {
@@ -1341,7 +1350,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L329",
       "id": "docs_architecture_slice_ko_env_example",
-      "community": 0,
+      "community": 1,
       "norm_label": "`.env.example`"
     },
     {
@@ -1350,7 +1359,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L331",
       "id": "docs_architecture_slice_ko_codeblock_9",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:env (app_env=local)"
     },
     {
@@ -1359,7 +1368,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L369",
       "id": "docs_architecture_slice_ko_10_tests",
-      "community": 0,
+      "community": 16,
       "norm_label": "10. tests \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
@@ -1368,7 +1377,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L371",
       "id": "docs_architecture_slice_ko_unit_tests",
-      "community": 0,
+      "community": 16,
       "norm_label": "unit tests"
     },
     {
@@ -1377,7 +1386,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L377",
       "id": "docs_architecture_slice_ko_contract_tests",
-      "community": 0,
+      "community": 16,
       "norm_label": "contract tests"
     },
     {
@@ -1386,7 +1395,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L383",
       "id": "docs_architecture_slice_ko_integration_tests",
-      "community": 0,
+      "community": 16,
       "norm_label": "integration tests"
     },
     {
@@ -1395,7 +1404,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L388",
       "id": "docs_architecture_slice_ko_e2e_ui_tests",
-      "community": 0,
+      "community": 16,
       "norm_label": "e2e/ui tests"
     },
     {
@@ -1404,7 +1413,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L396",
       "id": "docs_architecture_slice_ko_ci",
-      "community": 0,
+      "community": 16,
       "norm_label": "ci \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
@@ -1413,7 +1422,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L397",
       "id": "docs_architecture_slice_ko_codeblock_10",
-      "community": 0,
+      "community": 16,
       "norm_label": "code:text (lint backend)"
     },
     {
@@ -1422,7 +1431,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L405",
       "id": "docs_architecture_slice_ko_11_docs",
-      "community": 0,
+      "community": 1,
       "norm_label": "11. docs \u1100\u116e\u110c\u1169"
     },
     {
@@ -1431,7 +1440,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L407",
       "id": "docs_architecture_slice_ko_codeblock_11",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (docs/)"
     },
     {
@@ -1440,7 +1449,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L432",
       "id": "docs_architecture_slice_ko_12",
-      "community": 0,
+      "community": 1,
       "norm_label": "12. \u110e\u116e\u110e\u1165\u11ab \u110e\u1169\u1100\u1175 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169"
     },
     {
@@ -1449,7 +1458,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L434",
       "id": "docs_architecture_slice_ko_codeblock_12",
-      "community": 0,
+      "community": 1,
       "norm_label": "code:text (aquarium/)"
     },
     {
@@ -1458,7 +1467,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L460",
       "id": "docs_architecture_slice_ko_13_vertical_slice",
-      "community": 0,
+      "community": 1,
       "norm_label": "13. vertical slice \u1100\u116e\u1112\u1167\u11ab \u1109\u116e\u11ab\u1109\u1165"
     },
     {
@@ -1467,7 +1476,7 @@
       "source_file": "docs/architecture-slice-ko.md",
       "source_location": "L471",
       "id": "docs_architecture_slice_ko_14",
-      "community": 0,
+      "community": 1,
       "norm_label": "14. \u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -1476,7 +1485,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L1",
       "id": "docs_quickstart_ko_md",
-      "community": 11,
+      "community": 10,
       "norm_label": "quickstart-ko.md"
     },
     {
@@ -1485,7 +1494,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L1",
       "id": "docs_quickstart_ko_aquarium_quickstart",
-      "community": 11,
+      "community": 10,
       "norm_label": "aquarium quickstart"
     },
     {
@@ -1494,7 +1503,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L3",
       "id": "docs_quickstart_ko_1",
-      "community": 11,
+      "community": 10,
       "norm_label": "1. \u1112\u116a\u11ab\u1100\u1167\u11bc \u1111\u1161\u110b\u1175\u11af \u110c\u116e\u11ab\u1107\u1175"
     },
     {
@@ -1503,7 +1512,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L5",
       "id": "docs_quickstart_ko_codeblock_1",
-      "community": 11,
+      "community": 10,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
@@ -1512,7 +1521,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L9",
       "id": "docs_quickstart_ko_2_docker_compose",
-      "community": 11,
+      "community": 10,
       "norm_label": "2. docker compose \u1109\u1175\u11af\u1112\u1162\u11bc"
     },
     {
@@ -1521,7 +1530,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L11",
       "id": "docs_quickstart_ko_codeblock_2",
-      "community": 11,
+      "community": 10,
       "norm_label": "code:bash (docker compose up --build)"
     },
     {
@@ -1530,7 +1539,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L15",
       "id": "docs_quickstart_ko_3",
-      "community": 11,
+      "community": 10,
       "norm_label": "3. \u110c\u1165\u11b8\u1109\u1169\u11a8"
     },
     {
@@ -1539,7 +1548,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L20",
       "id": "docs_quickstart_ko_4",
-      "community": 11,
+      "community": 10,
       "norm_label": "4. \u1105\u1169\u110f\u1165\u11af \u1100\u1162\u1107\u1161\u11af \u1100\u1165\u11b7\u110c\u1173\u11bc"
     },
     {
@@ -1548,7 +1557,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L22",
       "id": "docs_quickstart_ko_codeblock_3",
-      "community": 11,
+      "community": 10,
       "norm_label": "code:bash (cd backend)"
     },
     {
@@ -1557,7 +1566,7 @@
       "source_file": "docs/quickstart-ko.md",
       "source_location": "L33",
       "id": "docs_quickstart_ko_5_mvp",
-      "community": 11,
+      "community": 10,
       "norm_label": "5. \u1112\u1167\u11ab\u110c\u1162 mvp \u110c\u116e\u110b\u1174\u1109\u1161\u1112\u1161\u11bc"
     },
     {
@@ -1566,7 +1575,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L1",
       "id": "docs_contracts_handoff_manifest_v1_md",
-      "community": 21,
+      "community": 19,
       "norm_label": "handoff-manifest-v1.md"
     },
     {
@@ -1575,7 +1584,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L1",
       "id": "contracts_handoff_manifest_v1_handoff_manifest_v1",
-      "community": 21,
+      "community": 19,
       "norm_label": "handoff manifest v1"
     },
     {
@@ -1584,7 +1593,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L5",
       "id": "contracts_handoff_manifest_v1_schema",
-      "community": 21,
+      "community": 19,
       "norm_label": "schema"
     },
     {
@@ -1593,7 +1602,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L7",
       "id": "contracts_handoff_manifest_v1_codeblock_1",
-      "community": 21,
+      "community": 19,
       "norm_label": "code:json ({)"
     },
     {
@@ -1602,7 +1611,7 @@
       "source_file": "docs/contracts/handoff-manifest-v1.md",
       "source_location": "L27",
       "id": "contracts_handoff_manifest_v1_policy",
-      "community": 21,
+      "community": 19,
       "norm_label": "policy"
     },
     {
@@ -1611,17 +1620,17 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L1",
       "id": "docs_current_execution_plan_md",
-      "community": 4,
+      "community": 5,
       "norm_label": "execution-plan.md"
     },
     {
-      "label": "Aquarium \uc2e4\ud589\uacc4\ud68d \u2014 stub MVP\uc5d0\uc11c \uc2e4\uc81c BettaFish\u2192MiroFish \ud1b5\ud569 \uc81c\ud488\uae4c\uc9c0",
+      "label": "Aquarium \uc2e4\ud589\uacc4\ud68d \u2014 standalone native runtime\uc5d0\uc11c legacy bridge\uae4c\uc9c0",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L1",
-      "id": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "community": 4,
-      "norm_label": "aquarium \u1109\u1175\u11af\u1112\u1162\u11bc\u1100\u1168\u1112\u116c\u11a8 \u2014 stub mvp\u110b\u1166\u1109\u1165 \u1109\u1175\u11af\u110c\u1166 bettafish\u2192mirofish \u1110\u1169\u11bc\u1112\u1161\u11b8 \u110c\u1166\u1111\u116e\u11b7\u1101\u1161\u110c\u1175"
+      "id": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "community": 5,
+      "norm_label": "aquarium \u1109\u1175\u11af\u1112\u1162\u11bc\u1100\u1168\u1112\u116c\u11a8 \u2014 standalone native runtime\u110b\u1166\u1109\u1165 legacy bridge\u1101\u1161\u110c\u1175"
     },
     {
       "label": "\ubaa9\ud45c",
@@ -1629,7 +1638,7 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L3",
       "id": "current_execution_plan",
-      "community": 4,
+      "community": 5,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1638,7 +1647,7 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L7",
       "id": "current_execution_plan_7",
-      "community": 4,
+      "community": 5,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u110b\u116a\u11ab\u1105\u116d \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -1647,142 +1656,151 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L15",
       "id": "current_execution_plan_15",
-      "community": 4,
+      "community": 5,
       "norm_label": "\u1109\u1175\u11af\u1112\u1162\u11bc \u1103\u1161\u11ab\u1100\u1168"
     },
     {
-      "label": "Phase 1 \u2014 Adapter contract \uace0\uc815",
+      "label": "Phase 1 \u2014 Standalone native contract \uace0\uc815",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L17",
-      "id": "current_execution_plan_phase_1_adapter_contract",
-      "community": 4,
-      "norm_label": "phase 1 \u2014 adapter contract \u1100\u1169\u110c\u1165\u11bc"
+      "id": "current_execution_plan_phase_1_standalone_native_contract",
+      "community": 5,
+      "norm_label": "phase 1 \u2014 standalone native contract \u1100\u1169\u110c\u1165\u11bc"
+    },
+    {
+      "label": "Phase 1b \u2014 Legacy adapter contract \uace0\uc815",
+      "file_type": "document",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L25",
+      "id": "current_execution_plan_phase_1b_legacy_adapter_contract",
+      "community": 5,
+      "norm_label": "phase 1b \u2014 legacy adapter contract \u1100\u1169\u110c\u1165\u11bc"
     },
     {
       "label": "Phase 2 \u2014 BettaFish \uc2e4\uc81c report \uc5f0\uacb0",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L29",
+      "source_location": "L37",
       "id": "current_execution_plan_phase_2_bettafish_report",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase 2 \u2014 bettafish \u1109\u1175\u11af\u110c\u1166 report \u110b\u1167\u11ab\u1100\u1167\u11af"
     },
     {
       "label": "Phase 3 \u2014 MiroFish \uc2e4\uc81c simulation \uc5f0\uacb0",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "id": "current_execution_plan_phase_3_mirofish_simulation",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase 3 \u2014 mirofish \u1109\u1175\u11af\u110c\u1166 simulation \u110b\u1167\u11ab\u1100\u1167\u11af"
     },
     {
       "label": "Phase 4 \u2014 UI/UX \uc81c\ud488\ud654",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L49",
+      "source_location": "L57",
       "id": "current_execution_plan_phase_4_ui_ux",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase 4 \u2014 ui/ux \u110c\u1166\u1111\u116e\u11b7\u1112\u116a"
     },
     {
       "label": "Phase 5 \u2014 \ubc30\ud3ec \ud488\uc9c8",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L58",
+      "source_location": "L66",
       "id": "current_execution_plan_phase_5",
-      "community": 4,
+      "community": 5,
       "norm_label": "phase 5 \u2014 \u1107\u1162\u1111\u1169 \u1111\u116e\u11b7\u110c\u1175\u11af"
     },
     {
       "label": "Adapter command contract",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L68",
+      "source_location": "L76",
       "id": "current_execution_plan_adapter_command_contract",
-      "community": 4,
+      "community": 5,
       "norm_label": "adapter command contract"
     },
     {
       "label": "BettaFish command",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L70",
+      "source_location": "L78",
       "id": "current_execution_plan_bettafish_command",
-      "community": 4,
+      "community": 5,
       "norm_label": "bettafish command"
     },
     {
       "label": "code:text (AQUARIUM_TOPIC)",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L74",
+      "source_location": "L82",
       "id": "current_execution_plan_codeblock_1",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:text (aquarium_topic)"
     },
     {
       "label": "code:text ($AQUARIUM_RUN_DIR/bettafish_handoff_manifest.json)",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L83",
+      "source_location": "L91",
       "id": "current_execution_plan_codeblock_2",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:text ($aquarium_run_dir/bettafish_handoff_manifest.json)"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L89",
+      "source_location": "L97",
       "id": "current_execution_plan_codeblock_3",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:json ({)"
     },
     {
       "label": "MiroFish command",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L103",
+      "source_location": "L111",
       "id": "current_execution_plan_mirofish_command",
-      "community": 4,
+      "community": 5,
       "norm_label": "mirofish command"
     },
     {
       "label": "code:text (AQUARIUM_TOPIC)",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L107",
+      "source_location": "L115",
       "id": "current_execution_plan_codeblock_4",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:text (aquarium_topic)"
     },
     {
       "label": "code:text ($AQUARIUM_RUN_DIR/mirofish_result.json)",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L117",
+      "source_location": "L125",
       "id": "current_execution_plan_codeblock_5",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:text ($aquarium_run_dir/mirofish_result.json)"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L123",
+      "source_location": "L131",
       "id": "current_execution_plan_codeblock_6",
-      "community": 4,
+      "community": 5,
       "norm_label": "code:json ({)"
     },
     {
       "label": "\ub2e4\uc74c \uc791\uc5c5 \ucd94\ucc9c",
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L134",
-      "id": "current_execution_plan_134",
-      "community": 4,
+      "source_location": "L142",
+      "id": "current_execution_plan_142",
+      "community": 5,
       "norm_label": "\u1103\u1161\u110b\u1173\u11b7 \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -1791,7 +1809,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 18,
+      "community": 13,
       "norm_label": "product.md"
     },
     {
@@ -1800,7 +1818,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "current_product_product_aquarium",
-      "community": 18,
+      "community": 13,
       "norm_label": "product \u2014 aquarium"
     },
     {
@@ -1809,7 +1827,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product",
-      "community": 18,
+      "community": 13,
       "norm_label": "\u1112\u1161\u11ab \u110c\u116e\u11af \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -1818,7 +1836,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_mvp",
-      "community": 18,
+      "community": 13,
       "norm_label": "mvp \u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1827,17 +1845,26 @@
       "source_file": "docs/current/product.md",
       "source_location": "L17",
       "id": "current_product_non_goals",
-      "community": 18,
+      "community": 13,
       "norm_label": "non-goals"
     },
     {
       "label": "\uc131\uacf5 \uc21c\uac04",
       "file_type": "document",
       "source_file": "docs/current/product.md",
-      "source_location": "L25",
-      "id": "current_product_25",
-      "community": 18,
+      "source_location": "L26",
+      "id": "current_product_26",
+      "community": 13,
       "norm_label": "\u1109\u1165\u11bc\u1100\u1169\u11bc \u1109\u116e\u11ab\u1100\u1161\u11ab"
+    },
+    {
+      "label": "Product positioning",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L30",
+      "id": "current_product_product_positioning",
+      "community": 13,
+      "norm_label": "product positioning"
     },
     {
       "label": "architecture.md",
@@ -1845,7 +1872,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 1,
+      "community": 2,
       "norm_label": "architecture.md"
     },
     {
@@ -1854,7 +1881,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "current_architecture_aquarium_architecture_slice",
-      "community": 1,
+      "community": 2,
       "norm_label": "aquarium architecture slice"
     },
     {
@@ -1863,7 +1890,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L5",
       "id": "current_architecture_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1872,7 +1899,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L7",
       "id": "current_architecture",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1881,394 +1908,394 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L21",
       "id": "current_architecture_21",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u1107\u1175\u1106\u1169\u11a8\u1111\u116d"
     },
     {
       "label": "2. \ucd5c\uc18c \uacac\uace0 \uc544\ud0a4\ud14d\ucc98",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "current_architecture_2",
-      "community": 1,
+      "community": 2,
       "norm_label": "2. \u110e\u116c\u1109\u1169 \u1100\u1167\u11ab\u1100\u1169 \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
       "label": "code:text (Browser UI)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "current_architecture_codeblock_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (browser ui)"
     },
     {
       "label": "3. Docker Compose \uc11c\ube44\uc2a4",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L52",
+      "source_location": "L54",
       "id": "current_architecture_3_docker_compose",
-      "community": 1,
+      "community": 2,
       "norm_label": "3. docker compose \u1109\u1165\u1107\u1175\u1109\u1173"
     },
     {
       "label": "\uae30\ubcf8 profile",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L54",
+      "source_location": "L56",
       "id": "current_architecture_profile",
-      "community": 1,
+      "community": 2,
       "norm_label": "\u1100\u1175\u1107\u1169\u11ab profile"
     },
     {
       "label": "optional profile",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L70",
+      "source_location": "L72",
       "id": "current_architecture_optional_profile",
-      "community": 1,
+      "community": 2,
       "norm_label": "optional profile"
     },
     {
       "label": "code:bash (cp .env.example .env)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L79",
+      "source_location": "L81",
       "id": "current_architecture_codeblock_2",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:bash (cp .env.example .env)"
     },
     {
       "label": "4. Backend \uad6c\uc870",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L86",
+      "source_location": "L88",
       "id": "current_architecture_4_backend",
-      "community": 1,
+      "community": 2,
       "norm_label": "4. backend \u1100\u116e\u110c\u1169"
     },
     {
       "label": "code:text (backend/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L88",
+      "source_location": "L90",
       "id": "current_architecture_codeblock_3",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (backend/)"
     },
     {
       "label": "API \ucd5c\uc18c \uc138\ud2b8",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L144",
+      "source_location": "L149",
       "id": "current_architecture_api",
-      "community": 1,
+      "community": 2,
       "norm_label": "api \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
       "label": "5. Frontend \uad6c\uc870",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L162",
+      "source_location": "L167",
       "id": "current_architecture_5_frontend",
-      "community": 1,
+      "community": 2,
       "norm_label": "5. frontend \u1100\u116e\u110c\u1169"
     },
     {
       "label": "code:text (frontend/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L164",
+      "source_location": "L169",
       "id": "current_architecture_codeblock_4",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (frontend/)"
     },
     {
       "label": "6. Storage \ubaa8\ub378",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L198",
+      "source_location": "L203",
       "id": "current_architecture_6_storage",
-      "community": 1,
+      "community": 2,
       "norm_label": "6. storage \u1106\u1169\u1103\u1166\u11af"
     },
     {
       "label": "PostgreSQL \ud14c\uc774\ube14",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L200",
+      "source_location": "L205",
       "id": "current_architecture_postgresql",
-      "community": 1,
+      "community": 2,
       "norm_label": "postgresql \u1110\u1166\u110b\u1175\u1107\u1173\u11af"
     },
     {
       "label": "File storage",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L212",
+      "source_location": "L217",
       "id": "current_architecture_file_storage",
-      "community": 1,
+      "community": 2,
       "norm_label": "file storage"
     },
     {
       "label": "code:text (data/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L213",
+      "source_location": "L218",
       "id": "current_architecture_codeblock_5",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (data/)"
     },
     {
       "label": "7. Job flow\uc640 handoff contract",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L232",
+      "source_location": "L237",
       "id": "current_architecture_7_job_flow_handoff_contract",
-      "community": 12,
+      "community": 11,
       "norm_label": "7. job flow\u110b\u116a handoff contract"
     },
     {
       "label": "code:text (POST /api/runs)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L234",
+      "source_location": "L239",
       "id": "current_architecture_codeblock_6",
-      "community": 12,
+      "community": 11,
       "norm_label": "code:text (post /api/runs)"
     },
     {
       "label": "Stage 1: ResearchReport",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L247",
+      "source_location": "L252",
       "id": "current_architecture_stage_1_researchreport",
-      "community": 12,
+      "community": 11,
       "norm_label": "stage 1: researchreport"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L250",
+      "source_location": "L255",
       "id": "current_architecture_codeblock_7",
-      "community": 12,
+      "community": 11,
       "norm_label": "code:json ({)"
     },
     {
       "label": "Stage 2: SeedDocument",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L264",
+      "source_location": "L269",
       "id": "current_architecture_stage_2_seeddocument",
-      "community": 12,
+      "community": 11,
       "norm_label": "stage 2: seeddocument"
     },
     {
       "label": "Stage 3: Ontology/Persona extraction",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L270",
+      "source_location": "L275",
       "id": "current_architecture_stage_3_ontology_persona_extraction",
-      "community": 12,
+      "community": 11,
       "norm_label": "stage 3: ontology/persona extraction"
     },
     {
       "label": "Stage 4: Simulation",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L276",
+      "source_location": "L281",
       "id": "current_architecture_stage_4_simulation",
-      "community": 12,
+      "community": 11,
       "norm_label": "stage 4: simulation"
     },
     {
       "label": "Stage 5: SimulationReport",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L281",
+      "source_location": "L286",
       "id": "current_architecture_stage_5_simulationreport",
-      "community": 12,
+      "community": 11,
       "norm_label": "stage 5: simulationreport"
     },
     {
       "label": "Stage 6: Agent Chat",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L285",
+      "source_location": "L290",
       "id": "current_architecture_stage_6_agent_chat",
-      "community": 12,
+      "community": 11,
       "norm_label": "stage 6: agent chat"
     },
     {
       "label": "8. i18n \uc804\ub7b5",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L290",
+      "source_location": "L295",
       "id": "current_architecture_8_i18n",
-      "community": 1,
+      "community": 2,
       "norm_label": "8. i18n \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
       "label": "code:json ({)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L306",
+      "source_location": "L311",
       "id": "current_architecture_codeblock_8",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:json ({)"
     },
     {
       "label": "9. Provider/env \uc124\uacc4",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L315",
+      "source_location": "L320",
       "id": "current_architecture_9_provider_env",
-      "community": 1,
+      "community": 2,
       "norm_label": "9. provider/env \u1109\u1165\u11af\u1100\u1168"
     },
     {
       "label": "Provider profiles",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L317",
+      "source_location": "L322",
       "id": "current_architecture_provider_profiles",
-      "community": 1,
+      "community": 2,
       "norm_label": "provider profiles"
     },
     {
       "label": "`.env.example`",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L329",
+      "source_location": "L337",
       "id": "current_architecture_env_example",
-      "community": 1,
+      "community": 2,
       "norm_label": "`.env.example`"
     },
     {
       "label": "code:env (APP_ENV=local)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L331",
+      "source_location": "L339",
       "id": "current_architecture_codeblock_9",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:env (app_env=local)"
     },
     {
       "label": "10. Tests \uc804\ub7b5",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L369",
+      "source_location": "L377",
       "id": "current_architecture_10_tests",
-      "community": 1,
+      "community": 2,
       "norm_label": "10. tests \u110c\u1165\u11ab\u1105\u1163\u11a8"
     },
     {
       "label": "Unit tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L371",
+      "source_location": "L379",
       "id": "current_architecture_unit_tests",
-      "community": 1,
+      "community": 2,
       "norm_label": "unit tests"
     },
     {
       "label": "Contract tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L377",
+      "source_location": "L385",
       "id": "current_architecture_contract_tests",
-      "community": 1,
+      "community": 2,
       "norm_label": "contract tests"
     },
     {
       "label": "Integration tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L383",
+      "source_location": "L391",
       "id": "current_architecture_integration_tests",
-      "community": 1,
+      "community": 2,
       "norm_label": "integration tests"
     },
     {
       "label": "E2E/UI tests",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L388",
+      "source_location": "L396",
       "id": "current_architecture_e2e_ui_tests",
-      "community": 1,
+      "community": 2,
       "norm_label": "e2e/ui tests"
     },
     {
       "label": "CI \ucd5c\uc18c \uc138\ud2b8",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L396",
+      "source_location": "L404",
       "id": "current_architecture_ci",
-      "community": 1,
+      "community": 2,
       "norm_label": "ci \u110e\u116c\u1109\u1169 \u1109\u1166\u1110\u1173"
     },
     {
       "label": "code:text (lint backend)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L397",
+      "source_location": "L405",
       "id": "current_architecture_codeblock_10",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (lint backend)"
     },
     {
       "label": "11. Docs \uad6c\uc870",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L405",
+      "source_location": "L413",
       "id": "current_architecture_11_docs",
-      "community": 1,
+      "community": 2,
       "norm_label": "11. docs \u1100\u116e\u110c\u1169"
     },
     {
       "label": "code:text (docs/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L407",
+      "source_location": "L415",
       "id": "current_architecture_codeblock_11",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (docs/)"
     },
     {
       "label": "12. \ucd94\ucc9c \ucd08\uae30 \ud30c\uc77c \uad6c\uc870",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L432",
+      "source_location": "L440",
       "id": "current_architecture_12",
-      "community": 1,
+      "community": 2,
       "norm_label": "12. \u110e\u116e\u110e\u1165\u11ab \u110e\u1169\u1100\u1175 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169"
     },
     {
       "label": "code:text (aquarium/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L434",
+      "source_location": "L442",
       "id": "current_architecture_codeblock_12",
-      "community": 1,
+      "community": 2,
       "norm_label": "code:text (aquarium/)"
     },
     {
       "label": "13. Vertical slice \uad6c\ud604 \uc21c\uc11c",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L460",
+      "source_location": "L468",
       "id": "current_architecture_13_vertical_slice",
-      "community": 1,
+      "community": 2,
       "norm_label": "13. vertical slice \u1100\u116e\u1112\u1167\u11ab \u1109\u116e\u11ab\u1109\u1165"
     },
     {
       "label": "14. \ud575\uc2ec \uacb0\uc815",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L471",
+      "source_location": "L479",
       "id": "current_architecture_14",
-      "community": 1,
+      "community": 2,
       "norm_label": "14. \u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -2277,7 +2304,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "docs_current_qa_md",
-      "community": 16,
+      "community": 12,
       "norm_label": "qa.md"
     },
     {
@@ -2286,7 +2313,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "current_qa_qa_aquarium",
-      "community": 16,
+      "community": 12,
       "norm_label": "qa \u2014 aquarium"
     },
     {
@@ -2295,52 +2322,52 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "id": "current_qa",
-      "community": 16,
+      "community": 12,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1100\u1165\u11b7\u110c\u1173\u11bc \u1109\u1161\u11bc\u1110\u1162"
     },
     {
       "label": "Acceptance criteria",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L40",
+      "source_location": "L46",
       "id": "current_qa_acceptance_criteria",
-      "community": 16,
+      "community": 12,
       "norm_label": "acceptance criteria"
     },
     {
       "label": "Product flow",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L42",
+      "source_location": "L48",
       "id": "current_qa_product_flow",
-      "community": 16,
+      "community": 12,
       "norm_label": "product flow"
     },
     {
       "label": "i18n",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L48",
+      "source_location": "L54",
       "id": "current_qa_i18n",
-      "community": 16,
+      "community": 12,
       "norm_label": "i18n"
     },
     {
       "label": "Fail-closed",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L54",
+      "source_location": "L60",
       "id": "current_qa_fail_closed",
-      "community": 16,
+      "community": 12,
       "norm_label": "fail-closed"
     },
     {
       "label": "Docker",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L60",
+      "source_location": "L66",
       "id": "current_qa_docker",
-      "community": 16,
+      "community": 12,
       "norm_label": "docker"
     },
     {
@@ -2349,7 +2376,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "docs_current_release_md",
-      "community": 9,
+      "community": 8,
       "norm_label": "release.md"
     },
     {
@@ -2358,7 +2385,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "current_release_release_aquarium",
-      "community": 9,
+      "community": 8,
       "norm_label": "release \u2014 aquarium"
     },
     {
@@ -2367,79 +2394,97 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "id": "current_release_release",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 release \u1109\u116e\u110c\u116e\u11ab"
     },
     {
-      "label": "\ud604\uc7ac \uc2e4\uc81c \ud1b5\ud569 \uc2e4\ud589 \uacbd\ub85c",
+      "label": "\ud604\uc7ac \uae30\ubcf8 \uc2e4\ud589 \uacbd\ub85c",
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L9",
       "id": "current_release",
-      "community": 9,
-      "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1109\u1175\u11af\u110c\u1166 \u1110\u1169\u11bc\u1112\u1161\u11b8 \u1109\u1175\u11af\u1112\u1162\u11bc \u1100\u1167\u11bc\u1105\u1169"
+      "community": 8,
+      "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1100\u1175\u1107\u1169\u11ab \u1109\u1175\u11af\u1112\u1162\u11bc \u1100\u1167\u11bc\u1105\u1169"
+    },
+    {
+      "label": "code:text (docker compose up --build)",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L11",
+      "id": "current_release_codeblock_1",
+      "community": 8,
+      "norm_label": "code:text (docker compose up --build)"
+    },
+    {
+      "label": "Legacy sibling-runner \ud1b5\ud569 \uc2e4\ud589 \uacbd\ub85c",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L18",
+      "id": "current_release_legacy_sibling_runner",
+      "community": 8,
+      "norm_label": "legacy sibling-runner \u1110\u1169\u11bc\u1112\u1161\u11b8 \u1109\u1175\u11af\u1112\u1162\u11bc \u1100\u1167\u11bc\u1105\u1169"
     },
     {
       "label": "code:bash (AQUARIUM_BETTAFISH_COMMAND=\"python3 /Users/crimson/Projects/)",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L13",
-      "id": "current_release_codeblock_1",
-      "community": 9,
+      "source_location": "L22",
+      "id": "current_release_codeblock_2",
+      "community": 8,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /users/crimson/projects/)"
     },
     {
       "label": "Local release gate",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L24",
+      "source_location": "L33",
       "id": "current_release_local_release_gate",
-      "community": 9,
+      "community": 8,
       "norm_label": "local release gate"
     },
     {
       "label": "code:bash (cd backend && uv run pytest -q)",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L26",
-      "id": "current_release_codeblock_2",
-      "community": 9,
+      "source_location": "L35",
+      "id": "current_release_codeblock_3",
+      "community": 8,
       "norm_label": "code:bash (cd backend && uv run pytest -q)"
     },
     {
       "label": "GitHub Actions contract",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L35",
+      "source_location": "L44",
       "id": "current_release_github_actions_contract",
-      "community": 9,
+      "community": 8,
       "norm_label": "github actions contract"
     },
     {
       "label": "Docker endpoints",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L46",
+      "source_location": "L55",
       "id": "current_release_docker_endpoints",
-      "community": 9,
+      "community": 8,
       "norm_label": "docker endpoints"
     },
     {
       "label": "Release caveats",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L52",
+      "source_location": "L61",
       "id": "current_release_release_caveats",
-      "community": 9,
+      "community": 8,
       "norm_label": "release caveats"
     },
     {
       "label": "Released PRs",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L61",
+      "source_location": "L70",
       "id": "current_release_released_prs",
-      "community": 9,
+      "community": 8,
       "norm_label": "released prs"
     },
     {
@@ -2727,7 +2772,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_research_report_md",
-      "community": 23,
+      "community": 22,
       "norm_label": "research_report.md"
     },
     {
@@ -2736,7 +2781,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_research_report_ai",
-      "community": 23,
+      "community": 22,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: ai \u1100\u1165\u11b7\u1109\u1162\u11a8\u110b\u1166\u11ab\u110c\u1175\u11ab \u1109\u1175\u110c\u1161\u11bc \u1107\u1167\u11ab\u1112\u116a"
     },
     {
@@ -2745,7 +2790,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L3",
       "id": "aq_6ede9411e4ba_research_report",
-      "community": 23,
+      "community": 22,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2754,7 +2799,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/research_report.md",
       "source_location": "L9",
       "id": "aq_6ede9411e4ba_research_report_9",
-      "community": 23,
+      "community": 22,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2763,7 +2808,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_6ede9411e4ba_simulation_report_md",
-      "community": 19,
+      "community": 17,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2772,7 +2817,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L1",
       "id": "aq_6ede9411e4ba_simulation_report",
-      "community": 19,
+      "community": 17,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2781,7 +2826,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L5",
       "id": "aq_6ede9411e4ba_simulation_report_5",
-      "community": 19,
+      "community": 17,
       "norm_label": "\u110b\u1161\u11bc\u1109\u1161\u11bc\u1107\u1173\u11af \u1107\u1175\u11ab\u1103\u1169"
     },
     {
@@ -2790,7 +2835,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L8",
       "id": "aq_6ede9411e4ba_simulation_report_universe_1",
-      "community": 19,
+      "community": 17,
       "norm_label": "universe 1"
     },
     {
@@ -2799,7 +2844,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L15",
       "id": "aq_6ede9411e4ba_simulation_report_universe_2",
-      "community": 19,
+      "community": 17,
       "norm_label": "universe 2"
     },
     {
@@ -2808,7 +2853,7 @@
       "source_file": "data/runs/aq_6ede9411e4ba/simulation_report.md",
       "source_location": "L22",
       "id": "aq_6ede9411e4ba_simulation_report_universe_3",
-      "community": 19,
+      "community": 17,
       "norm_label": "universe 3"
     },
     {
@@ -2817,7 +2862,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_research_report_md",
-      "community": 24,
+      "community": 21,
       "norm_label": "research_report.md"
     },
     {
@@ -2826,7 +2871,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_research_report",
-      "community": 24,
+      "community": 21,
       "norm_label": "\u110c\u1169\u1109\u1161 \u1107\u1169\u1100\u1169\u1109\u1165: \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7 \u1103\u1169\u110f\u1165 \u1109\u1173\u1106\u1169\u110f\u1173"
     },
     {
@@ -2835,7 +2880,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L3",
       "id": "aq_3f8c20f490b8_research_report_3",
-      "community": 24,
+      "community": 21,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1109\u1175\u11ab\u1112\u1169"
     },
     {
@@ -2844,7 +2889,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/research_report.md",
       "source_location": "L9",
       "id": "aq_3f8c20f490b8_research_report_9",
-      "community": 24,
+      "community": 21,
       "norm_label": "\u1112\u1162\u11ab\u1103\u1173\u110b\u1169\u1111\u1173 \u1106\u1166\u1106\u1169"
     },
     {
@@ -2853,7 +2898,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "data_runs_aq_3f8c20f490b8_simulation_report_md",
-      "community": 25,
+      "community": 20,
       "norm_label": "simulation_report.md"
     },
     {
@@ -2862,7 +2907,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L1",
       "id": "aq_3f8c20f490b8_simulation_report",
-      "community": 25,
+      "community": 20,
       "norm_label": "\u1109\u1175\u1106\u1172\u11af\u1105\u1166\u110b\u1175\u1109\u1167\u11ab \u1107\u1169\u1100\u1169\u1109\u1165"
     },
     {
@@ -2871,7 +2916,7 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L5",
       "id": "aq_3f8c20f490b8_simulation_report_5",
-      "community": 25,
+      "community": 20,
       "norm_label": "\u1103\u1161\u11ab\u110b\u1175\u11af \u1112\u1162\u1105\u1172"
     },
     {
@@ -2880,15 +2925,123 @@
       "source_file": "data/runs/aq_3f8c20f490b8/simulation_report.md",
       "source_location": "L8",
       "id": "aq_3f8c20f490b8_simulation_report_single_current",
-      "community": 25,
+      "community": 20,
       "norm_label": "single current"
+    },
+    {
+      "label": "Aquarium \uc2e4\ud589\uacc4\ud68d \u2014 stub MVP\uc5d0\uc11c \uc2e4\uc81c BettaFish\u2192MiroFish \ud1b5\ud569 \uc81c\ud488\uae4c\uc9c0",
+      "file_type": "document",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L1",
+      "community": 5,
+      "norm_label": "aquarium \u1109\u1175\u11af\u1112\u1162\u11bc\u1100\u1168\u1112\u116c\u11a8 \u2014 stub mvp\u110b\u1166\u1109\u1165 \u1109\u1175\u11af\u110c\u1166 bettafish\u2192mirofish \u1110\u1169\u11bc\u1112\u1161\u11b8 \u110c\u1166\u1111\u116e\u11b7\u1101\u1161\u110c\u1175",
+      "id": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish"
+    },
+    {
+      "label": "Phase 1 \u2014 Adapter contract \uace0\uc815",
+      "file_type": "document",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L17",
+      "community": 5,
+      "norm_label": "phase 1 \u2014 adapter contract \u1100\u1169\u110c\u1165\u11bc",
+      "id": "current_execution_plan_phase_1_adapter_contract"
+    },
+    {
+      "label": "\ub2e4\uc74c \uc791\uc5c5 \ucd94\ucc9c",
+      "file_type": "document",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L134",
+      "community": 5,
+      "norm_label": "\u1103\u1161\u110b\u1173\u11b7 \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110e\u116e\u110e\u1165\u11ab",
+      "id": "current_execution_plan_134"
+    },
+    {
+      "label": "_stub_manifest()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L137",
+      "community": 0,
+      "norm_label": "_stub_manifest()",
+      "id": "domain_pipeline_stub_manifest"
+    },
+    {
+      "label": "_stub_simulation()",
+      "file_type": "code",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L160",
+      "community": 0,
+      "norm_label": "_stub_simulation()",
+      "id": "domain_pipeline_stub_simulation"
+    },
+    {
+      "label": "Summarize what the run can honestly claim at the API/UI boundary.",
+      "file_type": "rationale",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L176",
+      "community": 0,
+      "norm_label": "summarize what the run can honestly claim at the api/ui boundary.",
+      "id": "domain_pipeline_rationale_176"
+    },
+    {
+      "label": "\ud604\uc7ac MVP \uc0c1\ud0dc",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "community": 6,
+      "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162",
+      "id": "aquarium_readme_mvp"
+    },
+    {
+      "label": "\uc2e4\uc81c adapter \uc5f0\uacb0",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "community": 6,
+      "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af",
+      "id": "aquarium_readme_adapter"
+    },
+    {
+      "label": "MVP Flow",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L63",
+      "community": 6,
+      "norm_label": "mvp flow",
+      "id": "aquarium_readme_mvp_flow"
+    },
+    {
+      "label": "\ud504\ub85c\uc81d\ud2b8 \ubb38\uc11c",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L76",
+      "community": 6,
+      "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
+      "id": "aquarium_readme_76"
+    },
+    {
+      "label": "\uc911\uc694\ud55c \ud55c\uacc4",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L87",
+      "community": 6,
+      "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
+      "id": "aquarium_readme_87"
+    },
+    {
+      "label": "\uc131\uacf5 \uc21c\uac04",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L25",
+      "community": 13,
+      "norm_label": "\u1109\u1165\u11bc\u1100\u1169\u11bc \u1109\u116e\u11ab\u1100\u1161\u11ab",
+      "id": "current_product_25"
     },
     {
       "label": "\ud504\ub85c\uc81d\ud2b8 \ubb38\uc11c",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L75",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "aquarium_readme_75"
     },
@@ -2897,7 +3050,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L86",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "aquarium_readme_86"
     },
@@ -2906,7 +3059,7 @@
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L14",
-      "community": 4,
+      "community": 5,
       "norm_label": "\u1109\u1175\u11af\u1112\u1162\u11bc \u1103\u1161\u11ab\u1100\u1168",
       "id": "current_execution_plan_14"
     },
@@ -2915,7 +3068,7 @@
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L133",
-      "community": 4,
+      "community": 5,
       "norm_label": "\u1103\u1161\u110b\u1173\u11b7 \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110e\u116e\u110e\u1165\u11ab",
       "id": "current_execution_plan_133"
     },
@@ -2924,7 +3077,7 @@
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L24",
-      "community": 9,
+      "community": 8,
       "norm_label": "release caveat",
       "id": "current_release_release_caveat"
     },
@@ -2933,7 +3086,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "community": 8,
+      "community": 4,
       "norm_label": "aquarium / \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7",
       "id": "feat_real_runner_integration_readme_aquarium"
     },
@@ -2942,7 +3095,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162",
       "id": "feat_real_runner_integration_readme_mvp"
     },
@@ -2951,7 +3104,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L18",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u1108\u1161\u1105\u1173\u11ab \u1109\u1175\u110c\u1161\u11a8",
       "id": "feat_real_runner_integration_readme"
     },
@@ -2960,7 +3113,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L20",
-      "community": 8,
+      "community": 4,
       "norm_label": "code:bash (cp .env.example .env)",
       "id": "feat_real_runner_integration_readme_codeblock_1"
     },
@@ -2969,7 +3122,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L32",
-      "community": 8,
+      "community": 4,
       "norm_label": "code:bash (cd backend)",
       "id": "feat_real_runner_integration_readme_codeblock_2"
     },
@@ -2978,7 +3131,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L43",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af",
       "id": "feat_real_runner_integration_readme_adapter"
     },
@@ -2987,7 +3140,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L47",
-      "community": 8,
+      "community": 4,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /path/to/bettafish_aquar)",
       "id": "feat_real_runner_integration_readme_codeblock_3"
     },
@@ -2996,7 +3149,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L56",
-      "community": 8,
+      "community": 4,
       "norm_label": "code:bash (./scripts/run_real_integration_canary.sh)",
       "id": "feat_real_runner_integration_readme_codeblock_4"
     },
@@ -3005,7 +3158,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L62",
-      "community": 8,
+      "community": 4,
       "norm_label": "mvp flow",
       "id": "feat_real_runner_integration_readme_mvp_flow"
     },
@@ -3014,7 +3167,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L64",
-      "community": 8,
+      "community": 4,
       "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)",
       "id": "feat_real_runner_integration_readme_codeblock_5"
     },
@@ -3023,7 +3176,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L75",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_real_runner_integration_readme_75"
     },
@@ -3032,7 +3185,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L86",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_real_runner_integration_readme_86"
     },
@@ -3041,7 +3194,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L67",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_real_runner_integration_readme_67"
     },
@@ -3050,7 +3203,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L78",
-      "community": 8,
+      "community": 4,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_real_runner_integration_readme_78"
     },
@@ -3059,7 +3212,7 @@
       "file_type": "document",
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L132",
-      "community": 4,
+      "community": 5,
       "norm_label": "\u1103\u1161\u110b\u1173\u11b7 \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110e\u116e\u110e\u1165\u11ab",
       "id": "current_execution_plan_132"
     },
@@ -3068,7 +3221,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "community": 6,
+      "community": 4,
       "norm_label": "aquarium / \u110b\u1161\u110f\u116e\u110b\u1161\u1105\u1175\u110b\u116e\u11b7",
       "id": "feat_adapter_orchestration_readme_aquarium"
     },
@@ -3077,7 +3230,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 mvp \u1109\u1161\u11bc\u1110\u1162",
       "id": "feat_adapter_orchestration_readme_mvp"
     },
@@ -3086,7 +3239,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L18",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u1108\u1161\u1105\u1173\u11ab \u1109\u1175\u110c\u1161\u11a8",
       "id": "feat_adapter_orchestration_readme"
     },
@@ -3095,7 +3248,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L20",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:bash (cp .env.example .env)",
       "id": "feat_adapter_orchestration_readme_codeblock_1"
     },
@@ -3104,7 +3257,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L32",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:bash (cd backend)",
       "id": "feat_adapter_orchestration_readme_codeblock_2"
     },
@@ -3113,7 +3266,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L43",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u1109\u1175\u11af\u110c\u1166 adapter \u110b\u1167\u11ab\u1100\u1167\u11af",
       "id": "feat_adapter_orchestration_readme_adapter"
     },
@@ -3122,7 +3275,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L47",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:bash (aquarium_bettafish_command=\"python3 /path/to/bettafish_aquar)",
       "id": "feat_adapter_orchestration_readme_codeblock_3"
     },
@@ -3131,7 +3284,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L54",
-      "community": 6,
+      "community": 4,
       "norm_label": "mvp flow",
       "id": "feat_adapter_orchestration_readme_mvp_flow"
     },
@@ -3140,7 +3293,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L56",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:text (\u110c\u116e\u110c\u1166 \u110b\u1175\u11b8\u1105\u1167\u11a8)",
       "id": "feat_adapter_orchestration_readme_codeblock_4"
     },
@@ -3149,7 +3302,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L67",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_adapter_orchestration_readme_67"
     },
@@ -3158,7 +3311,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L78",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_adapter_orchestration_readme_78"
     },
@@ -3167,7 +3320,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L55",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "feat_adapter_orchestration_readme_55"
     },
@@ -3176,7 +3329,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L66",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "feat_adapter_orchestration_readme_66"
     },
@@ -3185,7 +3338,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L55",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u1111\u1173\u1105\u1169\u110c\u1166\u11a8\u1110\u1173 \u1106\u116e\u11ab\u1109\u1165",
       "id": "aquarium_readme_55"
     },
@@ -3194,7 +3347,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L66",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u110c\u116e\u11bc\u110b\u116d\u1112\u1161\u11ab \u1112\u1161\u11ab\u1100\u1168",
       "id": "aquarium_readme_66"
     }
@@ -3799,17 +3952,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_stub_manifest"
+      "target": "domain_pipeline_native_manifest"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L160",
+      "source_location": "L161",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backend_app_domain_pipeline_py",
-      "target": "domain_pipeline_stub_simulation"
+      "target": "domain_pipeline_native_simulation"
     },
     {
       "relation": "contains",
@@ -3830,6 +3983,26 @@
       "confidence_score": 1.0,
       "source": "backend_app_domain_pipeline_py",
       "target": "domain_pipeline_run_aquarium_pipeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_domain_pipeline_py",
+      "target": "domain_pipeline_stub_manifest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_app_domain_pipeline_py",
+      "target": "domain_pipeline_stub_simulation"
     },
     {
       "relation": "calls",
@@ -3862,6 +4035,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "domain_pipeline_build_simulation_report",
+      "target": "domain_pipeline_write_text"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_native_manifest",
       "target": "domain_pipeline_write_text"
     },
     {
@@ -3916,6 +4100,17 @@
       "source_location": "L138",
       "weight": 1.0,
       "confidence_score": 1.0,
+      "source": "domain_pipeline_native_manifest",
+      "target": "domain_pipeline_build_research_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "domain_pipeline_stub_manifest",
       "target": "domain_pipeline_build_research_report"
     },
@@ -3957,10 +4152,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L161",
+      "source_location": "L162",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
+      "source": "domain_pipeline_native_simulation",
       "target": "domain_pipeline_extract_ontology"
     },
     {
@@ -3990,6 +4185,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_extract_ontology"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L151",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4001,10 +4207,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L162",
+      "source_location": "L163",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
+      "source": "domain_pipeline_native_simulation",
       "target": "domain_pipeline_build_personas"
     },
     {
@@ -4023,6 +4229,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_build_personas"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L152",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4034,10 +4251,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L163",
+      "source_location": "L164",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
+      "source": "domain_pipeline_native_simulation",
       "target": "domain_pipeline_run_simulation"
     },
     {
@@ -4067,6 +4284,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_run_simulation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L153",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4078,10 +4306,10 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L164",
+      "source_location": "L165",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "domain_pipeline_stub_simulation",
+      "source": "domain_pipeline_native_simulation",
       "target": "domain_pipeline_build_simulation_report"
     },
     {
@@ -4100,6 +4328,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_pipeline_build_simulation_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L154",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4111,11 +4350,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L181",
+      "source_location": "L231",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_stub_manifest"
+      "target": "domain_pipeline_native_manifest"
     },
     {
       "relation": "calls",
@@ -4125,7 +4364,7 @@
       "source_file": "backend/app/domain/pipeline.py",
       "source_location": "L140",
       "weight": 1.0,
-      "source": "domain_pipeline_stub_manifest",
+      "source": "domain_pipeline_native_manifest",
       "target": "domain_contracts_handoffmanifest"
     },
     {
@@ -4134,31 +4373,9 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L150",
+      "source_location": "L151",
       "weight": 1.0,
-      "source": "domain_pipeline_stub_manifest",
-      "target": "domain_contracts_adapterstage"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L194",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "domain_pipeline_run_aquarium_pipeline",
-      "target": "domain_pipeline_stub_simulation"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/app/domain/pipeline.py",
-      "source_location": "L165",
-      "weight": 1.0,
-      "source": "domain_pipeline_stub_simulation",
+      "source": "domain_pipeline_native_manifest",
       "target": "domain_contracts_adapterstage"
     },
     {
@@ -4170,6 +4387,38 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_native_simulation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "domain_pipeline_native_simulation",
+      "target": "domain_contracts_adapterstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L245",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_build_runtime_claim"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_rationale_177",
       "target": "domain_pipeline_build_runtime_claim"
     },
     {
@@ -4324,6 +4573,28 @@
       "weight": 1.0,
       "source": "tests_test_pipeline_contract_test_pipeline_supports_single_mode_and_english_locale",
       "target": "domain_pipeline_run_aquarium_pipeline"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_stub_manifest"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "domain_pipeline_run_aquarium_pipeline",
+      "target": "domain_pipeline_stub_simulation"
     },
     {
       "relation": "calls",
@@ -4507,6 +4778,39 @@
       "weight": 1.0,
       "source": "domain_adapters_run_mirofish_cli_adapter",
       "target": "domain_contracts_adapterstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "domain_pipeline_stub_manifest",
+      "target": "domain_contracts_adapterstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "domain_pipeline_stub_simulation",
+      "target": "domain_contracts_adapterstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/app/domain/pipeline.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "domain_pipeline_stub_manifest",
+      "target": "domain_contracts_handoffmanifest"
     },
     {
       "relation": "contains",
@@ -4959,21 +5263,71 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "aquarium_readme_aquarium",
-      "target": "aquarium_readme_mvp"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
       "source_location": "L17",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "aquarium_readme_aquarium",
       "target": "aquarium_readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium",
+      "target": "aquarium_readme_18"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium",
+      "target": "aquarium_readme_aquarium_standalone_native"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium",
+      "target": "aquarium_readme_legacy_bridge_adapter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium",
+      "target": "aquarium_readme_77"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium",
+      "target": "aquarium_readme_88"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium",
+      "target": "aquarium_readme_mvp"
     },
     {
       "relation": "contains",
@@ -5079,6 +5433,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_18",
+      "target": "aquarium_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_18",
+      "target": "aquarium_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_aquarium_standalone_native",
+      "target": "aquarium_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L47",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5089,21 +5473,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L56",
+      "source_location": "L44",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "aquarium_readme_adapter",
+      "source": "aquarium_readme_mvp_flow",
+      "target": "aquarium_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_legacy_bridge_adapter",
       "target": "aquarium_readme_codeblock_4"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L71",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "aquarium_readme_mvp_flow",
-      "target": "aquarium_readme_codeblock_3"
+      "source": "aquarium_readme_legacy_bridge_adapter",
+      "target": "aquarium_readme_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "aquarium_readme_adapter",
+      "target": "aquarium_readme_codeblock_4"
     },
     {
       "relation": "contains",
@@ -5124,6 +5528,16 @@
       "confidence_score": 1.0,
       "source": "docs_changelog_md",
       "target": "docs_changelog_changelog_aquarium"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_changelog_changelog_aquarium",
+      "target": "docs_changelog_2026_06_30_standalone_aquarium_native_pivot"
     },
     {
       "relation": "contains",
@@ -5811,9 +6225,69 @@
       "source_file": "docs/current/execution-plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "source": "docs_current_execution_plan_md",
+      "target": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_current_execution_plan_md",
       "target": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "target": "current_execution_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "target": "current_execution_plan_7",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "target": "current_execution_plan_15",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "target": "current_execution_plan_adapter_command_contract",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "current_execution_plan_aquarium_standalone_native_runtime_legacy_bridge",
+      "target": "current_execution_plan_142",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5839,71 +6313,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "target": "current_execution_plan_15"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/execution-plan.md",
-      "source_location": "L66",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "target": "current_execution_plan_adapter_command_contract"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/execution-plan.md",
-      "source_location": "L134",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "target": "current_execution_plan_134"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/execution-plan.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "target": "current_execution_plan_14"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/execution-plan.md",
-      "source_location": "L133",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "target": "current_execution_plan_133"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/execution-plan.md",
-      "source_location": "L132",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
-      "target": "current_execution_plan_132"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/execution-plan.md",
       "source_location": "L17",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "current_execution_plan_15",
-      "target": "current_execution_plan_phase_1_adapter_contract"
+      "target": "current_execution_plan_phase_1_standalone_native_contract",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "current_execution_plan_15",
+      "target": "current_execution_plan_phase_1b_legacy_adapter_contract",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5949,10 +6373,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/execution-plan.md",
-      "source_location": "L16",
+      "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "current_execution_plan_14",
+      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
+      "target": "current_execution_plan_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_15",
       "target": "current_execution_plan_phase_1_adapter_contract"
     },
     {
@@ -6014,6 +6448,16 @@
       "confidence_score": 1.0,
       "source": "current_execution_plan_adapter_command_contract",
       "target": "current_execution_plan_mirofish_command"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
+      "target": "current_execution_plan_adapter_command_contract"
     },
     {
       "relation": "contains",
@@ -6114,6 +6558,26 @@
       "confidence_score": 1.0,
       "source": "current_product_product_aquarium",
       "target": "current_product_non_goals"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_aquarium",
+      "target": "current_product_26"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_aquarium",
+      "target": "current_product_product_positioning"
     },
     {
       "relation": "contains",
@@ -6699,6 +7163,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/release.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_release_release_aquarium",
+      "target": "current_release_legacy_sibling_runner"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -6779,11 +7253,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/release.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_release_legacy_sibling_runner",
+      "target": "current_release_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
       "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "current_release_local_release_gate",
       "target": "current_release_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_release_local_release_gate",
+      "target": "current_release_codeblock_3"
     },
     {
       "relation": "contains",
@@ -7228,6 +7722,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
+      "target": "current_execution_plan_134"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
+      "target": "current_execution_plan_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
+      "target": "current_execution_plan_133"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_aquarium_stub_mvp_bettafish_mirofish",
+      "target": "current_execution_plan_132"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/execution-plan.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_execution_plan_14",
+      "target": "current_execution_plan_phase_1_adapter_contract"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
@@ -7497,5 +8041,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "955eeb39e6e94b31521ceabf69fe9dbe0f257b41"
+  "built_at_commit": "c56ddd0eafc1e38d1e128dc93c1502f1e6880607"
 }
