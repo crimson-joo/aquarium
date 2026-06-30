@@ -1,5 +1,12 @@
 # Changelog — Aquarium
 
+## 2026-06-30 — Native Productization Pass 1
+
+- Split Aquarium native execution into research/graph/persona/simulation/report engine packages.
+- Added API result surfaces for `seed`, `ecosystem`, `simulation`, and `report` so the UI can expose explorable product results, not just artifact paths.
+- Split runtime evidence into `graph_engine_status` and `graph_memory_status` so Aquarium ecosystem generation is not mislabeled as Graphiti memory PASS.
+- Added UI tabs for 조사 Seed / 생태계 지도 / 해류 관찰 / 리포트 and verified browser console errors stayed at 0.
+
 ## 2026-06-30 — Standalone Aquarium native pivot
 
 - Promoted the default no-runner path from `local_stub` degraded output to `aquarium_native` standalone vertical slice.
