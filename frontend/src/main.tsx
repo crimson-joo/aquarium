@@ -9,7 +9,18 @@ type Mode = 'single' | 'multiverse';
 type Stage = { name: string; provider: string; status: string; warnings?: string[] };
 type ProviderKey = 'local_stub' | 'bettafish_cli' | 'mirofish_cli';
 type StatusKey = 'completed' | 'degraded' | 'failed';
-type RunResult = { run_id: string; mode: Mode; status: string; summary?: string[]; stages?: Stage[]; artifacts?: Record<string, string> };
+type RuntimeLevel = 'native_bounded' | 'real_provider_warning' | 'degraded_stub' | 'contract_only' | 'failed';
+type GraphMemoryKey = 'native_pass' | 'warning' | 'not_native';
+type RuntimeClaim = {
+  real_integration: boolean;
+  runtime_level: RuntimeLevel;
+  native_bounded_smoke: boolean;
+  degraded: boolean;
+  graph_memory_status: GraphMemoryKey;
+  long_running_multiverse_verified: boolean;
+  mode_verified: Mode;
+};
+type RunResult = { run_id: string; mode: Mode; status: string; summary?: string[]; stages?: Stage[]; artifacts?: Record<string, string>; runtime_claim?: RuntimeClaim };
 
 function App() {
   const [locale, setLocale] = useState<Locale>('ko');
@@ -69,6 +80,15 @@ function App() {
         {!result && <p>{t.emptyStatus}</p>}
         {result && <div className="result">
           <b>{result.status.toUpperCase()}</b><p>Run: {result.run_id}</p><p>Mode: {result.mode}</p><p>{result.summary?.join(' ')}</p>
+          {result.runtime_claim && <div className={`runtimeClaim ${result.runtime_claim.runtime_level}`}>
+            <b>{t.runtimeTitle}</b>
+            <p>{t.runtimeLevels[result.runtime_claim.runtime_level] ?? result.runtime_claim.runtime_level}</p>
+            <div className="claimGrid">
+              <span>{result.runtime_claim.real_integration ? t.realIntegrationOn : t.realIntegrationOff}</span>
+              <span>{t.graphMemoryLabels[result.runtime_claim.graph_memory_status] ?? result.runtime_claim.graph_memory_status}</span>
+              <span>{result.runtime_claim.long_running_multiverse_verified ? t.longRunOn : t.longRunOff}</span>
+            </div>
+          </div>}
           <div className="stageGrid">
             {result.stages?.map((stage) => {
               const providerLabel = t.providerLabels[stage.provider as ProviderKey] ?? stage.provider;

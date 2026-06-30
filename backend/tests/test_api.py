@@ -17,6 +17,9 @@ def test_create_run_and_chat(tmp_path, monkeypatch):
     body = response.json()
     assert body["status"] == "completed"
     assert body["mode"] == "multiverse"
+    assert body["runtime_claim"]["runtime_level"] == "degraded_stub"
+    assert body["runtime_claim"]["real_integration"] is False
+    assert body["runtime_claim"]["long_running_multiverse_verified"] is False
     assert [stage["name"] for stage in body["stages"]] == ["bettafish_report", "mirofish_simulation"]
     assert body["artifacts"]["handoff_manifest"].endswith("handoff_manifest.json")
     run_id = body["run_id"]

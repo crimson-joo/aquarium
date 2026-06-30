@@ -172,6 +172,44 @@ def _stub_simulation(locale: Locale, mode: SimulationMode, root: Path, seed: See
     return ontology, personas, simulation, simulation_report, stage
 
 
+def build_runtime_claim(stages: list[AdapterStage], mode: SimulationMode) -> dict[str, object]:
+    """Summarize what the run can honestly claim at the API/UI boundary."""
+    by_name = {stage.name: stage for stage in stages}
+    providers = {name: stage.provider for name, stage in by_name.items()}
+    statuses = {name: stage.status for name, stage in by_name.items()}
+    warnings = [warning for stage in stages for warning in stage.warnings]
+    both_real = (
+        providers.get("bettafish_report") == "bettafish_cli"
+        and providers.get("mirofish_simulation") == "mirofish_cli"
+        and statuses.get("bettafish_report") == "completed"
+        and statuses.get("mirofish_simulation") == "completed"
+    )
+    any_failed = any(stage.status == "failed" for stage in stages)
+    any_degraded = any(stage.status == "degraded" or stage.provider == "local_stub" for stage in stages)
+    native_warning = any("native_unverified" in warning or "fixture" in warning.lower() for warning in warnings)
+    if any_failed:
+        level = "failed"
+    elif both_real and not native_warning:
+        level = "native_bounded"
+    elif both_real:
+        level = "real_provider_warning"
+    elif any_degraded:
+        level = "degraded_stub"
+    else:
+        level = "contract_only"
+    return {
+        "real_integration": both_real,
+        "runtime_level": level,
+        "native_bounded_smoke": both_real and not native_warning,
+        "degraded": any_degraded,
+        "graph_memory_status": "warning" if native_warning else ("native_pass" if both_real else "not_native"),
+        "long_running_multiverse_verified": False,
+        "mode_verified": mode.value,
+        "providers": providers,
+        "stage_statuses": statuses,
+    }
+
+
 def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, storage_root: Path) -> PipelineResult:
     run = RunRecord(run_id=f"aq_{uuid4().hex[:12]}", topic=topic, locale=locale, mode=mode, status="running")
     root = _run_dir(storage_root, run.run_id)
@@ -204,6 +242,7 @@ def run_aquarium_pipeline(topic: str, locale: Locale, mode: SimulationMode, stor
     run.stages.append(miro_stage)
 
     run.status = "completed" if all(stage.status != "failed" for stage in run.stages) else "failed"
+    run.runtime_claim = build_runtime_claim(run.stages, mode)
     result = PipelineResult(run=run, manifest=manifest, seed=seed, ontology=ontology, personas=personas, simulation=simulation, simulation_report=simulation_report)
     _write_json(root / "result.json", result.model_dump(mode="json"))
     return result

@@ -12,9 +12,9 @@ MVP vertical slice 기준 검증 완료:
 실제 runner 통합 canary 기준:
 
 - `scripts/run_real_integration_canary.sh`가 추가되었다.
-- fake BettaFish/MiroFish contract runner로 canary PASS 경로를 검증한다.
 - runner 미설정 상태는 `local_stub` degraded로 JSON summary를 출력하고 exit code `2`를 반환해야 한다.
 - real PASS 조건은 BettaFish=`bettafish_cli completed`, MiroFish=`mirofish_cli completed` 둘 다 만족할 때뿐이다.
+- 2026-06-30 추가 검증에서 fake bridge 없이 live MiroFish backend + Graphiti + OASIS bounded single run까지 통과했다.
 
 Release QA 결과:
 
@@ -26,8 +26,16 @@ Release QA 결과:
 - Docker Compose config/build/up health smoke: passed.
 - Browser smoke: Korean UI rendered, run completed, warnings/artifacts visible, console errors 0.
 - GitHub Actions: Aquarium main `Local Runtime CI` success; MiroFish-localized main `Local Runtime CI` and `Deploy GitHub Pages` success.
+- Native runtime canary: `pass`, `real_integration=true`, run `aq_25badceb79ca`.
+  - BettaFish provider: `bettafish_cli`, completed.
+  - MiroFish provider: `mirofish_cli`, completed.
+  - MiroFish graph: `local_mirofish_3660f13154484f5b`, 10 nodes / 38 edges.
+  - Simulation: `sim_3c7675d86e46`, graph memory update enabled, 16 meaningful actions.
+  - Report: `report_d385e3807800`, Korean report generated with CJK leakage 0.
+- API/UI runtime labeling: `runtime_claim` exposes real/degraded/native boundary; focused backend tests 14 passed and frontend build passed after the change.
+- MiroFish live-local multiverse canary: `PASS`, `mv_4ef846551b2d`, 4 universes / 24 configured rounds / graph memory preflight healthy / ensemble comparison produced 3 clusters and 4 sensitivity axes.
 
-중요 caveat: MiroFish bridge는 contract-level fake bridge로 검증했기 때문에, live native Graphiti/OASIS 실행 증명은 별도 항목으로 남긴다.
+중요 caveat: Aquarium native canary는 live native Graphiti/OASIS 경로를 통과한 bounded single-run smoke다. MiroFish multiverse 확장은 live endpoint preflight + bounded real-backend comparison PASS로 확인했지만, durable OASIS action stream이 쌓이는 장시간 production run으로 격상하려면 별도 장시간 실행이 필요하다.
 
 ## Acceptance criteria
 

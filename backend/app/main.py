@@ -47,6 +47,7 @@ def create_app() -> FastAPI:
             "locale": result.run.locale,
             "mode": result.run.mode,
             "status": result.run.status,
+            "runtime_claim": result.run.runtime_claim,
             "stages": [stage.model_dump(mode="json") for stage in result.run.stages],
             "artifacts": {
                 "research_report": result.manifest.final_report_path,
