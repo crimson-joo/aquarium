@@ -12,7 +12,8 @@ BettaFish-localized/MiroFish-localized repo를 옆에서 호출하는 “연결�
 - legacy bridge: `AQUARIUM_BETTAFISH_COMMAND` / `AQUARIUM_MIROFISH_COMMAND` 외부 CLI adapter contract 지원
 - FastAPI backend + Vite React frontend
 - Docker Compose-first 실행 구조
-- 보고서와 simulation artifact를 `data/runs/<run_id>/`에 저장
+- DB-backed local lifecycle: `data/aquarium.db`에 job/artifact metadata 저장, `data/runs/<run_id>/`에 보고서와 simulation artifact 저장
+- job progress/stage/attempt/error/result polling과 cancel/retry/resume API/UI 제공
 - API/UI가 `runtime_claim`으로 standalone/native, external runner dependency, real/degraded/native 상태를 분리 표시
 
 ## 빠른 시작
@@ -38,6 +39,8 @@ cd ../frontend
 npm install
 npm test
 npm run build
+npx playwright install chromium
+E2E_BASE_URL=http://127.0.0.1:3008 npm run test:e2e
 ```
 
 ## 기본 실행: Aquarium standalone native
@@ -54,6 +57,8 @@ clone 직후 별도 sibling repo command를 설정하지 않아도 Aquarium은 �
 ```
 
 API/UI의 `runtime_claim.runtime_level`이 `aquarium_native`이면 외부 BettaFish/MiroFish repo 호출이 아니라 Aquarium 내부 경로로 생성된 실행입니다.
+
+`POST /api/runs`는 즉시 결과를 반환하지 않고 DB-backed job을 생성합니다. UI는 `/api/jobs/{job_id}`를 polling하여 progress/stage를 보여주고, 완료 후 seed/ecosystem/currents/report 탭을 표시합니다.
 
 ## Legacy bridge / 실제 adapter 연결
 

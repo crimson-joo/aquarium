@@ -347,6 +347,19 @@ The default standalone path is split into explicit engine packages instead of hi
 
 `graph_engine_status=aquarium_native` means the Aquarium-native ecosystem map ran. It does **not** mean Graphiti memory was used. Graphiti/Neo4j memory remains a separate optional layer and must be reported as `graph_memory_status=not_configured` until a real memory provider is wired and verified.
 
+### Production Readiness Pass 1 lifecycle
+
+Aquarium now has a DB-backed local lifecycle layer for run orchestration:
+
+- `backend/app/domain/lifecycle.py` owns the local SQLite-backed `jobs` and `artifacts` tables under `AQUARIUM_DATA_DIR/aquarium.db`.
+- `POST /api/runs` creates a queued job and returns `202 Accepted` with `job_id`, `run_id`, progress, stage, attempts, links, and terminal result when available.
+- `GET /api/jobs/{job_id}` polls lifecycle state.
+- `POST /api/jobs/{job_id}/cancel` marks queued jobs cancelled and requests cancellation for running jobs.
+- `POST /api/jobs/{job_id}/retry` and `/resume` requeue failed/cancelled jobs.
+- The local `JobWorker` executes queued work in-process with one worker thread for this RC. It is intentionally not yet a distributed production queue.
+
+This pass moves Aquarium away from request-bound synchronous execution, but production still requires a real external queue/worker process, Postgres-backed repository, migrations, multi-worker locking, and crash recovery before hosted SaaS claims.
+
 ### `.env.example`
 
 ```env

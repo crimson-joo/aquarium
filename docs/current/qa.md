@@ -42,6 +42,7 @@ Release QA 결과:
   - Report: `report_d385e3807800`, Korean report generated with CJK leakage 0.
 - API/UI runtime labeling: `runtime_claim` exposes standalone native / external runner dependency / real-degraded-native boundary; focused backend tests 14 passed and frontend build passed after the change.
 - Productization pass 1: native engines split into `research`, `graph`, `persona`, `simulation`, `report` packages; API returns explorable `seed`/`ecosystem`/`simulation`/`report`; UI tabs show 조사 Seed/생태계 지도/해류 관찰/리포트; browser smoke showed Graphiti memory as not configured rather than PASS; console errors 0.
+- Production Readiness Pass 1: `POST /api/runs` now creates a DB-backed job and returns `202`; lifecycle polling, cancel, retry, resume, progress/stage, attempts, and result persistence are covered by backend tests. UI shows job progress/failure controls, and Playwright E2E covers job creation through result tabs with console errors 0.
 - MiroFish live-local multiverse canary: `PASS`, `mv_4ef846551b2d`, 4 universes / 24 configured rounds / graph memory preflight healthy / ensemble comparison produced 3 clusters and 4 sensitivity axes.
 
 중요 caveat: Aquarium native canary는 live native Graphiti/OASIS 경로를 통과한 bounded single-run smoke다. MiroFish multiverse 확장은 live endpoint preflight + bounded real-backend comparison PASS로 확인했지만, durable OASIS action stream이 쌓이는 장시간 production run으로 격상하려면 별도 장시간 실행이 필요하다.
@@ -70,3 +71,4 @@ Release QA 결과:
 
 - `docker compose config --quiet`가 통과해야 한다.
 - `docker compose up --build` 후 UI/API가 응답해야 한다.
+- Playwright E2E는 Docker Compose runtime에서 job lifecycle → result tabs → Graphiti memory caveat를 검증해야 한다.

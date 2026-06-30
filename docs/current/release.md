@@ -29,6 +29,7 @@ AQUARIUM_MIROFISH_COMMAND="python3 /Users/crimson/Projects/mirofish-localized/sc
 - MiroFish command는 위 변수와 `AQUARIUM_HANDOFF_MANIFEST`를 받아 `$AQUARIUM_RUN_DIR/mirofish_result.json`을 생성해야 합니다.
 - 두 단계가 모두 `bettafish_cli completed` / `mirofish_cli completed`일 때만 real integration PASS입니다.
 - API/UI는 `runtime_claim`으로 `standalone_native`, `external_runner_dependency`, `real_integration`, `runtime_level`, `graph_engine_status`, `graph_memory_status`, `long_running_multiverse_verified`를 함께 표시합니다. `aquarium_native`는 standalone vertical slice, `graph_engine_status=aquarium_native`는 Aquarium 자체 생태계 지도 생성, `graph_memory_status=not_configured`는 Graphiti 기억 계층 미연결을 뜻합니다. `native_bounded`는 legacy bridge를 통한 bounded native smoke 통과를 뜻하며, `long_running_multiverse_verified=false`인 동안 production 장시간 native라고 부르지 않습니다.
+- Production Readiness Pass 1 adds local DB-backed run lifecycle and an in-process worker queue. This is a stronger local RC path, but not yet a hosted production queue: Postgres repository, migrations, distributed workers, crash recovery, auth/rate limits, and external deployment gates remain separate production blockers.
 
 ## Local release gate
 

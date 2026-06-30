@@ -2,23 +2,26 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI, HTTPException, status
+from pydantic import BaseModel, Field
 
 from app.core.config import get_settings
 from app.core.i18n import msg
 from app.domain.contracts import Locale, SimulationMode
+from app.domain.lifecycle import JobWorker, LifecycleStore
 from app.domain.pipeline import run_aquarium_pipeline
 
 
 class CreateRunRequest(BaseModel):
-    topic: str
+    topic: str = Field(min_length=1, max_length=500)
     locale: Locale = Locale.KO
     mode: SimulationMode = SimulationMode.SINGLE
 
 
 class ChatRequest(BaseModel):
-    question: str
+    question: str = Field(min_length=1, max_length=1000)
 
 
 def _data_dir() -> Path:
@@ -60,33 +63,148 @@ def _run_response(result):
     }
 
 
+def _job_response(job: dict):
+    return {
+        "job_id": job["job_id"],
+        "run_id": job["run_id"],
+        "topic": job["topic"],
+        "locale": job["locale"],
+        "mode": job["mode"],
+        "status": job["status"],
+        "progress": job["progress"],
+        "stage": job["stage"],
+        "attempts": job["attempts"],
+        "cancel_requested": job["cancel_requested"],
+        "error": job["error"],
+        "created_at": job["created_at"],
+        "updated_at": job["updated_at"],
+        "completed_at": job["completed_at"],
+        "result": job["result"],
+        "links": {
+            "job": f"/api/jobs/{job['job_id']}",
+            "run": f"/api/runs/{job['run_id']}",
+            "retry": f"/api/jobs/{job['job_id']}/retry",
+            "resume": f"/api/jobs/{job['job_id']}/resume",
+            "cancel": f"/api/jobs/{job['job_id']}/cancel",
+        },
+    }
+
+
+def _load_run_payload(store: LifecycleStore, run_id: str):
+    job = store.get_job_by_run_id(run_id)
+    if job and job.get("result"):
+        return job["result"]
+    if job and job["status"] in {"queued", "running", "failed", "cancelled"}:
+        return None
+    path = _result_path(run_id)
+    if path.exists():
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        if "run" in raw:
+            return {
+                "run_id": raw["run"]["run_id"],
+                "topic": raw["run"]["topic"],
+                "locale": raw["run"]["locale"],
+                "mode": raw["run"]["mode"],
+                "status": raw["run"]["status"],
+                "runtime_claim": raw["run"].get("runtime_claim", {}),
+                "stages": raw["run"].get("stages", []),
+                "artifacts": {
+                    "research_report": raw["manifest"]["final_report_path"],
+                    "handoff_manifest": str(_data_dir() / "runs" / run_id / "handoff_manifest.json"),
+                    "simulation_report": raw["simulation_report"]["path"],
+                },
+                "seed": raw["seed"],
+                "ecosystem": {"entities": raw["ontology"]["entities"], "relations": raw["ontology"]["relations"], "personas": raw["personas"]},
+                "simulation": raw["simulation"],
+                "report": {"path": raw["simulation_report"]["path"], "preview": [line for line in raw["simulation_report"]["body"].splitlines() if line.strip()][:10]},
+                "summary": raw["simulation_report"]["body"].splitlines()[:6],
+            }
+        return raw
+    return None
+
+
 def create_app() -> FastAPI:
-    app = FastAPI(title="Aquarium API", version="0.1.0")
+    data_dir = _data_dir()
+    store = LifecycleStore(data_dir)
+    store.recover_interrupted_jobs()
+    worker = JobWorker(store, run_aquarium_pipeline, _run_response, data_dir)
+    for queued_job_id in store.queued_job_ids():
+        worker.enqueue(queued_job_id)
+
+    @asynccontextmanager
+    async def lifespan(app: FastAPI):
+        try:
+            yield
+        finally:
+            worker.shutdown(wait=False)
+            store.close()
+
+    app = FastAPI(title="Aquarium API", version="0.2.0", lifespan=lifespan)
+    app.state.lifecycle_store = store
+    app.state.job_worker = worker
 
     @app.get("/api/health")
     def health():
-        return {"status": "ok", "app": "Aquarium"}
+        return {"status": "ok", "app": "Aquarium", "lifecycle": "db-backed", "worker": "enabled"}
 
-    @app.post("/api/runs")
+    @app.post("/api/runs", status_code=status.HTTP_202_ACCEPTED)
     def create_run(payload: CreateRunRequest):
-        result = run_aquarium_pipeline(payload.topic, payload.locale, payload.mode, _data_dir())
-        return _run_response(result)
+        job = store.create_job(payload.topic.strip(), payload.locale, payload.mode)
+        worker.enqueue(job["job_id"])
+        return _job_response(store.get_job(job["job_id"]))
+
+    @app.get("/api/jobs")
+    def list_jobs(limit: int = 20):
+        return {"jobs": [_job_response(job) for job in store.list_jobs(max(1, min(limit, 100)))]}
+
+    @app.get("/api/jobs/{job_id}")
+    def get_job(job_id: str):
+        job = store.get_job(job_id)
+        if not job:
+            raise HTTPException(status_code=404, detail="job not found")
+        return _job_response(job)
+
+    @app.post("/api/jobs/{job_id}/cancel")
+    def cancel_job(job_id: str):
+        job = store.request_cancel(job_id)
+        if not job:
+            raise HTTPException(status_code=404, detail="job not found")
+        return _job_response(job)
+
+    @app.post("/api/jobs/{job_id}/retry")
+    def retry_job(job_id: str):
+        if not store.get_job(job_id):
+            raise HTTPException(status_code=404, detail="job not found")
+        job = store.reset_for_retry(job_id)
+        if not job:
+            raise HTTPException(status_code=409, detail="job is not retryable")
+        worker.enqueue(job_id)
+        return _job_response(store.get_job(job_id))
+
+    @app.post("/api/jobs/{job_id}/resume")
+    def resume_job(job_id: str):
+        if not store.get_job(job_id):
+            raise HTTPException(status_code=404, detail="job not found")
+        job = store.reset_for_retry(job_id)
+        if not job:
+            raise HTTPException(status_code=409, detail="job is not resumable")
+        worker.enqueue(job_id)
+        return _job_response(store.get_job(job_id))
 
     @app.get("/api/runs/{run_id}")
     def get_run(run_id: str):
-        path = _result_path(run_id)
-        if not path.exists():
+        payload = _load_run_payload(store, run_id)
+        if not payload:
             raise HTTPException(status_code=404, detail="run not found")
-        return json.loads(path.read_text(encoding="utf-8"))
+        return payload
 
     @app.post("/api/runs/{run_id}/chat")
     def chat(run_id: str, payload: ChatRequest):
-        path = _result_path(run_id)
-        if not path.exists():
+        result = _load_run_payload(store, run_id)
+        if not result:
             raise HTTPException(status_code=404, detail="run not found")
-        result = json.loads(path.read_text(encoding="utf-8"))
-        locale = Locale(result["run"]["locale"])
-        mode = result["run"]["mode"]
+        locale = Locale(result["locale"])
+        mode = result["mode"]
         universe_count = len(result["simulation"]["universes"])
         answer = (
             f"{msg(locale, 'chat_prefix')}, 이 질문은 {universe_count}개 해류의 {mode} 시뮬레이션과 "
